@@ -4,9 +4,7 @@ import { isDevelopment } from "lib/legacy";
 const { parseEther } = ethers.utils;
 
 export const MAINNET = 1;
-export const TESTNET = 97;
-export const FANTOM_TESTNET = 4002;
-export const ARBITRUM_TESTNET = 421611;
+export const TESTNET = 5;
 export const ARBITRUM = 42161;
 
 // TODO take it from web3
@@ -14,41 +12,39 @@ export const DEFAULT_CHAIN_ID = MAINNET;
 export const CHAIN_ID = DEFAULT_CHAIN_ID;
 
 // export const SUPPORTED_CHAIN_IDS = [ARBITRUM, AVALANCHE];
-export const SUPPORTED_CHAIN_IDS = [FANTOM_TESTNET];
+export const SUPPORTED_CHAIN_IDS = [TESTNET];
 
 if (isDevelopment()) {
-  SUPPORTED_CHAIN_IDS.push(ARBITRUM_TESTNET);
+  SUPPORTED_CHAIN_IDS.push(TESTNET);
 }
 
 export const IS_NETWORK_DISABLED = {
   [ARBITRUM]: true,
   [MAINNET]: false,
-  [TESTNET]: true,
-  [FANTOM_TESTNET]: true,
+  [TESTNET]: true
 };
 
 export const CHAIN_NAMES_MAP = {
   [MAINNET]: "Ethereum",
-  [TESTNET]: "BSC Testnet",
-  [ARBITRUM_TESTNET]: "ArbRinkeby",
-  [ARBITRUM]: "Arbitrum",
-  [FANTOM_TESTNET]: "Fantom Testnet",
+  [TESTNET]: "Goerli Testnet",
+  [ARBITRUM]: "Arbitrum"
 };
 
 export const GAS_PRICE_ADJUSTMENT_MAP = {
   [ARBITRUM]: "0",
-  [FANTOM_TESTNET]: "0", // 3 gwei
   [MAINNET]: "0",
+  [TESTNET]: "0"
 };
 
 export const MAX_GAS_PRICE_MAP = {
-  [FANTOM_TESTNET]: "0", // 200 gwei
-  [MAINNET]: "0"
+  [MAINNET]: "0",
+  [TESTNET]: "0", // 200 gwei
+  [ARBITRUM]: "0", // 200 gwei
 };
 
 export const HIGH_EXECUTION_FEES_MAP = {
   [ARBITRUM]: 3, // 3 USD
-  [FANTOM_TESTNET]: 3, // 3 USD
+  [TESTNET]: 3, // 3 USD
   [MAINNET]: 3
 };
 
@@ -67,24 +63,11 @@ const constants = {
   },
 
   [TESTNET]: {
-    nativeTokenSymbol: "BNB",
-    defaultCollateralSymbol: "BUSD",
+    nativeTokenSymbol: "GoerliETH",
+    defaultCollateralSymbol: "USDC",
     defaultFlagOrdersEnabled: true,
     positionReaderPropsLength: 8,
     v2: false,
-  },
-
-  [ARBITRUM_TESTNET]: {
-    nativeTokenSymbol: "ETH",
-    defaultCollateralSymbol: "USDC",
-    defaultFlagOrdersEnabled: false,
-    positionReaderPropsLength: 9,
-    v2: true,
-
-    SWAP_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
-    INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
-    // contract requires that execution fee be strictly greater than instead of gte
-    DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.000300001"),
   },
 
   [ARBITRUM]: {
@@ -99,53 +82,24 @@ const constants = {
     INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
     // contract requires that execution fee be strictly greater than instead of gte
     DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.000300001"),
-  },
-
-  [FANTOM_TESTNET]: {
-    nativeTokenSymbol: "FTM",
-    defaultCollateralSymbol: "USDC",
-    defaultFlagOrdersEnabled: true,
-    positionReaderPropsLength: 9,
-    v2: true,
-
-    SWAP_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
-    INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
-    // contract requires that execution fee be strictly greater than instead of gte
-    DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.000300001"),
-  },
+  }
 };
 
 const ALCHEMY_WHITELISTED_DOMAINS = ["gmx.io", "app.gmx.io"];
 
 export const ARBITRUM_RPC_PROVIDERS = [getDefaultArbitrumRpcUrl()];
-export const FANTOM_TESTNET_RPC_PROVIDERS = ["https://rpc.testnet.fantom.network"];
+export const TESTNET_RPC_PROVIDERS = ["https://ethereum-goerli.publicnode.com"];
 export const ETHEREUM_RPC_PROVIDERS = ["https://eth.llamarpc.com"];
-
-export const BSC_RPC_PROVIDERS = [
-  "https://bsc-dataseed.binance.org",
-  "https://bsc-dataseed1.defibit.io",
-  "https://bsc-dataseed1.ninicoin.io",
-  "https://bsc-dataseed2.defibit.io",
-  "https://bsc-dataseed3.defibit.io",
-  "https://bsc-dataseed4.defibit.io",
-  "https://bsc-dataseed2.ninicoin.io",
-  "https://bsc-dataseed3.ninicoin.io",
-  "https://bsc-dataseed4.ninicoin.io",
-  "https://bsc-dataseed1.binance.org",
-  "https://bsc-dataseed2.binance.org",
-  "https://bsc-dataseed3.binance.org",
-  "https://bsc-dataseed4.binance.org",
-];
 
 export const RPC_PROVIDERS = {
   [MAINNET]: ETHEREUM_RPC_PROVIDERS,
-  [ARBITRUM]: ARBITRUM_RPC_PROVIDERS,
-  [FANTOM_TESTNET]: FANTOM_TESTNET_RPC_PROVIDERS,
+  [TESTNET]: TESTNET_RPC_PROVIDERS,
+  [ARBITRUM]: ARBITRUM_RPC_PROVIDERS
 };
 
 export const FALLBACK_PROVIDERS = {
   [ARBITRUM]: [getAlchemyHttpUrl()],
-  [FANTOM_TESTNET]: ["https://rpc.testnet.fantom.network"],
+  [TESTNET]: ["https://ethereum-goerli.publicnode.com"],
   [MAINNET]: ["https://eth.llamarpc.com"]
 };
 
@@ -163,25 +117,14 @@ export const NETWORK_METADATA = {
   },
   [TESTNET]: {
     chainId: "0x" + TESTNET.toString(16),
-    chainName: "BSC Testnet",
+    chainName: "Goerli Testnet",
     nativeCurrency: {
-      name: "BNB",
-      symbol: "BNB",
+      name: "GoerliETH",
+      symbol: "GoerliETH",
       decimals: 18,
     },
-    rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
-    blockExplorerUrls: ["https://testnet.bscscan.com/"],
-  },
-  [ARBITRUM_TESTNET]: {
-    chainId: "0x" + ARBITRUM_TESTNET.toString(16),
-    chainName: "Arbitrum Testnet",
-    nativeCurrency: {
-      name: "ETH",
-      symbol: "ETH",
-      decimals: 18,
-    },
-    rpcUrls: ["https://rinkeby.arbitrum.io/rpc"],
-    blockExplorerUrls: ["https://rinkeby-explorer.arbitrum.io/"],
+    rpcUrls: ["ttps://ethereum-goerli.publicnode.com"],
+    blockExplorerUrls: ["https://goerli.etherscan.io/"],
   },
   [ARBITRUM]: {
     chainId: "0x" + ARBITRUM.toString(16),
@@ -193,18 +136,7 @@ export const NETWORK_METADATA = {
     },
     rpcUrls: ARBITRUM_RPC_PROVIDERS,
     blockExplorerUrls: [getExplorerUrl(ARBITRUM)],
-  },
-  [FANTOM_TESTNET]: {
-    chainId: "0x" + FANTOM_TESTNET.toString(16),
-    chainName: "Fantom Testnet",
-    nativeCurrency: {
-      name: "FTM",
-      symbol: "FTM",
-      decimals: 18,
-    },
-    rpcUrls: ["https://rpc.testnet.fantom.network"],
-    blockExplorerUrls: [getExplorerUrl(FANTOM_TESTNET)],
-  },
+  }
 };
 
 export const getConstant = (chainId: number, key: string) => {
@@ -249,7 +181,7 @@ export function getExplorerUrl(chainId) {
   } else if (chainId === MAINNET) {
     return "https://etherscan.com/";
   } else if (chainId === TESTNET) {
-    return "https://testnet.bscscan.com/";
+    return "https://goerli.etherscan.io/";
   } else if (chainId === ARBITRUM_TESTNET) {
     return "https://testnet.arbiscan.io/";
   } else if (chainId === ARBITRUM) {
