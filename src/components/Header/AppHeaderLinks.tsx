@@ -58,7 +58,7 @@ export function AppHeaderLinks({
           <Trans>Dashboard</Trans>
         </HeaderLink>
       </div>
-      <div className="header-dropdown">
+      {/* <div className="header-dropdown">
         <div className="dropbtn">
           <a href="#/nft" aria-current="page">
             NFT
@@ -76,7 +76,7 @@ export function AppHeaderLinks({
             </div>
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="App-header-link-container">
         <HeaderLink to="/earn" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
           <Trans>Earn</Trans>
