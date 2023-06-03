@@ -1,0 +1,8 @@
+.default-btn.read-more {
+  background: transparent;
+  border: 1px solid #a0a3c4;
+}
+
+.default-btn.read-more:hover {
+  background: #252629;
+}
