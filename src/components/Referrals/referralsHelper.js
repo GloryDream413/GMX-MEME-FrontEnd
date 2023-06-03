@@ -26,11 +26,6 @@ export async function getReferralCodeTakenStatus(account, referralCode, chainId)
   const [ownerETH] = await Promise.all([
     getReferralCodeOwner(MAINNET, referralCodeBytes32),
   ]);
-
-  // const takenOnArb =
-  //   !isAddressZero(ownerArbitrum) && (ownerArbitrum !== account || (ownerArbitrum === account && chainId === ARBITRUM));
-  // const takenOnAvax =
-  //   !isAddressZero(ownerAvax) && (ownerAvax !== account || (ownerAvax === account && chainId === AVALANCHE));
   const takenOnETH =
     !isAddressZero(ownerETH) && (ownerETH !== account || (ownerETH === account && chainId === MAINNET));
 
@@ -46,9 +41,6 @@ export async function getReferralCodeTakenStatus(account, referralCode, chainId)
   if (referralCodeTakenInfo[chainId]) {
     return { status: "current", info: referralCodeTakenInfo };
   }
-  // if (chainId === AVALANCHE ? referralCodeTakenInfo[ARBITRUM] : referralCodeTakenInfo[AVALANCHE]) {
-  //   return { status: "other", info: referralCodeTakenInfo };
-  // }
   return { status: "none", info: referralCodeTakenInfo };
 }
 

@@ -2,7 +2,6 @@ import { InjectedConnector } from "@web3-react/injected-connector";
 import {
   ARBITRUM,
   ARBITRUM_RPC_PROVIDERS,
-  ARBITRUM_TESTNET,
   MAINNET,
   ETHEREUM_RPC_PROVIDERS,
   DEFAULT_CHAIN_ID,
@@ -78,7 +77,6 @@ export const getWalletConnectConnector = () => {
   return new WalletConnectConnector({
     rpc: {
       [ARBITRUM]: ARBITRUM_RPC_PROVIDERS[0],
-      [ARBITRUM_TESTNET]: "https://rinkeby.arbitrum.io/rpc",
       [MAINNET]: ETHEREUM_RPC_PROVIDERS[0],
     },
     qrcode: true,

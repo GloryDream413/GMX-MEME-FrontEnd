@@ -1,4 +1,4 @@
-import { ARBITRUM, FANTOM_TESTNET, MAINNET } from "./chains";
+import { ARBITRUM, MAINNET } from "./chains";
 
 export const SUBGRAPH_URLS = {
   [ARBITRUM]: {
@@ -7,16 +7,10 @@ export const SUBGRAPH_URLS = {
     nissohVault: "https://api.thegraph.com/subgraphs/name/nissoh/gmx-vault",
   },
 
-  [FANTOM_TESTNET]: {
-    stats: "https://api.thegraph.com/subgraphs/name/glorydream413/zomitest-stats",
-    referrals: "https://api.thegraph.com/subgraphs/name/glorydream413/zomitest-referrals",
-    trades:"https://api.thegraph.com/subgraphs/name/glorydream413/zomitest-trades",
-  },
-
   [MAINNET]: {
-    stats: "https://api.thegraph.com/subgraphs/name/strongnezha/zomi-stats",
-    referrals: "https://api.thegraph.com/subgraphs/name/strongnezha/zomi-referrals",
-    trades:"https://api.thegraph.com/subgraphs/name/strongnezha/zomi-trades",
+    stats: "https://api.thegraph.com/subgraphs/name/glorydream413/poope",
+    referrals: "https://api.thegraph.com/subgraphs/name/glorydream413/poope-referrals",
+    trades:"https://api.thegraph.com/subgraphs/name/glorydream413/poope-trades",
   },
 
   common: {

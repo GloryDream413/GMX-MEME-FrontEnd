@@ -14,24 +14,15 @@ import { MAINNET } from "config/chains";
 import { t } from "@lingui/macro";
 
 const NETWORK_ICONS = {
-  // [AVALANCHE]: arbitrumIcon,
   [MAINNET]: avalancheIcon,
 };
 
 const NETWORK_ICON_ALTS = {
-  // [AVALANCHE]: "Arbitrum Icon",
   [MAINNET]: "Ethereum Icon",
 };
 
 export default function Ecosystem() {
   const gmxPages = [
-    // {
-    //   title: "$ZOMI Governance",
-    //   link: "https://gov.minmax.exchange/",
-    //   linkLabel: "gov.minmax.exchange",
-    //   about: t`$ZOMI Governance Page`,
-    //   chainIds: [AVALANCHE],
-    // },
     {
       title: "$ZOMI Stats",
       link: "https://stats.zomi.exchange/",
@@ -39,13 +30,6 @@ export default function Ecosystem() {
       about: t`$ZOMI Stats Page`,
       chainIds: [MAINNET],
     },
-    // {
-    //   title: "$ZOMI Proposals",
-    //   link: "https://snapshot.org/#/minmax.eth",
-    //   linkLabel: "snapshot.org",
-    //   about: t`$ZOMI Proposals Voting page`,
-    //   chainIds: [AVALANCHE],
-    // },
     {
       title: "$ZOMI Announcements",
       link: "https://t.me/zomichat",

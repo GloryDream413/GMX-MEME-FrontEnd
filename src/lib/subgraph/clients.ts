@@ -1,6 +1,6 @@
 import { createClient } from "./utils";
 import { SUBGRAPH_URLS } from "config/subgraph";
-import { ARBITRUM, ARBITRUM_TESTNET, MAINNET } from "config/chains";
+import { ARBITRUM, MAINNET } from "config/chains";
 
 export const chainlinkClient = createClient(SUBGRAPH_URLS.common.chainLink);
 
@@ -16,8 +16,6 @@ export const ethGraphClientForTrades = createClient(SUBGRAPH_URLS[MAINNET].trade
 export function getGmxGraphClient(chainId: number) {
   if (chainId === ARBITRUM) {
     return arbitrumGraphClient;
-  } else if (chainId === ARBITRUM_TESTNET) {
-    return null;
   } else if (chainId === MAINNET) {
     return ethGraphClient;
   }

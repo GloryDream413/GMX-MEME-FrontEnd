@@ -547,15 +547,6 @@ export default function DashboardV2() {
             <Trans>
               {chainName} Total Stats start from {totalStatsStartDate}.<br /> For detailed stats:
               </Trans>{" "}
-              {/* {chainId === ARBITRUM && (
-                <ExternalLink href="https://stats.zomi.exchange">https://stats.zomi.exchange</ExternalLink>
-              )}
-              {chainId === AVALANCHE && (
-                <ExternalLink href="https://stats.zomi.exchange/avalanche">
-                  https://stats.zomi.exchange/avalanche
-                </ExternalLink>
-              )}
-              . */}
             </div>
           </div>
         </div>
@@ -613,7 +604,6 @@ export default function DashboardV2() {
                           title={t`Volume`}
                           // arbitrumValue={currentVolumeInfo?.[ARBITRUM].totalVolume}
                           arbitrumValue={bigNumberify(0)}
-                          // avaxValue={currentVolumeInfo?.[AVALANCHE].totalVolume}
                           avaxValue={
                             totalVolumeDelta ? formatNumber(totalVolumeDelta, { currency: true, compact: false }) : `$0`
                           }
@@ -721,10 +711,7 @@ export default function DashboardV2() {
                       renderContent={() => (
                         <StatsTooltip
                           title={t`Total Fees`}
-                          // arbitrumValue={totalFees?.[ARBITRUM]}
-                          // avaxValue={totalFees?.[AVALANCHE]}
                           avaxValue={totalFees ? formatNumber(totalFees, { currency: true, compact: false }) : `$0`}
-                          // total={totalFees?.total}
                           total={totalFees ? formatNumber(totalFees, { currency: true, compact: false }) : `$0`}
                           decimalsForConversion={0}
                           isFloatNum={true}
@@ -747,10 +734,7 @@ export default function DashboardV2() {
                       renderContent={() => (
                         <StatsTooltip
                           title={t`Total Volume`}
-                          // arbitrumValue={totalVolume?.[ARBITRUM]}
-                          // avaxValue={totalVolume?.[AVALANCHE]}
                           avaxValue={totalVolume ? formatNumber(totalVolume, { currency: true, compact: false }) : `$0`}
-                          // total={totalVolume?.total}
                           total={totalVolume ? formatNumber(totalVolume, { currency: true, compact: false }) : `$0`}
                           isFloatNum={true}
                         />

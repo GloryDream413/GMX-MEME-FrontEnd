@@ -1,4 +1,4 @@
-import { ARBITRUM, ARBITRUM_TESTNET, MAINNET } from "./chains";
+import { ARBITRUM, MAINNET } from "./chains";
 
 export const GMX_STATS_API_URL = "https://stats.gmx.io/api";
 

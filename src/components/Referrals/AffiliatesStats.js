@@ -159,45 +159,6 @@ function AffiliatesStats({
                           >
                             <FiTwitter />
                           </a>
-                          {/* {ownerOnOtherChain && !ownerOnOtherChain?.isTaken && (
-                            <div className="info">
-                              <TooltipWithPortal
-                                position="right"
-                                handle={<IoWarningOutline color="#ffba0e" size={16} />}
-                                renderContent={() => (
-                                  <div>
-                                    <Trans>
-                                      This code is not yet registered on{" "}
-                                      {chainId === AVALANCHE ? "Arbitrum" : "Avalanche"}, you will not receive rebates
-                                      there.
-                                      <br />
-                                      <br />
-                                      Switch your network to create this code on{" "}
-                                      {chainId === AVALANCHE ? "Arbitrum" : "Avalanche"}.
-                                    </Trans>
-                                  </div>
-                                )}
-                              />
-                            </div>
-                          )}
-                          {ownerOnOtherChain && ownerOnOtherChain?.isTaken && !ownerOnOtherChain?.isTakenByCurrentUser && (
-                            <div className="info">
-                              <TooltipWithPortal
-                                position="right"
-                                handle={<BiErrorCircle color="#e82e56" size={16} />}
-                                renderContent={() => (
-                                  <div>
-                                    <Trans>
-                                      This code has been taken by someone else on{" "}
-                                      {chainId === AVALANCHE ? "Arbitrum" : "Avalanche"}, you will not receive rebates
-                                      from traders using this code on {chainId === AVALANCHE ? "Arbitrum" : "Avalanche"}
-                                      .
-                                    </Trans>
-                                  </div>
-                                )}
-                              />
-                            </div>
-                          )} */}
                         </div>
                       </td>
                       <td data-label="Total Volume">{getUSDValue(stat.volume)}</td>

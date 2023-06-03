@@ -47,10 +47,6 @@ export default function BuyGMX() {
               <div className="Page-description">
                 <Trans>ETH is needed on Arbitrum to purchase $ZOMI.</Trans>
                 <br />
-                {/* <Trans>
-                  To purchase $ZOMI on <span onClick={() => onNetworkSelect(AVALANCHE)}>Avalanche</span>, please change
-                  your network.
-                </Trans> */}
               </div>
             </div>
           </div>
