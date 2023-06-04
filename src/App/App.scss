@@ -396,7 +396,7 @@
   padding-top: 1.05rem;
 }
 .Wallet-btn:hover {
-  // background: var(--dark-blue-hover);
+  background: var(--dark-blue-hover);
   border-color: var(--dark-blue-border);
 }
 .Wallet-btn:active {
@@ -857,7 +857,7 @@ a.App-cta:hover,
 button.App-cta:hover:enabled {
   // background: linear-gradient(90deg, rgba(58, 78, 252, 1) 0%, rgba(51, 68, 222, 1) 100%);
   background: #BC8A5F;
-  box-shadow: 0 0 0.4rem 0.6rem rgba(45, 66, 252, 0.2);
+  // box-shadow: 0 0 0.4rem 0.6rem rgba(45, 66, 252, 0.2);
 }
 
 .App-cta.small {
@@ -1502,4 +1502,8 @@ button.App-button {
   to {
     transform: rotate(360deg);
   }
+}
+
+.Exchange-swap-button:hover {
+  border-color: white!important;
 }
