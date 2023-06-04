@@ -111,7 +111,7 @@ export default function GlpSwap(props) {
   } = props;
   const history = useHistory();
   const swapLabel = isBuying ? "BuyGlp" : "SellGlp";
-  const tabLabel = isBuying ? t`Buy $ZLP` : t`Sell $ZLP`;
+  const tabLabel = isBuying ? t`Buy $PLP` : t`Sell $PLP`;
   const { active, library, account } = useWeb3React();
   const { chainId } = useChainId();
   // const chainName = getChainName(chainId)

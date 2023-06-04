@@ -393,7 +393,7 @@ export default function DashboardV2() {
                     <br />
                     Get lower fees to{" "}
                     <Link to="/buy_mlp" target="_blank" rel="noopener noreferrer">
-                      buy $ZLP
+                      buy $PLP
                     </Link>{" "}
                     with {tokenInfo.symbol},&nbsp; and to{" "}
                     <Link to="/trade" target="_blank" rel="noopener noreferrer">
@@ -419,7 +419,7 @@ export default function DashboardV2() {
               )}
               <br />
               <div>
-                <ExternalLink href="https://docs.zomi.finance">
+                <ExternalLink href="https://docs.poope.finance">
                   <Trans>More Info</Trans>
                 </ExternalLink>
               </div>
@@ -567,21 +567,20 @@ export default function DashboardV2() {
                       handle={`$${formatAmount(tvl, USD_DECIMALS, 0, true)}`}
                       position="right-bottom"
                       renderContent={() => (
-                        <span>{t`Assets Under Management: $ZOMI staked (All chains) + $ZLP pool (${chainName})`}</span>
-                        // <div>{t`Assets Under Management: $ZOMI staked (All chains) + $ZLP pool (${chainName})`}</div>
+                        <span>{t`Assets Under Management: $POOPE staked (All chains) + $PLP pool (${chainName})`}</span>
                       )}
                     />
                   </div>
                 </div>
                 <div className="App-card-row">
                   <div className="label">
-                    <Trans>$ZLP Pool</Trans>
+                    <Trans>$PLP Pool</Trans>
                   </div>
                   <div>
                     <TooltipComponent
                       handle={`$${formatAmount(aum, USD_DECIMALS, 0, true)}`}
                       position="right-bottom"
-                      renderContent={() => <span>{t`Total value of tokens in $ZLP pool (${chainName})`}</span>}
+                      renderContent={() => <span>{t`Total value of tokens in $PLP pool (${chainName})`}</span>}
                     />
                   </div>
                 </div>
@@ -757,7 +756,7 @@ export default function DashboardV2() {
               {chainId === ARBITRUM && <img src={arbitrum24Icon} alt="arbitrum24Icon" />}
             </div>
             <div className="Page-description">
-              <Trans>Platform and $ZLP index tokens.</Trans>
+              <Trans>Platform and $PLP index tokens.</Trans>
             </div>
           </div>
           <div className="DashboardV2-token-cards">
@@ -767,11 +766,11 @@ export default function DashboardV2() {
                   <div className="App-card-title">
                     <div className="App-card-title-mark">
                       <div className="App-card-title-mark-icon">
-                        <img src={gmx40Icon} alt="$ZOMI Token Icon" width="40px" />
+                        <img src={gmx40Icon} alt="$POOPE Token Icon" width="40px" />
                       </div>
                       <div className="App-card-title-mark-info">
-                        <div className="App-card-title-mark-title">$ZOMI</div>
-                        <div className="App-card-title-mark-subtitle">$ZOMI</div>
+                        <div className="App-card-title-mark-title">$POOPE</div>
+                        <div className="App-card-title-mark-subtitle">$POOPE</div>
                       </div>
                       <div>
                         <AssetDropdown assetSymbol="GMX" />
@@ -813,7 +812,7 @@ export default function DashboardV2() {
                       <div className="label">
                         <Trans>Supply</Trans>
                       </div>
-                      <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} $ZOMI</div>
+                      <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} $POOPE</div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
@@ -900,8 +899,8 @@ export default function DashboardV2() {
                         )}
                       </div>
                       <div className="App-card-title-mark-info">
-                        <div className="App-card-title-mark-title">$ZLP</div>
-                        <div className="App-card-title-mark-subtitle">$ZLP</div>
+                        <div className="App-card-title-mark-title">$PLP</div>
+                        <div className="App-card-title-mark-subtitle">$PLP</div>
                       </div>
                       <div>
                         <AssetDropdown assetSymbol="GLP" />
@@ -920,7 +919,7 @@ export default function DashboardV2() {
                       <div className="label">
                         <Trans>Supply</Trans>
                       </div>
-                      <div>{formatAmount(glpSupply, GLP_DECIMALS, 0, true)} $ZLP</div>
+                      <div>{formatAmount(glpSupply, GLP_DECIMALS, 0, true)} $PLP</div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
@@ -977,7 +976,7 @@ export default function DashboardV2() {
                         ))}
                       </Pie>
                       <text x={"50%"} y={"50%"} fill="white" textAnchor="middle" dominantBaseline="middle">
-                        $ZLP Pool
+                        $PLP Pool
                       </text>
                       <Tooltip content={<CustomTooltip />} />
                     </PieChart>
@@ -987,7 +986,7 @@ export default function DashboardV2() {
             </div>
             <div className="token-table-wrapper App-card">
               <div className="App-card-title">
-                <Trans>$ZLP Index Composition</Trans>{" "}
+                <Trans>$PLP Index Composition</Trans>{" "}
                 {chainId === MAINNET && <img src={avalanche16Icon} alt={t`Avalanche Icon`} />}
                 {chainId === ARBITRUM && <img src={arbitrum16Icon} alt={t`Arbitrum Icon`} />}
               </div>

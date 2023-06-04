@@ -253,7 +253,7 @@ export const PLATFORM_TOKENS: { [chainId: number]: { [symbol: string]: Token } }
     },
     GLP: {
       name: "POOPE LP",
-      symbol: "$ZLP",
+      symbol: "$PLP",
       decimals: 18,
       address: getContract(MAINNET, "StakedGlpTracker"), // address of fsGLP token because user only holds fsGLP
       imageUrl: "https://github.com/zomi/gmx-assets/blob/main/GMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
