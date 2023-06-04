@@ -396,8 +396,8 @@
   padding-top: 1.05rem;
 }
 .Wallet-btn:hover {
-  background: var(--dark-blue-hover);
-  // border-color: var(--dark-blue-border);
+  // background: var(--dark-blue-hover);
+  border-color: var(--dark-blue-border);
 }
 .Wallet-btn:active {
   background: var(--dark-blue-active);
