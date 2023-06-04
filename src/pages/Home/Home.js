@@ -25,98 +25,11 @@ import { ARBITRUM, MAINNET } from "config/chains";
 import { getServerUrl } from "config/backend";
 import { bigNumberify, formatAmount, numberWithCommas } from "lib/numbers";
 export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
-  // const [openedFAQIndex, setOpenedFAQIndex] = useState(null)
-  // const faqContent = [{
-  //   id: 1,
-  //   question: "What is GMX?",
-  //   answer: "GMX is a decentralized spot and perpetual exchange that supports low swap fees and zero price impact trades.<br><br>Trading is supported by a unique multi-asset pool that earns liquidity providers fees from market making, swap fees, leverage trading (spreads, funding fees & liquidations), and asset rebalancing.<br><br>Dynamic pricing is supported by Chainlink Oracles along with TWAP pricing from leading volume DEXs."
-  // }, {
-  //   id: 2,
-  //   question: "What is the $ZOMI Governance Token? ",
-  //   answer: "The $ZOMI token is the governance token of the $ZOMI ecosystem, it provides the token owner voting rights on the direction of the $ZOMI platform.<br><br>Additionally, when $ZOMI is staked you will earn 30% of the platform-generated fees, you will also earn Escrowed $ZOMI tokens and Multiplier Points."
-  // }, {
-  //   id: 3,
-  //   question: "What is the $ZLP Token? ",
-  //   answer: "The $ZLP token represents the liquidity users provide to the $ZOMI platform for Swaps and Margin Trading.<br><br>To provide liquidity to $ZLP you <a href='https://gmx.io/buy_mlp' target='_blank'>trade</a> your crypto asset BTC, ETH, LINK, UNI, USDC, USDT, MIM, or FRAX to the liquidity pool, in exchange, you gain exposure to a diversified index of tokens while earning 50% of the platform trading fees and esZOMI."
-  // }, {
-  //   id: 4,
-  //   question: "What can I trade on GMX? ",
-  //   answer: "On $ZOMI you can swap or margin trade any of the following assets: ETH, BTC, LINK, UNI, USDC, USDT, MIM, FRAX, with others to be added. "
-  // }]
-
-  // const toggleFAQContent = function(index) {
-  //   if (openedFAQIndex === index) {
-  //     setOpenedFAQIndex(null)
-  //   } else {
-  //     setOpenedFAQIndex(index)
-  //   }
-  // }
-
-  // ARBITRUM
-
-  // const arbitrumPositionStatsUrl = getServerUrl(ARBITRUM, "/position_stats");
-  // const { data: arbitrumPositionStats } = useSWR([arbitrumPositionStatsUrl], {
-  //   fetcher: (...args) => fetch(...args).then((res) => res.json()),
-  // });
-
-  // const arbitrumTotalVolumeUrl = getServerUrl(ARBITRUM, "/total_volume");
-  // const { data: arbitrumTotalVolume } = useSWR([arbitrumTotalVolumeUrl], {
-  //   fetcher: (...args) => fetch(...args).then((res) => res.json()),
-  // });
-
-  // const avalanchePositionStatsUrl = getServerUrl(MAINNET, "/position_stats");
-  // const { data: avalanchePositionStats } = useSWR([avalanchePositionStatsUrl], {
-  //   fetcher: (...args) => fetch(...args).then((res) => res.json()),
-  // });
-
-  // const avalancheTotalVolumeUrl = getServerUrl(MAINNET, "/total_volume");
-  // const { data: avalancheTotalVolume } = useSWR([avalancheTotalVolumeUrl], {
-  //   fetcher: (...args) => fetch(...args).then((res) => res.json()),
-  // });
-
-  // // Total Volume
-
-  // const arbitrumTotalVolumeSum = getTotalVolumeSum(arbitrumTotalVolume);
-  // const avalancheTotalVolumeSum = getTotalVolumeSum(avalancheTotalVolume);
-
-  // let totalVolumeSum = bigNumberify(0);
-  // if (arbitrumTotalVolumeSum && avalancheTotalVolumeSum) {
-  //   totalVolumeSum = totalVolumeSum.add(arbitrumTotalVolumeSum);
-  //   totalVolumeSum = totalVolumeSum.add(avalancheTotalVolumeSum);
-  // }
-  const [totalVolume, totalVolumeDelta] = useVolumeData();
   
-  // Open Interest
-
-  // let openInterest = bigNumberify(0);
-  // if (
-  //   arbitrumPositionStats &&
-  //   arbitrumPositionStats.totalLongPositionSizes &&
-  //   arbitrumPositionStats.totalShortPositionSizes
-  // ) {
-  //   openInterest = openInterest.add(arbitrumPositionStats.totalLongPositionSizes);
-  //   openInterest = openInterest.add(arbitrumPositionStats.totalShortPositionSizes);
-  // }
-
-  // if (
-  //   avalanchePositionStats &&
-  //   avalanchePositionStats.totalLongPositionSizes &&
-  //   avalanchePositionStats.totalShortPositionSizes
-  // ) {
-  //   openInterest = openInterest.add(avalanchePositionStats.totalLongPositionSizes);
-  //   openInterest = openInterest.add(avalanchePositionStats.totalShortPositionSizes);
-  // }
-
+  const [totalVolume, totalVolumeDelta] = useVolumeData();
   const [openInterest, openInterestDelta] = useTradersData();
-
-  // user stat
-  // const arbitrumUserStats = useUserStat(ARBITRUM);
   const avalancheUserStats = useUserStat(MAINNET);
   let totalUsers = 0;
-
-  // if (arbitrumUserStats && arbitrumUserStats.uniqueCount) {
-  //   totalUsers += arbitrumUserStats.uniqueCount;
-  // }
 
   if (avalancheUserStats && avalancheUserStats.uniqueCount) {
     totalUsers += avalancheUserStats.uniqueCount;
@@ -174,7 +87,6 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
               <div className="Home-latest-info__title">
                 <Trans>Open Interest</Trans>
               </div>
-              {/* <div className="Home-latest-info__value">${formatAmount(openInterest, USD_DECIMALS, 0, true)}</div> */}
               <div className="Home-latest-info__value">{openInterest ? formatNumber(openInterest, { currency: true, compact: false }) : `$0`}</div>
             </div>
           </div>

@@ -28,16 +28,16 @@ export default function BuyGlp(props) {
     <div className="default-container page-layout">
       <div className="section-title-block">
         <div className="section-title-icon">
-          <img src={buyGLPIcon} alt={t`Buy $ZLP Icon`} />
+          <img src={buyGLPIcon} alt={t`Buy $PLP Icon`} />
         </div>
         <div className="section-title-content">
           <div className="Page-title">
-            <Trans>Buy / Sell $ZLP</Trans>
+            <Trans>Buy / Sell $PLP</Trans>
           </div>
           <div className="Page-description">
             {/* <Trans> */}
             Purchase{" "}
-            <ExternalLink href="https://docs.zomi.financetokenomics/mlp">$ZLP tokens</ExternalLink> to
+            <ExternalLink href="https://docs.zomi.financetokenomics/mlp">$PLP tokens</ExternalLink> to
             earn {nativeTokenSymbol} fees from swaps and leverages trading.
             {/* </Trans> */}
             <br />

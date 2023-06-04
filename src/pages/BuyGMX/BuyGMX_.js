@@ -45,7 +45,7 @@ export default function BuyGMX() {
                 <Trans>Buy / Transfer ETH</Trans>
               </div>
               <div className="Page-description">
-                <Trans>ETH is needed on Arbitrum to purchase $ZOMI.</Trans>
+                <Trans>ETH is needed on Arbitrum to purchase $POOPE.</Trans>
                 <br />
               </div>
             </div>
@@ -117,10 +117,10 @@ export default function BuyGMX() {
                 <Trans>Buy / Transfer ETH</Trans>
               </div>
               <div className="Page-description">
-                <Trans>ETH is needed on Ethereum to purchase $ZOMI.</Trans>
+                <Trans>ETH is needed on Ethereum to purchase $POOPE.</Trans>
                 <br />
                 {/* <Trans>
-                  To purchase $ZOMI on <span onClick={() => onNetworkSelect(ARBITRUM)}>Arbitrum</span>, please change your
+                  To purchase $POOPE on <span onClick={() => onNetworkSelect(ARBITRUM)}>Arbitrum</span>, please change your
                   network.
                 </Trans> */}
               </div>
@@ -188,7 +188,7 @@ export default function BuyGMX() {
             <div className="buy-card">
               <div className="section-title-content">
                 <div className="card-title">
-                  <Trans>Buy $ZOMI</Trans>
+                  <Trans>Buy $POOPE</Trans>
                 </div>
               </div>
               <div className="App-card no-height">
@@ -206,7 +206,7 @@ export default function BuyGMX() {
                       imgSrc={gmxAvax}
                       href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x6d8ebbaab26a1f40abd1ed14b702a84c7b4f2107"
                     >
-                      <Trans>Purchase $ZOMI</Trans>
+                      <Trans>Purchase $POOPE</Trans>
                     </Button>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ export default function BuyGMX() {
             <div className="buy-card">
               <div className="section-title-content">
                 <div className="card-title">
-                  <Trans>Buy $ZOMI</Trans>
+                  <Trans>Buy $POOPE</Trans>
                 </div>
               </div>
               <div className="App-card no-height">
@@ -238,7 +238,7 @@ export default function BuyGMX() {
                       imgSrc={gmxArbitrum}
                       href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a"
                     >
-                      <Trans>Purchase $ZOMI</Trans>
+                      <Trans>Purchase $POOPE</Trans>
                     </Button>
                   </div>
                 </div>
@@ -247,13 +247,13 @@ export default function BuyGMX() {
             <div className="buy-card">
               <div className="section-title-content">
                 <div className="card-title">
-                  <Trans>Buy $ZOMI Bonds</Trans>
+                  <Trans>Buy $POOPE Bonds</Trans>
                 </div>
               </div>
               <div className="App-card no-height">
                 <div className="App-card-content no-title">
                   <div className="BuyGMXGLP-description">
-                    <Trans>$ZOMI bonds can be bought on Olympus Pro with a discount and a small vesting period:</Trans>
+                    <Trans>$POOPE bonds can be bought on Olympus Pro with a discount and a small vesting period:</Trans>
                   </div>
                   <div className="buy-gmx">
                     <Button size="xl" imgSrc={ohmArbitrum} href="https://pro.olympusdao.finance/#/partners/GMX">

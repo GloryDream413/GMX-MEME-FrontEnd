@@ -121,7 +121,7 @@ function Referrals({ connectWallet, setPendingTxns, pendingTxns }) {
             </div>
             <div className="Page-description">
               <Trans>
-                Get fee discounts and earn rebates through the $ZOMI referral program. For more information, please read
+                Get fee discounts and earn rebates through the $POOPE referral program. For more information, please read
                 the{" "}
                 <ExternalLink href="https://zomi.gitbook.referrals">
                   referral program details

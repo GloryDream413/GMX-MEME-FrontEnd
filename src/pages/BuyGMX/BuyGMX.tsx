@@ -43,7 +43,7 @@ export default function BuyGMX() {
         <div className="section-title-block">
           <div className="section-title-content">
             <div className="Page-title">
-              <Trans>Buy $ZOMI on {getChainName(chainId)}</Trans>
+              <Trans>Buy $POOPE on {getChainName(chainId)}</Trans>
             </div>
             <div className="Page-description">
               <Trans>Choose to buy from decentralized or centralized exchanges.</Trans>
@@ -142,7 +142,7 @@ export default function BuyGMX() {
 function DecentralisedExchanges({ chainId, externalLinks }) {
   const isArbitrum = chainId === ARBITRUM;
   return (
-    <Card title={t`Buy $ZOMI from a Decentralized Exchange`}>
+    <Card title={t`Buy $POOPE from a Decentralized Exchange`}>
       <div className="App-card-content">
         {isArbitrum ? (
           <div className="exchange-info-group">
@@ -158,7 +158,7 @@ function DecentralisedExchanges({ chainId, externalLinks }) {
         ) : (
           <div className="exchange-info-group">
             <div className="BuyGMXGLP-description">
-              <Trans>Buy $ZOMI from Uniswap:</Trans>
+              <Trans>Buy $POOPE from Uniswap:</Trans>
             </div>
             <div className="buttons-group col-1">
               <Button imgSrc={Traderjoe} href={externalLinks.buyGmx.traderjoe}>
@@ -169,7 +169,7 @@ function DecentralisedExchanges({ chainId, externalLinks }) {
         )}
         <div className="exchange-info-group">
           <div className="BuyGMXGLP-description">
-            {/* <Trans>Buy $ZOMI using Decentralized Exchange Aggregators:</Trans> */}
+            {/* <Trans>Buy $POOPE using Decentralized Exchange Aggregators:</Trans> */}
           </div>
           <div className="buttons-group">
             {/* {DECENTRALISED_AGGRIGATORS.filter((e) => e.networks.includes(chainId)).map((exchange) => {
@@ -185,7 +185,7 @@ function DecentralisedExchanges({ chainId, externalLinks }) {
         </div>
         {/* <div className="exchange-info-group">
           <div className="BuyGMXGLP-description">
-            <Trans>Buy $ZOMI using any token from any network:</Trans>
+            <Trans>Buy $POOPE using any token from any network:</Trans>
           </div>
           <div className="buttons-group">
             <Button href={externalLinks.bungee} imgSrc={Bungee}>
@@ -215,10 +215,10 @@ function DecentralisedExchanges({ chainId, externalLinks }) {
 
 function CentralisedExchanges({ chainId, externalLinks }) {
   return (
-    <Card title={t`Buy $ZOMI from centralized services`}>
+    <Card title={t`Buy $POOPE from centralized services`}>
       <div className="App-card-content">
         <div className="exchange-info-group">
-          <div className="BuyGMXGLP-description">{/* <Trans>Buy $ZOMI from centralized exchanges:</Trans> */}</div>
+          <div className="BuyGMXGLP-description">{/* <Trans>Buy $POOPE from centralized exchanges:</Trans> */}</div>
           <div className="buttons-group">
             {/* {CENTRALISED_EXCHANGES.filter((e) => e.networks.includes(chainId)).map((exchange) => {
               const icon = importImage(exchange.icon) || "";
@@ -232,7 +232,7 @@ function CentralisedExchanges({ chainId, externalLinks }) {
         </div>
 
         <div className="exchange-info-group">
-          <div className="BuyGMXGLP-description">{/* <Trans>Buy $ZOMI using FIAT gateways:</Trans> */}</div>
+          <div className="BuyGMXGLP-description">{/* <Trans>Buy $POOPE using FIAT gateways:</Trans> */}</div>
           <div className="buttons-group col-2">
             {/* <Button href="https://www.binancecnt.com/en/buy-sell-crypto" imgSrc={Binance}>
               Binance Connect

@@ -446,8 +446,8 @@ export default function GlpSwap(props) {
 
   const getError = () => {
     if (IS_NETWORK_DISABLED[chainId]) {
-      if (isBuying) return [t`$ZLP buy disabled, pending ${getChainName(chainId)} upgrade`];
-      return [t`$ZLP sell disabled, pending ${getChainName(chainId)} upgrade`];
+      if (isBuying) return [t`$PLP buy disabled, pending ${getChainName(chainId)} upgrade`];
+      return [t`$PLP sell disabled, pending ${getChainName(chainId)} upgrade`];
     }
 
     if (!isBuying && inCooldownWindow) {
@@ -484,7 +484,7 @@ export default function GlpSwap(props) {
 
     if (!isBuying) {
       if (maxSellAmount && glpAmount && glpAmount.gt(maxSellAmount)) {
-        return [t`Insufficient $ZLP balance`];
+        return [t`Insufficient $PLP balance`];
       }
 
       const swapTokenInfo = getTokenInfo(infoTokens, swapTokenAddress);
@@ -554,7 +554,7 @@ export default function GlpSwap(props) {
       return isBuying ? t`Buying...` : t`Selling...`;
     }
 
-    return isBuying ? t`Buy $ZLP` : t`Sell $ZLP`;
+    return isBuying ? t`Buy $PLP` : t`Sell $PLP`;
   };
 
   const approveFromToken = () => {
@@ -586,7 +586,7 @@ export default function GlpSwap(props) {
       value,
       sentMsg: t`Buy submitted.`,
       failMsg: t`Buy failed.`,
-      successMsg: t`${formatAmount(glpAmount, 18, 4, true)} $ZLP bought with ${formatAmount(
+      successMsg: t`${formatAmount(glpAmount, 18, 4, true)} $PLP bought with ${formatAmount(
         swapAmount,
         swapTokenInfo.decimals,
         4,
@@ -613,7 +613,7 @@ export default function GlpSwap(props) {
     callContract(chainId, contract, method, params, {
       sentMsg: t`Sell submitted!`,
       failMsg: t`Sell failed.`,
-      successMsg: t`${formatAmount(glpAmount, 18, 4, true)} $ZLP sold for ${formatAmount(
+      successMsg: t`${formatAmount(glpAmount, 18, 4, true)} $PLP sold for ${formatAmount(
         swapAmount,
         swapTokenInfo.decimals,
         4,
@@ -687,7 +687,7 @@ export default function GlpSwap(props) {
   const nativeTokenSymbol = getNativeToken(chainId).symbol;
 
   const onSwapOptionChange = (opt) => {
-    if (opt === t`Sell $ZLP`) {
+    if (opt === t`Sell $PLP`) {
       switchSwapOption("redeem");
     } else {
       switchSwapOption();
@@ -721,8 +721,8 @@ export default function GlpSwap(props) {
                 )}
               </div>
               <div className="App-card-title-mark-info">
-                <div className="App-card-title-mark-title">$ZLP</div>
-                <div className="App-card-title-mark-subtitle">$ZLP</div>
+                <div className="App-card-title-mark-title">$PLP</div>
+                <div className="App-card-title-mark-subtitle">$PLP</div>
               </div>
               <div>
                 <AssetDropdown assetSymbol="GLP" />
@@ -742,7 +742,7 @@ export default function GlpSwap(props) {
                 <Trans>Wallet</Trans>
               </div>
               <div className="value">
-                {formatAmount(glpBalance, GLP_DECIMALS, 4, true)} $ZLP ($
+                {formatAmount(glpBalance, GLP_DECIMALS, 4, true)} $PLP ($
                 {formatAmount(glpBalanceUsd, USD_DECIMALS, 2, true)})
               </div>
             </div>
@@ -751,7 +751,7 @@ export default function GlpSwap(props) {
                 <Trans>Staked</Trans>
               </div>
               <div className="value">
-                {formatAmount(glpBalance, GLP_DECIMALS, 4, true)} $ZLP ($
+                {formatAmount(glpBalance, GLP_DECIMALS, 4, true)} $PLP ($
                 {formatAmount(glpBalanceUsd, USD_DECIMALS, 2, true)})
               </div>
             </div>
@@ -765,7 +765,7 @@ export default function GlpSwap(props) {
                 </div>
                 <div className="value">
                   <Tooltip
-                    handle={`${formatAmount(reservedAmount, 18, 4, true)} $ZLP ($${formatAmount(
+                    handle={`${formatAmount(reservedAmount, 18, 4, true)} $PLP ($${formatAmount(
                       reserveAmountUsd,
                       USD_DECIMALS,
                       2,
@@ -773,7 +773,7 @@ export default function GlpSwap(props) {
                     )})`}
                     position="right-bottom"
                     renderContent={() =>
-                      t`${formatAmount(reservedAmount, 18, 4, true)} $ZLP have been reserved for vesting.`
+                      t`${formatAmount(reservedAmount, 18, 4, true)} $PLP have been reserved for vesting.`
                     }
                   />
                 </div>
@@ -812,7 +812,7 @@ export default function GlpSwap(props) {
               </div>
               <div className="value">
                 <Trans>
-                  {formatAmount(glpSupply, GLP_DECIMALS, 4, true)} $ZLP ($
+                  {formatAmount(glpSupply, GLP_DECIMALS, 4, true)} $PLP ($
                   {formatAmount(glpSupplyUsd, USD_DECIMALS, 2, true)})
                 </Trans>
               </div>
@@ -821,7 +821,7 @@ export default function GlpSwap(props) {
         </div>
         <div className="GlpSwap-box App-box">
           <Tab
-            options={[t`Buy $ZLP`, t`Sell $ZLP`]}
+            options={[t`Buy $PLP`, t`Sell $PLP`]}
             option={tabLabel}
             onChange={onSwapOptionChange}
             className="Exchange-swap-option-tabs"
@@ -867,7 +867,7 @@ export default function GlpSwap(props) {
               defaultTokenName={"GLP"}
             >
               <div className="selected-token">
-                $ZLP <img src={glp24Icon} alt="glp24Icon" width="24px" />
+                $PLP <img src={glp24Icon} alt="glp24Icon" width="24px" />
               </div>
             </BuyInputSection>
           )}
@@ -896,7 +896,7 @@ export default function GlpSwap(props) {
               defaultTokenName={"GLP"}
             >
               <div className="selected-token">
-                $ZLP <img src={glp24Icon} alt="glp24Icon" width="24px" />
+                $PLP <img src={glp24Icon} alt="glp24Icon" width="24px" />
               </div>
             </BuyInputSection>
           )}
@@ -988,16 +988,16 @@ export default function GlpSwap(props) {
         {isBuying && (
           <div className="Page-description">
             <Trans>
-              Fees may vary depending on which asset you use to buy $ZLP. <br />
-              Enter the amount of $ZLP you want to purchase in the order form, then check here to compare fees.
+              Fees may vary depending on which asset you use to buy $PLP. <br />
+              Enter the amount of $PLP you want to purchase in the order form, then check here to compare fees.
             </Trans>
           </div>
         )}
         {!isBuying && (
           <div className="Page-description">
             <Trans>
-              Fees may vary depending on which asset you sell $ZLP for. <br />
-              Enter the amount of $ZLP you want to redeem in the order form, then check here to compare fees.
+              Fees may vary depending on which asset you sell $PLP for. <br />
+              Enter the amount of $PLP you want to redeem in the order form, then check here to compare fees.
             </Trans>
           </div>
         )}
@@ -1021,7 +1021,7 @@ export default function GlpSwap(props) {
                     position="right-bottom text-none"
                     renderContent={() => (
                       <p className="text-white">
-                        <Trans>Available amount to deposit into $ZLP.</Trans>
+                        <Trans>Available amount to deposit into $PLP.</Trans>
                       </p>
                     )}
                   />
@@ -1034,7 +1034,7 @@ export default function GlpSwap(props) {
                       return (
                         <p className="text-white">
                           <Trans>
-                            Available amount to withdraw from $ZLP. Funds not utilized by current open positions.
+                            Available amount to withdraw from $PLP. Funds not utilized by current open positions.
                           </Trans>
                         </p>
                       );
@@ -1128,7 +1128,7 @@ export default function GlpSwap(props) {
                               Max pool capacity reached for {tokenInfo.symbol}
                               <br />
                               <br />
-                              Please mint $ZLP using another token
+                              Please mint $PLP using another token
                             </Trans>
                             <br />
                             <p>
@@ -1275,7 +1275,7 @@ export default function GlpSwap(props) {
                       position="right-bottom"
                       renderContent={() => (
                         <Trans>
-                          Max pool capacity reached for {tokenInfo.symbol}. Please mint $ZLP using another token
+                          Max pool capacity reached for {tokenInfo.symbol}. Please mint $PLP using another token
                         </Trans>
                       )}
                     />
@@ -1313,7 +1313,7 @@ export default function GlpSwap(props) {
                         position="left-bottom"
                         renderContent={() => (
                           <p className="text-white">
-                            <Trans>Available amount to deposit into $ZLP.</Trans>
+                            <Trans>Available amount to deposit into $PLP.</Trans>
                           </p>
                         )}
                       />
@@ -1337,7 +1337,7 @@ export default function GlpSwap(props) {
                             return (
                               <p className="text-white">
                                 <Trans>
-                                  Available amount to withdraw from $ZLP. Funds not utilized by current open positions.
+                                  Available amount to withdraw from $PLP. Funds not utilized by current open positions.
                                 </Trans>
                               </p>
                             );

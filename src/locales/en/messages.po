@@ -42,20 +42,20 @@ msgid "<0/>Profit price: {0} ${1}. This rule applies for the next {2}, until {3}
 msgstr "<0/>Profit price: {0} ${1}. This rule applies for the next {2}, until {3}."
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0> to start using $ZOMI"
-msgstr "<0>Install Coinbase Wallet</0> to start using $ZOMI"
+msgid "<0>Install Coinbase Wallet</0> to start using $POOPE"
+msgstr "<0>Install Coinbase Wallet</0> to start using $POOPE"
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0>, and use $ZOMI with its built-in browser"
-msgstr "<0>Install Coinbase Wallet</0>, and use $ZOMI with its built-in browser"
+msgid "<0>Install Coinbase Wallet</0>, and use $POOPE with its built-in browser"
+msgstr "<0>Install Coinbase Wallet</0>, and use $POOPE with its built-in browser"
 
 #: src/App/App.js
-msgid "<0>Install MetaMask</0> to start using $ZOMI"
-msgstr "<0>Install MetaMask</0> to start using $ZOMI"
+msgid "<0>Install MetaMask</0> to start using $POOPE"
+msgstr "<0>Install MetaMask</0> to start using $POOPE"
 
 #: src/App/App.js
-msgid "<0>Install MetaMask</0>, and use $ZOMI with its built-in browser"
-msgstr "<0>Install MetaMask</0>, and use $ZOMI with its built-in browser"
+msgid "<0>Install MetaMask</0>, and use $POOPE with its built-in browser"
+msgstr "<0>Install MetaMask</0>, and use $POOPE with its built-in browser"
 
 #: src/components/Exchange/OrdersToa.js
 msgid "<0>Insufficient liquidity to execute the order</0><1>The mark price which is an aggregate of exchange prices did not reach the specified price</1><2>The specified price was reached but not long enough for it to be executed</2><3>No keeper picked up the order for execution</3>"
@@ -70,12 +70,12 @@ msgid "<0>Return to </0><1>Homepage</1> <2>or </2> <3>Trade</3>"
 msgstr "<0>Return to </0><1>Homepage</1> <2>or </2> <3>Trade</3>"
 
 #: src/components/Glp/SwapErrorModal.tsx
-msgid "<0>The pool's capacity has been reached for {0}. Please use another token to buy $ZLP.</0><1>Check the \"Save on Fees\" section for tokens with the lowest fees.</1>"
-msgstr "<0>The pool's capacity has been reached for {0}. Please use another token to buy $ZLP.</0><1>Check the \"Save on Fees\" section for tokens with the lowest fees.</1>"
+msgid "<0>The pool's capacity has been reached for {0}. Please use another token to buy $PLP.</0><1>Check the \"Save on Fees\" section for tokens with the lowest fees.</1>"
+msgstr "<0>The pool's capacity has been reached for {0}. Please use another token to buy $PLP.</0><1>Check the \"Save on Fees\" section for tokens with the lowest fees.</1>"
 
 #: src/pages/Stake/StakeV2.js
-msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esZOMI tokens that have been converted to $ZOMI will remain as $ZOMI tokens.<3/><4/>To claim $ZOMI tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
-msgstr "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esZOMI tokens that have been converted to $ZOMI will remain as $ZOMI tokens.<3/><4/>To claim $ZOMI tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
+msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esPOOPE tokens that have been converted to $POOPE will remain as $POOPE tokens.<3/><4/>To claim $POOPE tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
+msgstr "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esPOOPE tokens that have been converted to $POOPE will remain as $POOPE tokens.<3/><4/>To claim $POOPE tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
 
 #: src/lib/wallets/index.js
 msgid "<0>Your wallet is not connected to {0}.</0><1/><2>Switch to {1}</2><3>Add {2}</3>"
@@ -178,12 +178,12 @@ msgid "Affiliates"
 msgstr "Affiliates"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "After claiming you will be able to vest a maximum of {0} esZOMI at a ratio of {1} {stakingToken} to 1 esZOMI."
-msgstr "After claiming you will be able to vest a maximum of {0} esZOMI at a ratio of {1} {stakingToken} to 1 esZOMI."
+msgid "After claiming you will be able to vest a maximum of {0} esPOOPE at a ratio of {1} {stakingToken} to 1 esPOOPE."
+msgstr "After claiming you will be able to vest a maximum of {0} esPOOPE at a ratio of {1} {stakingToken} to 1 esPOOPE."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "After claiming, the esZOMI tokens will be airdropped to your account on the selected network within 7 days."
-msgstr "After claiming, the esZOMI tokens will be airdropped to your account on the selected network within 7 days."
+msgid "After claiming, the esPOOPE tokens will be airdropped to your account on the selected network within 7 days."
+msgstr "After claiming, the esPOOPE tokens will be airdropped to your account on the selected network within 7 days."
 
 #: src/pages/BuyGMX/BuyGMX.js
 #: src/pages/BuyGMX/BuyGMX.js
@@ -248,8 +248,8 @@ msgstr "Approval was cancelled"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 #: src/pages/Stake/StakeV2.js
-msgid "Approve $ZOMI"
-msgstr "Approve $ZOMI"
+msgid "Approve $POOPE"
+msgstr "Approve $POOPE"
 
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/SwapBox.js
@@ -264,8 +264,8 @@ msgid "Approve {stakingTokenSymbol}"
 msgstr "Approve {stakingTokenSymbol}"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Approving $ZOMI..."
-msgstr "Approving $ZOMI..."
+msgid "Approving $POOPE..."
+msgstr "Approving $POOPE..."
 
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/SwapBox.js
@@ -294,16 +294,16 @@ msgid "Arbitrum Icon"
 msgstr "Arbitrum Icon"
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
-msgid "As there is not enough liquidity in $ZLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
-msgstr "As there is not enough liquidity in $ZLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
+msgid "As there is not enough liquidity in $PLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
+msgstr "As there is not enough liquidity in $PLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
 
 #: src/pages/Dashboard/DashboardV1.js
 msgid "Assets Under Management"
 msgstr "Assets Under Management"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Assets Under Management: $ZOMI staked (All chains) + $ZLP pool ({chainName})"
-msgstr "Assets Under Management: $ZOMI staked (All chains) + $ZLP pool ({chainName})"
+msgid "Assets Under Management: $POOPE staked (All chains) + $PLP pool ({chainName})"
+msgstr "Assets Under Management: $POOPE staked (All chains) + $PLP pool ({chainName})"
 
 #: src/components/Glp/GlpSwap.js
 msgid "Available"
@@ -318,13 +318,13 @@ msgstr "Available Liquidity"
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
-msgid "Available amount to deposit into $ZLP."
-msgstr "Available amount to deposit into $ZLP."
+msgid "Available amount to deposit into $PLP."
+msgstr "Available amount to deposit into $PLP."
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
-msgid "Available amount to withdraw from $ZLP. Funds not utilized by current open positions."
-msgstr "Available amount to withdraw from $ZLP. Funds not utilized by current open positions."
+msgid "Available amount to withdraw from $PLP. Funds not utilized by current open positions."
+msgstr "Available amount to withdraw from $PLP. Funds not utilized by current open positions."
 
 #: src/pages/Home/Home.js
 msgid "Available on your preferred network"
@@ -349,8 +349,8 @@ msgid "Avalanche Icon"
 msgstr "Avalanche Icon"
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "Avax is needed on Avalanche to purchase $ZOMI."
-msgstr "Avax is needed on Avalanche to purchase $ZOMI."
+msgid "Avax is needed on Avalanche to purchase $POOPE."
+msgstr "Avax is needed on Avalanche to purchase $POOPE."
 
 #: src/components/Exchange/SwapBox.js
 msgid "Balance"
@@ -417,8 +417,8 @@ msgid "Buy"
 msgstr "Buy"
 
 #: src/pages/BuyGlp/BuyGlp.js
-msgid "Buy / Sell $ZLP"
-msgstr "Buy / Sell $ZLP"
+msgid "Buy / Sell $PLP"
+msgstr "Buy / Sell $PLP"
 
 #: src/pages/BuyGMX/BuyGMX.js
 msgid "Buy / Transfer AVAX"
@@ -440,26 +440,26 @@ msgstr "Buy ETH"
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Stake/StakeV2.js
-msgid "Buy $ZLP"
-msgstr "Buy $ZLP"
+msgid "Buy $PLP"
+msgstr "Buy $PLP"
 
 #: src/pages/BuyGlp/BuyGlp.js
-msgid "Buy $ZLP Icon"
-msgstr "Buy $ZLP Icon"
+msgid "Buy $PLP Icon"
+msgstr "Buy $PLP Icon"
 
 #: src/pages/BuyGMX/BuyGMX.js
 #: src/pages/BuyGMX/BuyGMX.js
 #: src/pages/Stake/StakeV2.js
-msgid "Buy $ZOMI"
-msgstr "Buy $ZOMI"
+msgid "Buy $POOPE"
+msgstr "Buy $POOPE"
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "Buy $ZOMI Bonds"
-msgstr "Buy $ZOMI Bonds"
+msgid "Buy $POOPE Bonds"
+msgstr "Buy $POOPE Bonds"
 
 #: src/pages/Buy/Buy.js
-msgid "Buy $ZOMI or $ZLP"
-msgstr "Buy $ZOMI or $ZLP"
+msgid "Buy $POOPE or $PLP"
+msgstr "Buy $POOPE or $PLP"
 
 #: src/components/Glp/GlpSwap.js
 msgid "Buy failed."
@@ -551,8 +551,8 @@ msgstr "Claim"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Claim $ZOMI Rewards"
-msgstr "Claim $ZOMI Rewards"
+msgid "Claim $POOPE Rewards"
+msgstr "Claim $POOPE Rewards"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Claim Rewards"
@@ -564,13 +564,13 @@ msgid "Claim completed!"
 msgstr "Claim completed!"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Claim esZOMI"
-msgstr "Claim esZOMI"
+msgid "Claim esPOOPE"
+msgstr "Claim esPOOPE"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Claim esZOMI Rewards"
-msgstr "Claim esZOMI Rewards"
+msgid "Claim esPOOPE Rewards"
+msgstr "Claim esPOOPE Rewards"
 
 #: src/pages/Stake/StakeV1.js
 msgid "Claim failed"
@@ -780,8 +780,8 @@ msgid "Continue"
 msgstr "Continue"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Convert esZOMI tokens to $ZOMI tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
-msgstr "Convert esZOMI tokens to $ZOMI tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
+msgid "Convert esPOOPE tokens to $POOPE tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
+msgstr "Convert esPOOPE tokens to $POOPE tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -902,8 +902,8 @@ msgid "Dashboard"
 msgstr "Dashboard"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Dashboard for $ZOMI referral stats"
-msgstr "Dashboard for $ZOMI referral stats"
+msgid "Dashboard for $POOPE referral stats"
+msgstr "Dashboard for $POOPE referral stats"
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Dashboards"
@@ -1043,8 +1043,8 @@ msgid "Download"
 msgstr "Download"
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "ETH is needed on Arbitrum to purchase $ZOMI."
-msgstr "ETH is needed on Arbitrum to purchase $ZOMI."
+msgid "ETH is needed on Arbitrum to purchase $POOPE."
+msgstr "ETH is needed on Arbitrum to purchase $POOPE."
 
 #: src/components/Header/AppHeaderLinks.tsx
 #: src/pages/Stake/StakeV2.js
@@ -1219,12 +1219,12 @@ msgstr "Entry Price"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Escrowed $ZOMI"
-msgstr "Escrowed $ZOMI"
+msgid "Escrowed $POOPE"
+msgstr "Escrowed $POOPE"
 
 #: src/components/Glp/GlpSwap.js
-msgid "Escrowed $ZOMI APR"
-msgstr "Escrowed $ZOMI APR"
+msgid "Escrowed $POOPE APR"
+msgstr "Escrowed $POOPE APR"
 
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "Execute"
@@ -1278,16 +1278,16 @@ msgid "Fees are high to swap from {0} to {1}. <0/>{2} is needed for collateral."
 msgstr "Fees are high to swap from {0} to {1}. <0/>{2} is needed for collateral."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Fees generated by $ZOMI"
-msgstr "Fees generated by $ZOMI"
+msgid "Fees generated by $POOPE"
+msgstr "Fees generated by $POOPE"
 
 #: src/components/Glp/GlpSwap.js
-msgid "Fees may vary depending on which asset you sell $ZLP for. <0/>Enter the amount of $ZLP you want to redeem in the order form, then check here to compare fees."
-msgstr "Fees may vary depending on which asset you sell $ZLP for. <0/>Enter the amount of $ZLP you want to redeem in the order form, then check here to compare fees."
+msgid "Fees may vary depending on which asset you sell $PLP for. <0/>Enter the amount of $PLP you want to redeem in the order form, then check here to compare fees."
+msgstr "Fees may vary depending on which asset you sell $PLP for. <0/>Enter the amount of $PLP you want to redeem in the order form, then check here to compare fees."
 
 #: src/components/Glp/GlpSwap.js
-msgid "Fees may vary depending on which asset you use to buy $ZLP. <0/>Enter the amount of $ZLP you want to purchase in the order form, then check here to compare fees."
-msgstr "Fees may vary depending on which asset you use to buy $ZLP. <0/>Enter the amount of $ZLP you want to purchase in the order form, then check here to compare fees."
+msgid "Fees may vary depending on which asset you use to buy $PLP. <0/>Enter the amount of $PLP you want to purchase in the order form, then check here to compare fees."
+msgstr "Fees may vary depending on which asset you use to buy $PLP. <0/>Enter the amount of $PLP you want to purchase in the order form, then check here to compare fees."
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Fees since"
@@ -1334,57 +1334,57 @@ msgid "GBC NFTs APR tracker and rewards"
 msgstr "GBC NFTs APR tracker and rewards"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "$ZLP Index Composition"
-msgstr "$ZLP Index Composition"
+msgid "$PLP Index Composition"
+msgstr "$PLP Index Composition"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "$ZLP Pool"
-msgstr "$ZLP Pool"
+msgid "$PLP Pool"
+msgstr "$PLP Pool"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "$ZLP Vault"
-msgstr "$ZLP Vault"
+msgid "$PLP Vault"
+msgstr "$PLP Vault"
 
 #: src/components/Glp/GlpSwap.js
-msgid "$ZLP buy disabled, pending {0} upgrade"
-msgstr "$ZLP buy disabled, pending {0} upgrade"
+msgid "$PLP buy disabled, pending {0} upgrade"
+msgstr "$PLP buy disabled, pending {0} upgrade"
 
 #: src/components/TokenCard/TokenCard.js
-msgid "$ZLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
-msgstr "$ZLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
+msgid "$PLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
+msgstr "$PLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
 
 #: src/components/Glp/GlpSwap.js
-msgid "$ZLP sell disabled, pending {0} upgrade"
-msgstr "$ZLP sell disabled, pending {0} upgrade"
+msgid "$PLP sell disabled, pending {0} upgrade"
+msgstr "$PLP sell disabled, pending {0} upgrade"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Announcements and Updates"
-msgstr "$ZOMI Announcements and Updates"
+msgid "$POOPE Announcements and Updates"
+msgstr "$POOPE Announcements and Updates"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Blueberry NFTs"
-msgstr "$ZOMI Blueberry NFTs"
+msgid "$POOPE Blueberry NFTs"
+msgstr "$POOPE Blueberry NFTs"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Governance Page"
-msgstr "$ZOMI Governance Page"
+msgid "$POOPE Governance Page"
+msgstr "$POOPE Governance Page"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Pages"
-msgstr "$ZOMI Pages"
+msgid "$POOPE Pages"
+msgstr "$POOPE Pages"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Perpetuals Data"
-msgstr "$ZOMI Perpetuals Data"
+msgid "$POOPE Perpetuals Data"
+msgstr "$POOPE Perpetuals Data"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Proposals Voting page"
-msgstr "$ZOMI Proposals Voting page"
+msgid "$POOPE Proposals Voting page"
+msgstr "$POOPE Proposals Voting page"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Stats Page"
-msgstr "$ZOMI Stats Page"
+msgid "$POOPE Stats Page"
+msgstr "$POOPE Stats Page"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -1404,45 +1404,45 @@ msgid "$POOPE community discussion"
 msgstr "$POOPE community discussion"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI dashboards and analytics."
-msgstr "$ZOMI dashboards and analytics."
+msgid "$POOPE dashboards and analytics."
+msgstr "$POOPE dashboards and analytics."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI ecosystem pages."
-msgstr "$ZOMI ecosystem pages."
+msgid "$POOPE ecosystem pages."
+msgstr "$POOPE ecosystem pages."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI explorer for stats and traders"
-msgstr "$ZOMI explorer for stats and traders"
+msgid "$POOPE explorer for stats and traders"
+msgstr "$POOPE explorer for stats and traders"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI fundamentals"
-msgstr "$ZOMI fundamentals"
+msgid "$POOPE fundamentals"
+msgstr "$POOPE fundamentals"
 
 #: src/pages/Home/Home.js
-msgid "$ZOMI is currently live on Arbitrum and Avalanche."
-msgstr "$ZOMI is currently live on Arbitrum and Avalanche."
+msgid "$POOPE is currently live on Arbitrum and Avalanche."
+msgstr "$POOPE is currently live on Arbitrum and Avalanche."
 
 #: src/pages/Jobs/Jobs.js
-msgid "$ZOMI is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
-msgstr "$ZOMI is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
+msgid "$POOPE is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
+msgstr "$POOPE is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
 
 #: src/components/TokenCard/TokenCard.js
-msgid "$ZOMI is the utility and governance token. Accrues 30% of the platform's generated fees."
-msgstr "$ZOMI is the utility and governance token. Accrues 30% of the platform's generated fees."
+msgid "$POOPE is the utility and governance token. Accrues 30% of the platform's generated fees."
+msgstr "$POOPE is the utility and governance token. Accrues 30% of the platform's generated fees."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI staking calculator"
-msgstr "$ZOMI staking calculator"
+msgid "$POOPE staking calculator"
+msgstr "$POOPE staking calculator"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI staking rewards updates and insights"
-msgstr "$ZOMI staking rewards updates and insights"
+msgid "$POOPE staking rewards updates and insights"
+msgstr "$POOPE staking rewards updates and insights"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "$ZOMI transfers not yet enabled"
-msgstr "$ZOMI transfers not yet enabled"
+msgid "$POOPE transfers not yet enabled"
+msgstr "$POOPE transfers not yet enabled"
 
 #: src/components/Referrals/AddAffiliateCode.js
 msgid "Generate Referral Code"
@@ -1453,8 +1453,8 @@ msgid "Generating shareable image..."
 msgstr "Generating shareable image..."
 
 #: src/pages/Referrals/Referrals.js
-msgid "Get fee discounts and earn rebates through the $ZOMI referral program.<0/>For more information, please read the <1>referral program details</1>."
-msgstr "Get fee discounts and earn rebates through the $ZOMI referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgid "Get fee discounts and earn rebates through the $POOPE referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgstr "Get fee discounts and earn rebates through the $POOPE referral program.<0/>For more information, please read the <1>referral program details</1>."
 
 #: src/components/Exchange/SwapBox.js
 msgid "High Slippage, Swap Anyway"
@@ -1541,8 +1541,8 @@ msgid "Insufficient Available Liquidity to swap to {0}:"
 msgstr "Insufficient Available Liquidity to swap to {0}:"
 
 #: src/components/Glp/GlpSwap.js
-msgid "Insufficient $ZLP balance"
-msgstr "Insufficient $ZLP balance"
+msgid "Insufficient $PLP balance"
+msgstr "Insufficient $PLP balance"
 
 #: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
@@ -1610,8 +1610,8 @@ msgid "Invalid token indexToken: \"{0}\" collateralToken: \"{1}\""
 msgstr "Invalid token indexToken: \"{0}\" collateralToken: \"{1}\""
 
 #: src/pages/Jobs/Jobs.js
-msgid "Job openings at $ZOMI."
-msgstr "Job openings at $ZOMI."
+msgid "Job openings at $POOPE."
+msgstr "Job openings at $POOPE."
 
 #: src/pages/Jobs/Jobs.js
 msgid "Jobs"
@@ -1638,8 +1638,8 @@ msgid "Leaderboard"
 msgstr "Leaderboard"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Leaderboard for $ZOMI traders"
-msgstr "Leaderboard for $ZOMI traders"
+msgid "Leaderboard for $POOPE traders"
+msgstr "Leaderboard for $POOPE traders"
 
 #: src/components/Exchange/PositionEditor.js
 msgid "Leave at least {0} ETH for gas"
@@ -1891,12 +1891,12 @@ msgid "Max leverage: 30x"
 msgstr "Max leverage: 30x"
 
 #: src/components/Glp/GlpSwap.js
-msgid "Max pool capacity reached for {0}. Please mint $ZLP using another token"
-msgstr "Max pool capacity reached for {0}. Please mint $ZLP using another token"
+msgid "Max pool capacity reached for {0}. Please mint $PLP using another token"
+msgstr "Max pool capacity reached for {0}. Please mint $PLP using another token"
 
 #: src/components/Glp/GlpSwap.js
-msgid "Max pool capacity reached for {0}<0/><1/>Please mint $ZLP using another token"
-msgstr "Max pool capacity reached for {0}<0/><1/>Please mint $ZLP using another token"
+msgid "Max pool capacity reached for {0}<0/><1/>Please mint $PLP using another token"
+msgstr "Max pool capacity reached for {0}<0/><1/>Please mint $PLP using another token"
 
 #: src/App/App.js
 msgid "Max slippage precision is 0.01%"
@@ -2084,8 +2084,8 @@ msgid "No PnLs found"
 msgstr "No PnLs found"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "No esZOMI to claim"
-msgstr "No esZOMI to claim"
+msgid "No esPOOPE to claim"
+msgstr "No esPOOPE to claim"
 
 #: src/components/Exchange/OrdersList.js
 #: src/components/Exchange/OrdersList.js
@@ -2102,8 +2102,8 @@ msgid "No open positions"
 msgstr "No open positions"
 
 #: src/pages/Jobs/Jobs.js
-msgid "No open positions at $ZOMI currently"
-msgstr "No open positions at $ZOMI currently"
+msgid "No open positions at $POOPE currently"
+msgstr "No open positions at $POOPE currently"
 
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "No position"
@@ -2305,16 +2305,16 @@ msgid "Pay: {0} USD"
 msgstr "Pay: {0} USD"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Platform and $ZLP index tokens."
-msgstr "Platform and $ZLP index tokens."
+msgid "Platform and $PLP index tokens."
+msgstr "Platform and $PLP index tokens."
 
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Please input a referral code to benefit from fee discounts."
 msgstr "Please input a referral code to benefit from fee discounts."
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Please only use this for full account transfers.<0/>This will transfer all your $ZOMI, esZOMI, $ZLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked $ZOMI or $ZLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
-msgstr "Please only use this for full account transfers.<0/>This will transfer all your $ZOMI, esZOMI, $ZLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked $ZOMI or $ZLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
+msgid "Please only use this for full account transfers.<0/>This will transfer all your $POOPE, esPOOPE, $PLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked $POOPE or $PLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
+msgstr "Please only use this for full account transfers.<0/>This will transfer all your $POOPE, esPOOPE, $PLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked $POOPE or $PLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
 
 #: src/components/Migration/Migration.js
 msgid "Please read the <0>Medium post</0> before migrating."
@@ -2453,12 +2453,12 @@ msgid "Profit price: {0} ${1}. This rule applies for the next {2}, until {3}."
 msgstr "Profit price: {0} ${1}. This rule applies for the next {2}, until {3}."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects developed by the $ZOMI community."
-msgstr "Projects developed by the $ZOMI community."
+msgid "Projects developed by the $POOPE community."
+msgstr "Projects developed by the $POOPE community."
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects integrated with $ZOMI."
-msgstr "Projects integrated with $ZOMI."
+msgid "Projects integrated with $POOPE."
+msgstr "Projects integrated with $POOPE."
 
 #: src/pages/Ecosystem/Ecosystem.js
 #: src/pages/Ecosystem/Ecosystem.js
@@ -2466,13 +2466,13 @@ msgid "Protocol analytics"
 msgstr "Protocol analytics"
 
 #: src/pages/BuyGlp/BuyGlp.js
-msgid "Purchase <0>$ZLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
-msgstr "Purchase <0>$ZLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
+msgid "Purchase <0>$PLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
+msgstr "Purchase <0>$PLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
 
 #: src/pages/BuyGMX/BuyGMX.js
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "Purchase $ZOMI"
-msgstr "Purchase $ZOMI"
+msgid "Purchase $POOPE"
+msgstr "Purchase $POOPE"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Purchase Insurance"
@@ -2517,12 +2517,12 @@ msgid "Receiver Address"
 msgstr "Receiver Address"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Receiver has not staked $ZLP tokens before"
-msgstr "Receiver has not staked $ZLP tokens before"
+msgid "Receiver has not staked $PLP tokens before"
+msgstr "Receiver has not staked $PLP tokens before"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Receiver has not staked $ZOMI tokens before"
-msgstr "Receiver has not staked $ZOMI tokens before"
+msgid "Receiver has not staked $POOPE tokens before"
+msgstr "Receiver has not staked $POOPE tokens before"
 
 #: src/components/Glp/GlpSwap.js
 msgid "Redemption time not yet reached"
@@ -2627,8 +2627,8 @@ msgid "Reserved for Vesting"
 msgstr "Reserved for Vesting"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Returns calculator for $ZOMI and $ZLP"
-msgstr "Returns calculator for $ZOMI and $ZLP"
+msgid "Returns calculator for $POOPE and $PLP"
+msgstr "Returns calculator for $POOPE and $PLP"
 
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
@@ -2701,8 +2701,8 @@ msgstr "Self-transfer not supported"
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Stake/StakeV2.js
-msgid "Sell $ZLP"
-msgstr "Sell $ZLP"
+msgid "Sell $PLP"
+msgstr "Sell $PLP"
 
 #: src/components/Glp/GlpSwap.js
 msgid "Sell failed."
@@ -2722,12 +2722,12 @@ msgid "Selling..."
 msgstr "Selling..."
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Sender has withdrawn all tokens from $ZLP Vesting Vault"
-msgstr "Sender has withdrawn all tokens from $ZLP Vesting Vault"
+msgid "Sender has withdrawn all tokens from $PLP Vesting Vault"
+msgstr "Sender has withdrawn all tokens from $PLP Vesting Vault"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Sender has withdrawn all tokens from $ZOMI Vesting Vault"
-msgstr "Sender has withdrawn all tokens from $ZOMI Vesting Vault"
+msgid "Sender has withdrawn all tokens from $POOPE Vesting Vault"
+msgstr "Sender has withdrawn all tokens from $POOPE Vesting Vault"
 
 #: src/App/App.js
 #: src/components/Header/AppHeaderLinks.tsx
@@ -2828,28 +2828,28 @@ msgid "Stake"
 msgstr "Stake"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake <0>$ZOMI</0> and <1>$ZLP</1> to earn rewards."
-msgstr "Stake <0>$ZOMI</0> and <1>$ZLP</1> to earn rewards."
+msgid "Stake <0>$POOPE</0> and <1>$PLP</1> to earn rewards."
+msgstr "Stake <0>$POOPE</0> and <1>$PLP</1> to earn rewards."
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake $ZOMI"
-msgstr "Stake $ZOMI"
+msgid "Stake $POOPE"
+msgstr "Stake $POOPE"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake $ZOMI Rewards"
-msgstr "Stake $ZOMI Rewards"
+msgid "Stake $POOPE Rewards"
+msgstr "Stake $POOPE Rewards"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake Multiplier Points"
 msgstr "Stake Multiplier Points"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake esZOMI"
-msgstr "Stake esZOMI"
+msgid "Stake esPOOPE"
+msgstr "Stake esPOOPE"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake esZOMI Rewards"
-msgstr "Stake esZOMI Rewards"
+msgid "Stake esPOOPE Rewards"
+msgstr "Stake esPOOPE Rewards"
 
 #: src/pages/Stake/StakeV1.js
 msgid "Stake failed"
@@ -3043,20 +3043,20 @@ msgid "Telegram Groups"
 msgstr "Telegram Groups"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for $ZOMI position updates"
-msgstr "Telegram bot for $ZOMI position updates"
+msgid "Telegram bot for $POOPE position updates"
+msgstr "Telegram bot for $POOPE position updates"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for Open Interest on $ZOMI"
-msgstr "Telegram bot for Open Interest on $ZOMI"
+msgid "Telegram bot for Open Interest on $POOPE"
+msgstr "Telegram bot for Open Interest on $POOPE"
 
 #: src/components/Footer/Footer.js
 msgid "Terms and Conditions"
 msgstr "Terms and Conditions"
 
 #: src/pages/Stake/StakeV1.js
-msgid "The <0>$ZOMI migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
-msgstr "The <0>$ZOMI migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
+msgid "The <0>$POOPE migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
+msgstr "The <0>$POOPE migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
 
 #: src/pages/Stake/StakeV2.js
 msgid "The Boosted APR is from your staked Multiplier Points."
@@ -3067,20 +3067,20 @@ msgid "The Gambit protocol is in beta, please read the <0>staking details</0>be
 msgstr "The Gambit protocol is in beta, please read the <0>staking details</0>before participating."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "The address of the esZOMI (IOU) token is {esGmxIouAddress}."
-msgstr "The address of the esZOMI (IOU) token is {esGmxIouAddress}."
+msgid "The address of the esPOOPE (IOU) token is {esGmxIouAddress}."
+msgstr "The address of the esPOOPE (IOU) token is {esGmxIouAddress}."
 
 #: src/components/Exchange/SwapBox.js
 msgid "The borrow fee is calculated as (assets borrowed) / (total assets in pool) * 0.01% per hour."
 msgstr "The borrow fee is calculated as (assets borrowed) / (total assets in pool) * 0.01% per hour."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "The esZOMI (IOU) token is transferrable. You can add the token to your wallet and send it to another address to claim if you'd like."
-msgstr "The esZOMI (IOU) token is transferrable. You can add the token to your wallet and send it to another address to claim if you'd like."
+msgid "The esPOOPE (IOU) token is transferrable. You can add the token to your wallet and send it to another address to claim if you'd like."
+msgstr "The esPOOPE (IOU) token is transferrable. You can add the token to your wallet and send it to another address to claim if you'd like."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "The esZOMI tokens can be staked or vested at any time."
-msgstr "The esZOMI tokens can be staked or vested at any time."
+msgid "The esPOOPE tokens can be staked or vested at any time."
+msgstr "The esPOOPE tokens can be staked or vested at any time."
 
 #: src/lib/contracts/callContract.tsx
 msgid "The mark price has changed, consider increasing your Allowed Slippage by clicking on the \"...\" icon next to your address."
@@ -3111,8 +3111,8 @@ msgid "The spread is > 1%, please ensure the trade details are acceptable before
 msgstr "The spread is > 1%, please ensure the trade details are acceptable before comfirming"
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "The website is a community deployed and maintained instance of the open source <0>$ZOMI front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
-msgstr "The website is a community deployed and maintained instance of the open source <0>$ZOMI front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
+msgid "The website is a community deployed and maintained instance of the open source <0>$POOPE front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
+msgstr "The website is a community deployed and maintained instance of the open source <0>$POOPE front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
 
 #: src/components/Exchange/SwapBox.js
 msgid "There are more longs than shorts, borrow fees for shorting is currently zero"
@@ -3176,12 +3176,12 @@ msgid "To complete the transfer, you must switch your connected account to {rece
 msgstr "To complete the transfer, you must switch your connected account to {receiver}."
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "To purchase $ZOMI on <0>Arbitrum</0>, please change your network."
-msgstr "To purchase $ZOMI on <0>Arbitrum</0>, please change your network."
+msgid "To purchase $POOPE on <0>Arbitrum</0>, please change your network."
+msgstr "To purchase $POOPE on <0>Arbitrum</0>, please change your network."
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "To purchase $ZOMI on <0>Avalanche</0>, please change your network."
-msgstr "To purchase $ZOMI on <0>Avalanche</0>, please change your network."
+msgid "To purchase $POOPE on <0>Avalanche</0>, please change your network."
+msgstr "To purchase $POOPE on <0>Avalanche</0>, please change your network."
 
 #: src/components/Glp/GlpSwap.js
 msgid "To reduce fees, select a different asset to pay with."
@@ -3285,8 +3285,8 @@ msgid "Total fees earned since {0}: {1} USD<0/>Fee assets: {feeText}"
 msgstr "Total fees earned since {0}: {1} USD<0/>Fee assets: {feeText}"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Total value of tokens in $ZLP pool ({chainName})"
-msgstr "Total value of tokens in $ZLP pool ({chainName})"
+msgid "Total value of tokens in $PLP pool ({chainName})"
+msgstr "Total value of tokens in $PLP pool ({chainName})"
 
 #: src/components/StatsTooltip/StatsTooltip.tsx
 msgid "Total:"
@@ -3302,8 +3302,8 @@ msgid "Trade PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with u
 msgstr "Trade PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with up to 5x leverage directly from your wallet"
 
 #: src/components/Exchange/ExchangeBanner.js
-msgid "Trade on $ZOMI and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
-msgstr "Trade on $ZOMI and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
+msgid "Trade on $POOPE and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
+msgstr "Trade on $POOPE and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
 
 #: src/pages/Referrals/Referrals.js
 msgid "Traders"
@@ -3451,16 +3451,16 @@ msgid "Unstake"
 msgstr "Unstake"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Unstake $ZOMI"
-msgstr "Unstake $ZOMI"
+msgid "Unstake $POOPE"
+msgstr "Unstake $POOPE"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Unstake completed!"
 msgstr "Unstake completed!"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Unstake esZOMI"
-msgstr "Unstake esZOMI"
+msgid "Unstake esPOOPE"
+msgstr "Unstake esPOOPE"
 
 #: src/pages/Stake/StakeV1.js
 msgid "Unstake failed"
@@ -3543,28 +3543,28 @@ msgid "Vest"
 msgstr "Vest"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with $ZLP on Arbitrum"
-msgstr "Vest with $ZLP on Arbitrum"
+msgid "Vest with $PLP on Arbitrum"
+msgstr "Vest with $PLP on Arbitrum"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with $ZLP on Avalanche"
-msgstr "Vest with $ZLP on Avalanche"
+msgid "Vest with $PLP on Avalanche"
+msgstr "Vest with $PLP on Avalanche"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with $ZOMI on Arbitrum"
-msgstr "Vest with $ZOMI on Arbitrum"
+msgid "Vest with $POOPE on Arbitrum"
+msgstr "Vest with $POOPE on Arbitrum"
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with $ZOMI on Avalanche"
-msgstr "Vest with $ZOMI on Avalanche"
+msgid "Vest with $POOPE on Avalanche"
+msgstr "Vest with $POOPE on Avalanche"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Vested $ZLP not withdrawn"
-msgstr "Vested $ZLP not withdrawn"
+msgid "Vested $PLP not withdrawn"
+msgstr "Vested $PLP not withdrawn"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Vested $ZOMI not withdrawn"
-msgstr "Vested $ZOMI not withdrawn"
+msgid "Vested $POOPE not withdrawn"
+msgstr "Vested $POOPE not withdrawn"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -3680,8 +3680,8 @@ msgid "Withdraw failed."
 msgstr "Withdraw failed."
 
 #: src/pages/Stake/StakeV2.js
-msgid "Withdraw from $ZLP Vault"
-msgstr "Withdraw from $ZLP Vault"
+msgid "Withdraw from $PLP Vault"
+msgstr "Withdraw from $PLP Vault"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Withdraw from $POOPE Vault"
@@ -3724,8 +3724,8 @@ msgid "Yield Vaults"
 msgstr "Yield Vaults"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Yield simulator for $ZOMI"
-msgstr "Yield simulator for $ZOMI"
+msgid "Yield simulator for $POOPE"
+msgstr "Yield simulator for $POOPE"
 
 #: src/pages/Stake/StakeV2.js
 msgid "You are earning {0}% more {nativeTokenSymbol} rewards using {1} Staked Multiplier Points."
@@ -3736,8 +3736,8 @@ msgid "You are earning {nativeTokenSymbol} rewards with {0} tokens.<0/>Tokens: {
 msgstr "You are earning {nativeTokenSymbol} rewards with {0} tokens.<0/>Tokens: {amountStr}."
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "You are leaving $ZOMI.io and will be redirected to a third party, independent website."
-msgstr "You are leaving $ZOMI.io and will be redirected to a third party, independent website."
+msgid "You are leaving $POOPE.io and will be redirected to a third party, independent website."
+msgstr "You are leaving $POOPE.io and will be redirected to a third party, independent website."
 
 #: src/pages/BuyGMX/BuyGMX.js
 msgid "You can buy AVAX directly on <0>Avalanche</0> using Banxa:"
@@ -3761,8 +3761,8 @@ msgid "You can check your claim history <0>here</0>."
 msgstr "You can check your claim history <0>here</0>."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "You can currently vest a maximum of {0} esZOMI tokens at a ratio of {1} {stakingToken} to 1 esZOMI."
-msgstr "You can currently vest a maximum of {0} esZOMI tokens at a ratio of {1} {stakingToken} to 1 esZOMI."
+msgid "You can currently vest a maximum of {0} esPOOPE tokens at a ratio of {1} {stakingToken} to 1 esPOOPE."
+msgstr "You can currently vest a maximum of {0} esPOOPE tokens at a ratio of {1} {stakingToken} to 1 esPOOPE."
 
 #: src/pages/BuyGMX/BuyGMX.js
 msgid "You can transfer AVAX to Avalanche using any of the below options."
@@ -3798,12 +3798,12 @@ msgid "You have not deposited any tokens for vesting."
 msgstr "You have not deposited any tokens for vesting."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "You have {0} esZOMI (IOU) tokens."
-msgstr "You have {0} esZOMI (IOU) tokens."
+msgid "You have {0} esPOOPE (IOU) tokens."
+msgstr "You have {0} esPOOPE (IOU) tokens."
 
 #: src/pages/Stake/StakeV2.js
-msgid "You need a total of at least {0} {stakeTokenLabel} to vest {1} esZOMI."
-msgstr "You need a total of at least {0} {stakeTokenLabel} to vest {1} esZOMI."
+msgid "You need a total of at least {0} {stakeTokenLabel} to vest {1} esPOOPE."
+msgstr "You need a total of at least {0} {stakeTokenLabel} to vest {1} esPOOPE."
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "You need to select {swapTokenSymbol} as the \"Pay\" token to use it for collateral to initiate this trade."
@@ -3826,8 +3826,8 @@ msgid "You will receive at least {0} {1} if this order is executed. The executio
 msgstr "You will receive at least {0} {1} if this order is executed. The execution price may vary depending on swap fees at the time the order is executed."
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Your esZOMI (IOU) balance will decrease by your claim amount after claiming, this is expected behaviour."
-msgstr "Your esZOMI (IOU) balance will decrease by your claim amount after claiming, this is expected behaviour."
+msgid "Your esPOOPE (IOU) balance will decrease by your claim amount after claiming, this is expected behaviour."
+msgstr "Your esPOOPE (IOU) balance will decrease by your claim amount after claiming, this is expected behaviour."
 
 #: src/components/Exchange/ConfirmationBox.js
 msgid "Your position's collateral after deducting fees."
@@ -3910,25 +3910,25 @@ msgid "{0} Capacity Reached"
 msgstr "{0} Capacity Reached"
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} $ZLP (${1})"
-msgstr "{0} $ZLP (${1})"
+msgid "{0} $PLP (${1})"
+msgstr "{0} $PLP (${1})"
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} $ZLP bought with {1} {2}!"
-msgstr "{0} $ZLP bought with {1} {2}!"
+msgid "{0} $PLP bought with {1} {2}!"
+msgstr "{0} $PLP bought with {1} {2}!"
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} $ZLP have been reserved for vesting."
-msgstr "{0} $ZLP have been reserved for vesting."
+msgid "{0} $PLP have been reserved for vesting."
+msgstr "{0} $PLP have been reserved for vesting."
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} $ZLP sold for {1} {2}!"
-msgstr "{0} $ZLP sold for {1} {2}!"
+msgid "{0} $PLP sold for {1} {2}!"
+msgstr "{0} $PLP sold for {1} {2}!"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "{0} $ZOMI tokens can be claimed, use the options under the Total Rewards section to claim them."
-msgstr "{0} $ZOMI tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgid "{0} $POOPE tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgstr "{0} $POOPE tokens can be claimed, use the options under the Total Rewards section to claim them."
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "{0} Pool Capacity Reached"
@@ -3950,8 +3950,8 @@ msgid "{0} is above its target weight.<0/><1/>Get lower fees to <2>swap</2> toke
 msgstr "{0} is above its target weight.<0/><1/>Get lower fees to <2>swap</2> tokens for {1}."
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "{0} is below its target weight.<0/><1/>Get lower fees to <2>buy $ZLP</2> with {1},  and to <3>swap</3> {2} for other tokens."
-msgstr "{0} is below its target weight.<0/><1/>Get lower fees to <2>buy $ZLP</2> with {1},  and to <3>swap</3> {2} for other tokens."
+msgid "{0} is below its target weight.<0/><1/>Get lower fees to <2>buy $PLP</2> with {1},  and to <3>swap</3> {2} for other tokens."
+msgstr "{0} is below its target weight.<0/><1/>Get lower fees to <2>buy $PLP</2> with {1},  and to <3>swap</3> {2} for other tokens."
 
 #: src/components/Exchange/SwapBox.js
 msgid "{0} is required for collateral."
@@ -3982,8 +3982,8 @@ msgstr "{0} selected in order form"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "{0} tokens have been converted to $ZOMI from the {1} esZOMI deposited for vesting."
-msgstr "{0} tokens have been converted to $ZOMI from the {1} esZOMI deposited for vesting."
+msgid "{0} tokens have been converted to $POOPE from the {1} esPOOPE deposited for vesting."
+msgstr "{0} tokens have been converted to $POOPE from the {1} esPOOPE deposited for vesting."
 
 #: src/components/Exchange/TradeHistory.js
 msgid "{0} {1} {longOrShortText}, -{2} USD, {3} Price: ${4} USD"
@@ -4057,5 +4057,5 @@ msgstr "{volumeLabel} Volume"
 
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy $ZOMI on {0}"
-msgstr "Buy $ZOMI on {0}"
+msgid "Buy $POOPE on {0}"
+msgstr "Buy $POOPE on {0}"

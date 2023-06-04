@@ -10,20 +10,20 @@ export default function TermsAndConditions() {
       <div className="default-container Page page-layout">
         <div>
           <div className="Page-title-section center">
-            <div className="Page-title">$ZOMI</div>
+            <div className="Page-title">$POOPE</div>
             <div className="Page-subtitle">Terms and Conditions</div>
             <div className="Page-description">Last modified: November 1st, 2022</div>
           </div>
           <div className="content">
             <div className="section">
               <p className="body-text">
-                Welcome to zomi.finance ("we," "us," or "our"), the informational resource for $ZOMI Protocol, as
+                Welcome to zomi.finance ("we," "us," or "our"), the informational resource for $POOPE Protocol, as
                 defined below.
               </p>
               <p className="body-text">
                 zomi.finance provides information and resources about the fundamentals of the decentralized
-                non-custodial protocol called the $ZOMI Protocol (the "$ZOMI Protocol," "Protocol," or "$ZOMI DApp").
-                zomi.finance is not an available access point to the $ZOMI Protocol.
+                non-custodial protocol called the $POOPE Protocol (the "$POOPE Protocol," "Protocol," or "$POOPE DApp").
+                zomi.finance is not an available access point to the $POOPE Protocol.
               </p>
               <p className="body-text">
                 These Terms and Conditions and any other documents incorporated herein by reference (collectively, these
@@ -36,10 +36,10 @@ export default function TermsAndConditions() {
               <h3 className="body-title">1. USE OF THE SITE AND THE INTERFACE</h3>
               <p className="body-text">The zomi.finance site is for informational purposes only.</p>
               <p className="body-text">
-                zomi.finance is not part of any transaction on the blockchain networks underlying the $ZOMI Protocol;
+                zomi.finance is not part of any transaction on the blockchain networks underlying the $POOPE Protocol;
                 we do not have possession, custody, or control over any crypto assets appearing on the Interface; and we
                 do not have possession, custody, or control over any user's funds. Further, we do not store, send, or
-                receive any crypto assets. You understand that when you interact with any $ZOMI Protocol smart
+                receive any crypto assets. You understand that when you interact with any $POOPE Protocol smart
                 contracts, you always retain control over your crypto assets. We do not have access to your private
                 keys.
               </p>
@@ -217,7 +217,7 @@ export default function TermsAndConditions() {
                     4.1. zomi.finance own all rights, names, logos, and other marks used on the Site and the
                     Interface, including, without limitation, any copyrights in and to any content, code, data, or other
                     materials that you may access or use on or through the Site or the Interface; however, the code for
-                    the $ZOMI Protocol and the Interface (zomi.finance) deployed on IPFS is open-sourced. Except as
+                    the $POOPE Protocol and the Interface (zomi.finance) deployed on IPFS is open-sourced. Except as
                     expressly set forth herein, your use of or access to the Site or the Interface does not grant you
                     any ownership or other rights therein.
                   </p>
@@ -413,11 +413,11 @@ export default function TermsAndConditions() {
                   </ul>
                 </li>
               </ul>
-            </div>
+            </div>  
             <div className="section">
               <h3 className="body-title">8. DISCLOSURES; DISCLAIMERS</h3>
               <p className="body-text">
-                zomi.finance is an informational site for the $ZOMI Protocol. zomi.finance does not operate an
+                zomi.finance is an informational site for the $POOPE Protocol. zomi.finance does not operate an
                 exchange platform or offer trade execution or clearing services and has no oversight, involvement, or
                 control concerning your transactions using the Interface. All transactions between users of the
                 Interface are executed peer-to-peer directly between the users' blockchain addresses through a

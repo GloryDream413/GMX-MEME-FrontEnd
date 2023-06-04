@@ -16,7 +16,7 @@ function NftStake({ connectWallet, setPendingTxns, pendingTxns }) {
             <h3 className="fn__maintitle upper" data-text="NFT Stake">
               NFT Stake
             </h3>
-            <p>Earn $ZOMI from platform's collected fees with your NFT.</p>
+            <p>Earn $POOPE from platform's collected fees with your NFT.</p>
           </div>
           <div className="fn_cs_counter_list">
             <ul>
