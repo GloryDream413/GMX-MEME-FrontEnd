@@ -71,7 +71,8 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
         </div>
         <div className="Home-latest-info-container default-container">
           <div className="Home-latest-info-block">
-            <img src={tradingIcon} alt="Total Trading Volume Icon" className="Home-latest-info__icon" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div className="Home-latest-info-content"></div>
             <div className="Home-latest-info-content">
               <div className="Home-latest-info__title">
                 <Trans>Total Trading Volume</Trans>
@@ -82,7 +83,7 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
             </div>
           </div>
           <div className="Home-latest-info-block">
-            <img src={statsIcon} alt="Open Interest Icon" className="Home-latest-info__icon" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div className="Home-latest-info-content">
               <div className="Home-latest-info__title">
                 <Trans>Open Interest</Trans>
@@ -91,7 +92,7 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
             </div>
           </div>
           <div className="Home-latest-info-block">
-            <img src={totaluserIcon} alt="Total Users Icon" className="Home-latest-info__icon" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div className="Home-latest-info-content">
               <div className="Home-latest-info__title">
                 <Trans>Total Users</Trans>
@@ -105,7 +106,6 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
         <div className="Home-benefits default-container">
           <div className="Home-benefit">
             <div className="Home-benefit-icon">
-              <img src={liquidityIcon} alt="Reduce Liquidation Risks Icon" className="Home-benefit-icon-symbol" />
               <div className="Home-benefit-title">
                 <Trans>Reduce Liquidation Risks</Trans>
               </div>
@@ -119,7 +119,6 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
           </div>
           <div className="Home-benefit">
             <div className="Home-benefit-icon">
-              <img src={costIcon} alt="Save on Costs Icon" className="Home-benefit-icon-symbol" />
               <div className="Home-benefit-title">
                 <Trans>Save on Costs</Trans>
               </div>
@@ -133,7 +132,6 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
           </div>
           <div className="Home-benefit">
             <div className="Home-benefit-icon">
-              <img src={simpleSwapIcon} alt="Simple Swaps Icon" className="Home-benefit-icon-symbol" />
               <div className="Home-benefit-title">
                 <Trans>Simple Swaps</Trans>
               </div>
