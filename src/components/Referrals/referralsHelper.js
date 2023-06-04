@@ -127,7 +127,7 @@ export function getReferralCodeTradeUrl(referralCode) {
 }
 
 export function getTwitterShareUrl(referralCode) {
-  const message = ["Trying out trading on @minmaxdex, up to 30x leverage on $BTC, $ETH 📈", "For fee discounts use:"];
+  const message = ["Trying out trading on @minmaxdex, up to 5x leverage on $BTC, $ETH 📈", "For fee discounts use:"];
   const shareURL = getReferralCodeTradeUrl(referralCode);
 
   return getTwitterIntentURL(message, shareURL);

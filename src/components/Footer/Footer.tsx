@@ -14,23 +14,23 @@ import { isHomeSite, getAppBaseUrl, shouldShowRedirectModal } from "lib/legacy";
 const footerLinks = {
   home: [
     { text: t`Terms and Conditions`, link: "/terms-and-conditions" },
-    { text: t`Referral Terms`, link: "https://zomi.gitbook.referrals", external: true },
-    { text: t`Media Kit`, link: "https://docs.zomi.finance", external: true },
+    { text: t`Referral Terms`, link: "https://poope.gitbook.referrals", external: true },
+    { text: t`Media Kit`, link: "https://docs.poope.finance", external: true },
     // { text: "Jobs", link: "/jobs", isAppLink: true },
   ],
   app: [
     { text: t`Terms and Conditions`, link: "/terms-and-conditions" },
     { text: t`Referral Terms`, link: "/referral-terms" },
-    { text: t`Media Kit`, link: "https://docs.zomi.finance", external: true },
+    { text: t`Media Kit`, link: "https://docs.poope.finance", external: true },
     // { text: "Jobs", link: "/jobs" },
   ],
 };
 
 const socialLinks = [
-  { link: "https://twitter.com/zomi.finance", name: "Twitter", icon: twitterIcon },
-  { link: "https://zomifinance.medium.com/", name: "Medium", icon: mediumIcon },
-  { link: "https://github.com/zomi", name: "Github", icon: githubIcon },
-  { link: "https://t.me/zomichat", name: "Telegram", icon: telegramIcon },
+  { link: "https://twitter.com/poope.finance", name: "Twitter", icon: twitterIcon },
+  { link: "https://poopefinance.medium.com/", name: "Medium", icon: mediumIcon },
+  { link: "https://github.com/poope", name: "Github", icon: githubIcon },
+  { link: "https://t.me/poopechat", name: "Telegram", icon: telegramIcon },
   { link: "https://discord.gg/senshilabs", name: "Discord", icon: discordIcon },
 ];
 

@@ -94,8 +94,8 @@ export function Header({
         <div className="App-header large">
           <div className="App-header-container-left">
             <Link className="App-header-link-main" to="/">
-              <img src={logoImg} className="big" alt="ZOMI Logo" />
-              <img src={logoSmallImg} className="small" alt="ZOMI Logo" />
+              <img src={logoImg} className="big" alt="POOPE Logo" />
+              <img src={logoSmallImg} className="small" alt="POOPE Logo" />
             </Link>
           </div>
           <div className="App-header-container-left">
@@ -123,8 +123,8 @@ export function Header({
                 {isDrawerVisible && <FaTimes className="App-header-menu-icon" />}
               </div>
               <div className="App-header-link-main clickable" onClick={() => setIsDrawerVisible(!isDrawerVisible)}>
-                <img src={logoImg} className="big" alt="ZOMI Logo" />
-                <img src={logoSmallImg} className="small" alt="ZOMI Logo" />
+                <img src={logoImg} className="big" alt="POOPE Logo" />
+                <img src={logoSmallImg} className="small" alt="POOPE Logo" />
               </div>
             </div>
             <div className="App-header-container-right">

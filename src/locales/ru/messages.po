@@ -3295,8 +3295,8 @@ msgid "Trade"
 msgstr "Торговля"
 
 #: src/pages/Home/Home.js
-msgid "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 30x leverage directly from your wallet"
-msgstr "Торгуйте BTC, ETH, AVAX и другими популярными криптовалютами с кредитным плечом до 30x прямо из вашего кошелька."
+msgid "Trade PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with up to 30x leverage directly from your wallet"
+msgstr "Торгуйте PEPE, BOB, LADYS, WOJAK, DOGE и другими популярными криптовалютами с кредитным плечом до 30x прямо из вашего кошелька."
 
 #: src/components/Exchange/ExchangeBanner.js
 msgid "Trade on $ZOMI and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."

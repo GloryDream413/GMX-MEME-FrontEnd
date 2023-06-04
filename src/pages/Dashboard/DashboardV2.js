@@ -252,7 +252,7 @@ export default function DashboardV2() {
   const { data: feesSummaryByChain } = useFeesSummary();
   const feesSummary = feesSummaryByChain[chainId];
 
-  const eth = infoTokens[getTokenBySymbol(chainId, "ETH").address];
+  const eth = infoTokens[getTokenBySymbol(chainId, "WETH").address];
   const shouldIncludeCurrrentFees =
     feesSummaryByChain[chainId].lastUpdatedAt &&
     parseInt(Date.now() / 1000) - feesSummaryByChain[chainId].lastUpdatedAt > 60 * 60;
@@ -462,7 +462,7 @@ export default function DashboardV2() {
     },
   ];
 
-  const totalStatsStartDate = chainId === MAINNET ? t`06 Jan 2022` : t`01 Sep 2021`;
+  const totalStatsStartDate = chainId === MAINNET ? t`06 June 2023` : t`06 June 2023`;
 
   let stableGlp = 0;
   let totalGlp = 0;

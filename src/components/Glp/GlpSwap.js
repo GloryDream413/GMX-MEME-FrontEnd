@@ -708,22 +708,6 @@ export default function GlpSwap(props) {
         infoTokens={infoTokens}
         swapUsdMin={swapUsdMin}
       />
-      {/* <div className="Page-title-section">
-        <div className="Page-title">{isBuying ? "Buy $ZLP" : "Sell $ZLP"}</div>
-        {isBuying && <div className="Page-description">
-          Purchase <a href="https://docs.zomi.finance" target="_blank" rel="noopener noreferrer">GLP tokens</a> to earn {nativeTokenSymbol} fees from swaps and leverage trading.<br/>
-          Note that there is a minimum holding time of 15 minutes after a purchase.<br/>
-          <div>View <Link to="/earn">staking</Link> page.</div>
-        </div>}
-        {!isBuying && <div className="Page-description">
-          Redeem your $ZLP tokens for any supported asset.
-          {inCooldownWindow && <div>
-            $ZLP tokens can only be redeemed 15 minutes after your most recent purchase.<br/>
-            Your last purchase was at {formatDateTime(lastPurchaseTime)}, you can redeem $ZLP tokens after {formatDateTime(redemptionTime)}.<br/>
-          </div>}
-          <div>View <Link to="/earn">staking</Link> page.</div>
-        </div>}
-      </div> */}
       <div className="GlpSwap-content">
         <div className="App-card GlpSwap-stats-card">
           <div className="App-card-title">
@@ -812,7 +796,7 @@ export default function GlpSwap(props) {
                           showDollar={false}
                         />
                         <StatsTooltipRow
-                          label={t`Escrowed $ZOMI APR`}
+                          label={t`Escrowed $POOPE APR`}
                           value={`${formatAmount(stakedGlpTrackerApr, 2, 2, false)}%`}
                           showDollar={false}
                         />

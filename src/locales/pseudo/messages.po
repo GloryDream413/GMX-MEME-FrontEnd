@@ -3295,11 +3295,11 @@ msgid "Trade"
 msgstr ""
 
 #: src/pages/Home/Home.js
-msgid "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 30x leverage directly from your wallet"
+msgid "Trade PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with up to 5x leverage directly from your wallet"
 msgstr ""
 
 #: src/components/Exchange/ExchangeBanner.js
-msgid "Trade on $ZOMI and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
+msgid "Trade on $POOPE and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
 msgstr ""
 
 #: src/pages/Referrals/Referrals.js

@@ -2192,7 +2192,7 @@ export default function SwapBox(props) {
               orders. <br />
               <br />
               For screenshots and more information, please see the{" "}
-              <ExternalLink href="https://docs.zomi.financetrading#stop-loss-take-profit-orders">docs</ExternalLink>
+              <ExternalLink href="https://docs.poope.financetrading#stop-loss-take-profit-orders">docs</ExternalLink>
               .
             </Trans>
           </div>
@@ -2290,7 +2290,7 @@ export default function SwapBox(props) {
                         top right of the page after connecting your wallet.
                         <br />
                         <br />
-                        <ExternalLink href="https://docs.zomi.financetrading#opening-a-position">
+                        <ExternalLink href="https://docs.poope.financetrading#opening-a-position">
                           More Info
                         </ExternalLink>
                       </Trans>
@@ -2319,7 +2319,7 @@ export default function SwapBox(props) {
                         This exit price will change with the price of the asset.
                         <br />
                         <br />
-                        <ExternalLink href="https://docs.zomi.financetrading#opening-a-position">
+                        <ExternalLink href="https://docs.poope.financetrading#opening-a-position">
                           More Info
                         </ExternalLink>
                       </Trans>
@@ -2357,7 +2357,7 @@ export default function SwapBox(props) {
                         </div>
                       )}
                       <br />
-                      <ExternalLink href="https://docs.zomi.financetrading#opening-a-position">
+                      <ExternalLink href="https://docs.poope.financetrading#opening-a-position">
                         <Trans>More Info</Trans>
                       </ExternalLink>
                     </div>
@@ -2405,7 +2405,7 @@ export default function SwapBox(props) {
         <div className="App-card-divider"></div>
         <div className="Exchange-info-row">
           <div className="Exchange-info-label-button">
-            <ExternalLink href="https://docs.zomi.financetrading">
+            <ExternalLink href="https://docs.poope.financetrading">
               <Trans>Trading guide</Trans>
             </ExternalLink>
           </div>
@@ -2419,7 +2419,7 @@ export default function SwapBox(props) {
         </div> */}
         <div className="Exchange-info-row">
           <div className="Exchange-info-label-button">
-            <ExternalLink href="https://docs.zomi.financetrading#backup-rpc-urls">
+            <ExternalLink href="https://docs.poope.financetrading#backup-rpc-urls">
               <Trans>Speed up page loading</Trans>
             </ExternalLink>
           </div>

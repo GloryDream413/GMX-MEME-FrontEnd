@@ -3295,7 +3295,7 @@ msgid "Trade"
 msgstr "トレード"
 
 #: src/pages/Home/Home.js
-msgid "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 30x leverage directly from your wallet"
+msgid "Trade PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with up to 5x leverage directly from your wallet"
 msgstr "BTC、ETH、AVAXなどの主要仮想通貨を最大30倍のレバレッジで直接自分のウォレットから取引可能"
 
 #: src/components/Exchange/ExchangeBanner.js

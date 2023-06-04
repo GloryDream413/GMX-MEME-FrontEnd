@@ -29,7 +29,7 @@ export function AppHeaderLinks({
       {small && (
         <div className="App-header-links-header">
           <Link className="App-header-link-main" to="/">
-            <img src={logoImg} alt="ZOMI Logo" />
+            <img src={logoImg} alt="POOPE Logo" />
           </Link>
           <div
             className="App-header-menu-icon-block mobile-cross-menu"
@@ -106,7 +106,7 @@ export function AppHeaderLinks({
         </HeaderLink>
       </div>
       <div className="App-header-link-container">
-        <ExternalLink href="https://docs.zomi.finance">
+        <ExternalLink href="https://docs.poope.finance">
           <Trans>About</Trans>
         </ExternalLink>
       </div>

@@ -38,7 +38,7 @@
           "type": "uint256"
         }
       ],
-      "name": "StakeZomi",
+      "name": "StakeGMX",
       "type": "event"
     },
     {
@@ -76,7 +76,7 @@
           "type": "uint256"
         }
       ],
-      "name": "UnstakeZomi",
+      "name": "UnstakeGMX",
       "type": "event"
     },
     {
@@ -105,14 +105,14 @@
           "type": "uint256[]"
         }
       ],
-      "name": "batchStakeZomiForAccount",
+      "name": "batchStakeGMXForAccount",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
     },
     {
       "inputs": [],
-      "name": "bnZomi",
+      "name": "bnGMX",
       "outputs": [
         {
           "internalType": "address",
@@ -125,7 +125,7 @@
     },
     {
       "inputs": [],
-      "name": "bonusZomiTracker",
+      "name": "bonusGMXTracker",
       "outputs": [
         {
           "internalType": "address",
@@ -145,7 +145,7 @@
     },
     {
       "inputs": [],
-      "name": "claimEsZomi",
+      "name": "claimEsGMX",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -179,7 +179,7 @@
     },
     {
       "inputs": [],
-      "name": "esZomi",
+      "name": "esGMX",
       "outputs": [
         {
           "internalType": "address",
@@ -205,7 +205,7 @@
     },
     {
       "inputs": [],
-      "name": "feeZomiTracker",
+      "name": "feeGMXTracker",
       "outputs": [
         {
           "internalType": "address",
@@ -238,17 +238,17 @@
         },
         {
           "internalType": "address",
-          "name": "_zomi",
+          "name": "_gmx",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_esZomi",
+          "name": "_esGMX",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_bnZomi",
+          "name": "_bnGMX",
           "type": "address"
         },
         {
@@ -258,17 +258,17 @@
         },
         {
           "internalType": "address",
-          "name": "_stakedZomiTracker",
+          "name": "_stakedGMXTracker",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_bonusZomiTracker",
+          "name": "_bonusGMXTracker",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_feeZomiTracker",
+          "name": "_feeGMXTracker",
           "type": "address"
         },
         {
@@ -384,7 +384,7 @@
           "type": "uint256"
         }
       ],
-      "name": "stakeEsZomi",
+      "name": "stakeEsGMX",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -397,7 +397,7 @@
           "type": "uint256"
         }
       ],
-      "name": "stakeZomi",
+      "name": "stakeGMX",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -415,7 +415,7 @@
           "type": "uint256"
         }
       ],
-      "name": "stakeZomiForAccount",
+      "name": "stakeGMXForAccount",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -435,7 +435,7 @@
     },
     {
       "inputs": [],
-      "name": "stakedZomiTracker",
+      "name": "stakedGMXTracker",
       "outputs": [
         {
           "internalType": "address",
@@ -517,7 +517,7 @@
           "type": "uint256"
         }
       ],
-      "name": "unstakeEsZomi",
+      "name": "unstakeEsGMX",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -530,7 +530,7 @@
           "type": "uint256"
         }
       ],
-      "name": "unstakeZomi",
+      "name": "unstakeGMX",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -599,7 +599,7 @@
     },
     {
       "inputs": [],
-      "name": "zomi",
+      "name": "gmx",
       "outputs": [
         {
           "internalType": "address",

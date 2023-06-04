@@ -666,7 +666,7 @@ export default function ConfirmationBox(props) {
                         <br />
                         <Trans>
                           This is the network cost required to execute the postion.{" "}
-                          <ExternalLink href="https://docs.zomi.financetrading#execution-fee">
+                          <ExternalLink href="https://docs.poope.financetrading#execution-fee">
                             More Info
                           </ExternalLink>
                         </Trans>

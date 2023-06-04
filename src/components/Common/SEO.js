@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet";
 function SEO(props) {
   const { children, ...customMeta } = props;
   const meta = {
-    title: "ZOMI | Decentralized Perpetual Exchange",
+    title: "POOPE | Decentralized Perpetual Exchange",
     description:
-      "Trade spot or perpetual BTC, ETH, AVAX and other top cryptocurrencies with up to 30x leverage directly from your wallet on Arbitrum and Avalanche.",
+      "Trade spot or perpetual BTC, ETH, AVAX and other top cryptocurrencies with up to 5x leverage directly from your wallet on Arbitrum and Avalanche.",
     type: "exchange",
     ...customMeta,
   };
@@ -16,7 +16,7 @@ function SEO(props) {
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="ZOMI" />
+        <meta property="og:site_name" content="POOPE" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />

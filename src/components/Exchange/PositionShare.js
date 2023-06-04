@@ -139,7 +139,7 @@ function PositionShareCard({
   return (
     <div className="relative">
       <div ref={positionRef} className="position-share" style={{ backgroundImage: `url(${sharePositionBgImg})` }}>
-        <img className="logo" src={gmxLogo} alt="ZOMI Logo" />
+        <img className="logo" src={gmxLogo} alt="POOPE Logo" />
         <ul className="info">
           <li className="side">{isLong ? "LONG" : "SHORT"}</li>
           <li>{formatAmount(leverage, 4, 2, true)}x&nbsp;</li>
@@ -167,7 +167,7 @@ function PositionShareCard({
                 <p className="code">{code}</p>
               </>
             ) : (
-              <p className="code">https://zomi.finance</p>
+              <p className="code">https://poope.finance</p>
             )}
           </div>
         </div>

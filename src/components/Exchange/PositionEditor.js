@@ -205,7 +205,7 @@ export default function PositionEditor(props) {
     }
 
     if (nextLeverageExcludingPnl && nextLeverageExcludingPnl.gt(30.5 * BASIS_POINTS_DIVISOR)) {
-      return t`Max leverage: 30x`;
+      return t`Max leverage: 5x`;
     }
   };
 
@@ -596,7 +596,7 @@ export default function PositionEditor(props) {
                                 This is the network cost required to execute the {depositOrWithdrawalText}.
                                 <br />
                                 <br />
-                                <ExternalLink href="https://docs.zomi.financetrading#execution-fee">
+                                <ExternalLink href="https://docs.poope.financetrading#execution-fee">
                                   More Info
                                 </ExternalLink>
                               </Trans>
