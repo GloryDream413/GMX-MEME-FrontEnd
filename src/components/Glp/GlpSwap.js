@@ -40,7 +40,7 @@ import Token from "abis/Token.json";
 
 import glp24Icon from "img/zlp.png";
 import glp40Icon from "img/zlp.png";
-import arrowIcon from "img/ic_convert_down.svg";
+import arrowIcon from "img/ic_convert_down.png";
 
 import avalanche16Icon from "img/ic_avalanche_16.svg";
 import arbitrum16Icon from "img/ic_arbitrum_16.svg";
