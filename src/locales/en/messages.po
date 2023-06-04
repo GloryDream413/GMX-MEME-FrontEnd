@@ -1388,20 +1388,20 @@ msgstr "$ZOMI Stats Page"
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "$ZOMI Vault"
-msgstr "$ZOMI Vault"
+msgid "$POOPE Vault"
+msgstr "$POOPE Vault"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Weekly Updates"
-msgstr "$ZOMI Weekly Updates"
+msgid "$POOPE Weekly Updates"
+msgstr "$POOPE Weekly Updates"
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "$ZOMI bonds can be bought on Olympus Pro with a discount and a small vesting period:"
-msgstr "$ZOMI bonds can be bought on Olympus Pro with a discount and a small vesting period:"
+msgid "$POOPE bonds can be bought on Olympus Pro with a discount and a small vesting period:"
+msgstr "$POOPE bonds can be bought on Olympus Pro with a discount and a small vesting period:"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI community discussion"
-msgstr "$ZOMI community discussion"
+msgid "$POOPE community discussion"
+msgstr "$POOPE community discussion"
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "$ZOMI dashboards and analytics."
@@ -3684,8 +3684,8 @@ msgid "Withdraw from $ZLP Vault"
 msgstr "Withdraw from $ZLP Vault"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Withdraw from $ZOMI Vault"
-msgstr "Withdraw from $ZOMI Vault"
+msgid "Withdraw from $POOPE Vault"
+msgstr "Withdraw from $POOPE Vault"
 
 #: src/pages/Stake/StakeV2.js
 msgid "Withdraw submitted."

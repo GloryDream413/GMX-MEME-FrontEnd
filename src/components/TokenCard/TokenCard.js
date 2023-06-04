@@ -63,11 +63,11 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
     <div className="Home-token-card-options">
       <div className="Home-token-card-option">
         <div className="Home-token-card-option-icon">
-          <img src={gmxBigIcon} alt="mmxBigIcon" width="40px" /> $ZOMI
+          <img src={gmxBigIcon} alt="mmxBigIcon" width="40px" /> $POOPE
         </div>
         <div className="Home-token-card-option-info">
           <div className="Home-token-card-option-title">
-            <Trans>$ZOMI is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
+            <Trans>$POOPE is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
           </div>
           <div className="Home-token-card-option-apr">
             {/* <Trans>Arbitrum APR:</Trans> <APRLabel chainId={ARBITRUM} label="gmxAprTotal" />,{" "} */}
@@ -75,15 +75,12 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
           </div>
           <div className="Home-token-card-option-action">
             <div className="buy">
-              {/* <BuyLink to="/buy_ZOMI" className="default-btn" network={ARBITRUM}>
-                <Trans>Buy on Arbitrum</Trans>
-              </BuyLink> */}
               <BuyLink to="/buy_ZOMI" className="default-btn" network={MAINNET}>
                 <Trans>Buy</Trans>
               </BuyLink>
             </div>
             <ExternalLink
-              href="https://docs.zomi.financetokenomics/mmx"
+              href="https://docs.poope.financetokenomics/mmx"
               className="default-btn read-more"
             >
               <Trans>Read more</Trans>
@@ -93,11 +90,11 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
       </div>
       <div className="Home-token-card-option">
         <div className="Home-token-card-option-icon">
-          <img src={glpBigIcon} alt="mlpBigIcon" width="40px" /> $ZLP
+          <img src={glpBigIcon} alt="mlpBigIcon" width="40px" /> $PLP
         </div>
         <div className="Home-token-card-option-info">
           <div className="Home-token-card-option-title">
-            <Trans>$ZLP is the liquidity provider token. Accrues 70% of the platform's generated fees.</Trans>
+            <Trans>$PLP is the liquidity provider token. Accrues 70% of the platform's generated fees.</Trans>
           </div>
           <div className="Home-token-card-option-apr">
             {/* <Trans>Arbitrum APR:</Trans> <APRLabel chainId={ARBITRUM} label="glpAprTotal" key="ARBITRUM" />,{" "} */}
@@ -113,7 +110,7 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
               </BuyLink>
             </div>
             <a
-              href="https://docs.zomi.financetokenomics/mlp"
+              href="https://docs.poope.financetokenomics/mlp"
               target="_blank"
               rel="noreferrer"
               className="default-btn read-more"

@@ -5,7 +5,7 @@ function SEO(props) {
   const meta = {
     title: "POOPE | Decentralized Perpetual Exchange",
     description:
-      "Trade spot or perpetual BTC, ETH, AVAX and other top cryptocurrencies with up to 5x leverage directly from your wallet on Arbitrum and Avalanche.",
+      "Trade spot or perpetual PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with up to 5x leverage directly from your wallet on Arbitrum and Avalanche.",
     type: "exchange",
     ...customMeta,
   };

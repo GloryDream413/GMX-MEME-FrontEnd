@@ -1355,7 +1355,7 @@ export function getProcessedData(
 
 export function getPageTitle(data) {
   return `${data} | Decentralized
-  Perpetual Exchange | $ZOMI`;
+  Perpetual Exchange | $POOPE`;
 }
 
 export function isHashZero(value) {

@@ -42,19 +42,19 @@ msgid "<0/>Profit price: {0} ${1}. This rule applies for the next {2}, until {3}
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0> to start using $ZOMI"
+msgid "<0>Install Coinbase Wallet</0> to start using $POOPE"
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0>, and use $ZOMI with its built-in browser"
+msgid "<0>Install Coinbase Wallet</0>, and use $POOPE with its built-in browser"
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install MetaMask</0> to start using $ZOMI"
+msgid "<0>Install MetaMask</0> to start using $POOPE"
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install MetaMask</0>, and use $ZOMI with its built-in browser"
+msgid "<0>Install MetaMask</0>, and use $POOPE with its built-in browser"
 msgstr ""
 
 #: src/components/Exchange/OrdersToa.js
@@ -74,7 +74,7 @@ msgid "<0>The pool's capacity has been reached for {0}. Please use another token
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esZOMI tokens that have been converted to $ZOMI will remain as $ZOMI tokens.<3/><4/>To claim $ZOMI tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
+msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esPOOPE tokens that have been converted to $POOPE will remain as $POOPE tokens.<3/><4/>To claim $ZOMI tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
 msgstr ""
 
 #: src/lib/wallets/index.js
@@ -454,7 +454,7 @@ msgid "Buy $ZOMI"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "Buy $ZOMI Bonds"
+msgid "Buy $POOPE Bonds"
 msgstr ""
 
 #: src/pages/Buy/Buy.js
@@ -1388,11 +1388,11 @@ msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "$ZOMI Vault"
+msgid "$POOPE Vault"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "$ZOMI Weekly Updates"
+msgid "$POOPE Weekly Updates"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.js
@@ -3681,7 +3681,7 @@ msgid "Withdraw from $ZLP Vault"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Withdraw from $ZOMI Vault"
+msgid "Withdraw from $POOPE Vault"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js

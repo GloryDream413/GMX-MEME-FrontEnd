@@ -448,7 +448,7 @@ function VesterDepositModal(props) {
                   onChange={(e) => setValue(e.target.value)}
                 />
               </div>
-              <div className="PositionEditor-token-symbol">esZOMI</div>
+              <div className="PositionEditor-token-symbol">esPOOPE</div>
             </div>
           </div>
           <div className="VesterDepositModal-info-rows">
@@ -456,7 +456,7 @@ function VesterDepositModal(props) {
               <div className="Exchange-info-label">
                 <Trans>Wallet</Trans>
               </div>
-              <div className="align-right">{formatAmount(balance, 18, 2, true)} esZOMI</div>
+              <div className="align-right">{formatAmount(balance, 18, 2, true)} esPOOPE</div>
             </div>
             <div className="Exchange-info-row">
               <div className="Exchange-info-label">
@@ -480,12 +480,12 @@ function VesterDepositModal(props) {
                         <StatsTooltipRow
                           showDollar={false}
                           label={t`Deposited`}
-                          value={`${formatAmount(vestedAmount, 18, 2, true)} esZOMI`}
+                          value={`${formatAmount(vestedAmount, 18, 2, true)} esPOOPE`}
                         />
                         <StatsTooltipRow
                           showDollar={false}
                           label={t`Max Capacity`}
-                          value={`${formatAmount(maxVestableAmount, 18, 2, true)} esZOMI`}
+                          value={`${formatAmount(maxVestableAmount, 18, 2, true)} esPOOPE`}
                         />
                       </div>
                     );
@@ -526,7 +526,7 @@ function VesterDepositModal(props) {
                             <br />
                             <Trans>
                               You need a total of at least {formatAmount(nextReserveAmount, 18, 2, true)}{" "}
-                              {stakeTokenLabel} to vest {formatAmount(amount, 18, 2, true)} esZOMI.
+                              {stakeTokenLabel} to vest {formatAmount(amount, 18, 2, true)} esPOOPE.
                             </Trans>
                           </>
                         )}
@@ -578,10 +578,10 @@ function VesterWithdrawModal(props) {
             This will withdraw and unreserve all tokens as well as pause vesting.
             <br />
             <br />
-            esZOMI tokens that have been converted to $ZOMI will remain as $ZOMI tokens.
+            esPOOPE tokens that have been converted to $POOPE will remain as $POOPE tokens.
             <br />
             <br />
-            To claim $ZOMI tokens without withdrawing, use the "Claim" button under the Total Rewards section.
+            To claim $POOPE tokens without withdrawing, use the "Claim" button under the Total Rewards section.
             <br />
             <br />
           </div>
@@ -658,10 +658,10 @@ function CompoundModal(props) {
 
   const getPrimaryText = () => {
     if (isApproving) {
-      return t`Approving $ZOMI...`;
+      return t`Approving $POOPE...`;
     }
     if (needApproval) {
-      return t`Approve $ZOMI`;
+      return t`Approve $POOPE`;
     }
     if (isCompounding) {
       return t`Compounding...`;
@@ -748,22 +748,22 @@ function CompoundModal(props) {
           </div>
           <div>
             <Checkbox isChecked={shouldClaimGmx} setIsChecked={setShouldClaimGmx} disabled={shouldStakeGmx}>
-              <Trans>Claim $ZOMI Rewards</Trans>
+              <Trans>Claim $POOPE Rewards</Trans>
             </Checkbox>
           </div>
           <div>
             <Checkbox isChecked={shouldStakeGmx} setIsChecked={toggleShouldStakeGmx}>
-              <Trans>Stake $ZOMI Rewards</Trans>
+              <Trans>Stake $POOPE Rewards</Trans>
             </Checkbox>
           </div>
           <div>
             <Checkbox isChecked={shouldClaimEsGmx} setIsChecked={setShouldClaimEsGmx} disabled={shouldStakeEsGmx}>
-              <Trans>Claim esZOMI Rewards</Trans>
+              <Trans>Claim esPOOPE Rewards</Trans>
             </Checkbox>
           </div>
           <div>
             <Checkbox isChecked={shouldStakeEsGmx} setIsChecked={toggleShouldStakeEsGmx}>
-              <Trans>Stake esZOMI Rewards</Trans>
+              <Trans>Stake esPOOPE Rewards</Trans>
             </Checkbox>
           </div>
           <div>
@@ -874,12 +874,12 @@ function ClaimModal(props) {
         <div className="CompoundModal-menu">
           <div>
             <Checkbox isChecked={shouldClaimGmx} setIsChecked={setShouldClaimGmx}>
-              <Trans>Claim $ZOMI Rewards</Trans>
+              <Trans>Claim $POOPE Rewards</Trans>
             </Checkbox>
           </div>
           <div>
             <Checkbox isChecked={shouldClaimEsGmx} setIsChecked={setShouldClaimEsGmx}>
-              <Trans>Claim esZOMI Rewards</Trans>
+              <Trans>Claim esPOOPE Rewards</Trans>
             </Checkbox>
           </div>
           <div>
@@ -1176,16 +1176,16 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
   const showStakeGmxModal = () => {
     if (!isGmxTransferEnabled) {
-      helperToast.error(t`$ZOMI transfers not yet enabled`);
+      helperToast.error(t`$POOPE transfers not yet enabled`);
       return;
     }
 
     setIsStakeModalVisible(true);
-    setStakeModalTitle(t`Stake $ZOMI`);
+    setStakeModalTitle(t`Stake $POOPE`);
     setStakeModalMaxAmount(processedData.gmxBalance);
     // console.log("---shark processedData.gmxBalance: ", processedData.gmxBalance);
     setStakeValue("");
-    setStakingTokenSymbol("$ZOMI");
+    setStakingTokenSymbol("$POOPE");
     setStakingTokenAddress(gmxAddress);
     setStakingFarmAddress(stakedGmxTrackerAddress);
     setStakeMethodName("stakeZomi");
@@ -1193,10 +1193,10 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
   const showStakeEsGmxModal = () => {
     setIsStakeModalVisible(true);
-    setStakeModalTitle(t`Stake esZOMI`);
+    setStakeModalTitle(t`Stake esPOOPE`);
     setStakeModalMaxAmount(processedData.esGmxBalance);
     setStakeValue("");
-    setStakingTokenSymbol("esZOMI");
+    setStakingTokenSymbol("esPOOPE");
     setStakingTokenAddress(esGmxAddress);
     setStakingFarmAddress(AddressZero);
     setStakeMethodName("stakeEsZomi");
@@ -1209,8 +1209,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     }
 
     setIsVesterDepositModalVisible(true);
-    setVesterDepositTitle(t`$ZOMI Vault`);
-    setVesterDepositStakeTokenLabel("staked $ZOMI + esZOMI + Multiplier Points");
+    setVesterDepositTitle(t`$POOPE Vault`);
+    setVesterDepositStakeTokenLabel("staked $POOPE + esPOOPE + Multiplier Points");
     setVesterDepositMaxAmount(remainingVestableAmount);
     setVesterDepositBalance(processedData.esGmxBalance);
     setVesterDepositEscrowedBalance(vestingData.gmxVester.escrowedBalance);
@@ -1252,7 +1252,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     }
 
     setIsVesterWithdrawModalVisible(true);
-    setVesterWithdrawTitle(t`Withdraw from $ZOMI Vault`);
+    setVesterWithdrawTitle(t`Withdraw from $POOPE Vault`);
     setVesterWithdrawAddress(gmxVesterAddress);
   };
 
@@ -1269,11 +1269,11 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
   const showUnstakeGmxModal = () => {
     if (!isGmxTransferEnabled) {
-      helperToast.error(t`$ZOMI transfers not yet enabled`);
+      helperToast.error(t`$POOPE transfers not yet enabled`);
       return;
     }
     setIsUnstakeModalVisible(true);
-    setUnstakeModalTitle(t`Unstake $ZOMI`);
+    setUnstakeModalTitle(t`Unstake $POOPE`);
     let maxAmount = processedData.gmxInStakedGmx;
     if (
       processedData.gmxInStakedGmx &&
@@ -1287,13 +1287,13 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     setUnstakeModalMaxAmount(maxAmount);
     setUnstakeModalReservedAmount(vestingData.gmxVesterPairAmount);
     setUnstakeValue("");
-    setUnstakingTokenSymbol("$ZOMI");
+    setUnstakingTokenSymbol("$POOPE");
     setUnstakeMethodName("unstakeZomi");
   };
 
   const showUnstakeEsGmxModal = () => {
     setIsUnstakeModalVisible(true);
-    setUnstakeModalTitle(t`Unstake esZOMI`);
+    setUnstakeModalTitle(t`Unstake esPOOPE`);
     let maxAmount = processedData.esGmxInStakedGmx;
     if (
       processedData.esGmxInStakedGmx &&
@@ -1307,7 +1307,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     setUnstakeModalMaxAmount(maxAmount);
     setUnstakeModalReservedAmount(vestingData.gmxVesterPairAmount);
     setUnstakeValue("");
-    setUnstakingTokenSymbol("esZOMI");
+    setUnstakingTokenSymbol("esPOOPE");
     setUnstakeMethodName("unstakeEsZomi");
   };
 
@@ -1343,11 +1343,11 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
   if (totalRewardTokensAndGlp && totalRewardTokensAndGlp.gt(0)) {
     let gmxAmountStr;
     if (processedData.gmxInStakedGmx && processedData.gmxInStakedGmx.gt(0)) {
-      gmxAmountStr = formatAmount(processedData.gmxInStakedGmx, 18, 2, true) + " $ZOMI";
+      gmxAmountStr = formatAmount(processedData.gmxInStakedGmx, 18, 2, true) + " $POOPE";
     }
     let esGmxAmountStr;
     if (processedData.esGmxInStakedGmx && processedData.esGmxInStakedGmx.gt(0)) {
-      esGmxAmountStr = formatAmount(processedData.esGmxInStakedGmx, 18, 2, true) + " esZOMI";
+      esGmxAmountStr = formatAmount(processedData.esGmxInStakedGmx, 18, 2, true) + " esPOOPE";
     }
     let mpAmountStr;
     if (processedData.bonusGmxInFeeGmx && processedData.bnGmxInFeeGmx.gt(0)) {
@@ -1471,7 +1471,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
             <Trans>Earn</Trans>
           </div>
           <div className="Page-description">
-            <Trans>Stake $ZOMI and $ZLP to earn rewards.</Trans>
+            <Trans>Stake $POOPE and $PLP to earn rewards.</Trans>
           </div>
           {earnMsg && <div className="Page-description">{earnMsg}</div>}
         </div>
@@ -1479,7 +1479,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
       <div className="StakeV2-content">
         <div className="StakeV2-cards">
           <div className="App-card StakeV2-gmx-card">
-            <div className="App-card-title">$ZOMI</div>
+            <div className="App-card-title">$POOPE</div>
             <div className="App-card-divider"></div>
             <div className="App-card-content">
               <div className="App-card-row">
@@ -1514,7 +1514,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Wallet</Trans>
                 </div>
                 <div>
-                  {formatKeyAmount(processedData, "gmxBalance", 18, 2, true)} $ZOMI ($
+                  {formatKeyAmount(processedData, "gmxBalance", 18, 2, true)} $POOPE ($
                   {formatKeyAmount(processedData, "gmxBalanceUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
@@ -1523,7 +1523,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Staked</Trans>
                 </div>
                 <div>
-                  {formatKeyAmount(processedData, "gmxInStakedGmx", 18, 2, true)} $ZOMI ($
+                  {formatKeyAmount(processedData, "gmxInStakedGmx", 18, 2, true)} $POOPE ($
                   {formatKeyAmount(processedData, "gmxInStakedGmxUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
@@ -1540,7 +1540,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                       return (
                         <>
                           <StatsTooltipRow
-                            label="Escrowed $ZOMI APR"
+                            label="Escrowed $POOPE APR"
                             showDollar={false}
                             value={`${formatKeyAmount(processedData, "gmxAprForEsGmx", 2, 2, true)}%`}
                           />
@@ -1618,7 +1618,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                             showDollar={false}
                           />
                           <StatsTooltipRow
-                            label="Escrowed $ZOMI"
+                            label="Escrowed $POOPE"
                             value={`${formatKeyAmount(
                               processedData,
                               "stakedGmxTrackerRewards",
@@ -1675,31 +1675,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 </div>
                 <div>
                   {!totalGmxStaked && "..."}
-
-                  {/* {totalGmxStaked && (
-                    <Tooltip
-                      position="right-bottom"
-                      className="nowrap"
-                      handle={
-                        formatAmount(totalGmxStaked, 18, 0, true) +
-                        " $ZOMI" +
-                        ` ($${formatAmount(stakedGmxSupplyUsd, USD_DECIMALS, 0, true)})`
-                      }
-                      renderContent={() => (
-                        <StatsTooltip
-                          showDollar={false}
-                          title={t`Staked`}
-                          avaxValue={avaxGmxStaked}
-                          arbitrumValue={arbitrumGmxStaked}
-                          total={totalGmxStaked}
-                          decimalsForConversion={18}
-                          symbol="$ZOMI"
-                        />
-                      )}
-                    />
-                  )} */}
                   {formatAmount(totalGmxStaked, 18, 0, true) +
-                    " $ZOMI" +
+                    " $POOPE" +
                     ` ($${formatAmount(stakedGmxSupplyUsd, USD_DECIMALS, 0, true)})`}
                 </div>
               </div>
@@ -1710,15 +1687,15 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 {!totalGmxSupply && "..."}
                 {totalGmxSupply && (
                   <div>
-                    {formatAmount(totalGmxSupply, 18, 0, true)} $ZOMI ($
+                    {formatAmount(totalGmxSupply, 18, 0, true)} $POOPE ($
                     {formatAmount(totalSupplyUsd, USD_DECIMALS, 0, true)})
                   </div>
                 )}
               </div>
               <div className="App-card-divider" />
               <div className="App-card-options">
-                <Link className="App-button-option App-card-option" to="/buy_ZOMI">
-                  <Trans>Buy $ZOMI</Trans>
+                <Link className="App-button-option App-card-option" to="/buy_POOPE">
+                  <Trans>Buy $POOPE</Trans>
                 </Link>
                 {active && (
                   <button className="App-button-option App-card-option" onClick={() => showStakeGmxModal()}>
@@ -1754,7 +1731,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 </div>
               </div>
               <div className="App-card-row">
-                <div className="label">$ZOMI</div>
+                <div className="label">$POOPE</div>
                 <div>
                   {formatKeyAmount(processedData, "totalVesterRewards", 18, 4, true)} ($
                   {formatKeyAmount(processedData, "totalVesterRewardsUsd", USD_DECIMALS, 2, true)})
@@ -1762,7 +1739,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
               </div>
               <div className="App-card-row">
                 <div className="label">
-                  <Trans>Escrowed $ZOMI</Trans>
+                  <Trans>Escrowed $POOPE</Trans>
                 </div>
                 <div>
                   {formatKeyAmount(processedData, "totalEsGmxRewards", 18, 4, true)} ($
@@ -1878,7 +1855,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                             showDollar={false}
                           />
                           <StatsTooltipRow
-                            label="Escrowed $ZOMI APR"
+                            label="Escrowed $POOPE APR"
                             value={`${formatKeyAmount(processedData, "glpAprForEsGmx", 2, 2, true)}%`}
                             showDollar={false}
                           />
@@ -1915,7 +1892,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                             showDollar={false}
                           />
                           <StatsTooltipRow
-                            label="Escrowed $ZOMI"
+                            label="Escrowed $POOPE"
                             value={`${formatKeyAmount(
                               processedData,
                               "stakedGlpTrackerRewards",
@@ -1978,7 +1955,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           </div>
           <div className="App-card">
             <div className="App-card-title">
-              <Trans>Escrowed $ZOMI</Trans>
+              <Trans>Escrowed $POOPE</Trans>
             </div>
             <div className="App-card-divider"></div>
             <div className="App-card-content">
@@ -1993,7 +1970,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Wallet</Trans>
                 </div>
                 <div>
-                  {formatKeyAmount(processedData, "esGmxBalance", 18, 2, true)} esZOMI ($
+                  {formatKeyAmount(processedData, "esGmxBalance", 18, 2, true)} esPOOPE ($
                   {formatKeyAmount(processedData, "esGmxBalanceUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
@@ -2002,7 +1979,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Staked</Trans>
                 </div>
                 <div>
-                  {formatKeyAmount(processedData, "esGmxInStakedGmx", 18, 2, true)} esZOMI ($
+                  {formatKeyAmount(processedData, "esGmxInStakedGmx", 18, 2, true)} esPOOPE ($
                   {formatKeyAmount(processedData, "esGmxInStakedGmxUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
@@ -2032,7 +2009,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                               />
                             )}
                             <StatsTooltipRow
-                              label="Escrowed $ZOMI APR"
+                              label="Escrowed $POOPE APR"
                               value={`${formatKeyAmount(processedData, "gmxAprForEsGmx", 2, 2, true)}%`}
                               showDollar={false}
                             />
@@ -2053,7 +2030,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Total Staked</Trans>
                 </div>
                 <div>
-                  {formatKeyAmount(processedData, "stakedEsGmxSupply", 18, 0, true)} esZOMI ($
+                  {formatKeyAmount(processedData, "stakedEsGmxSupply", 18, 0, true)} esPOOPE ($
                   {formatKeyAmount(processedData, "stakedEsGmxSupplyUsd", USD_DECIMALS, 0, true)})
                 </div>
               </div>
@@ -2062,7 +2039,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Total Supply</Trans>
                 </div>
                 <div>
-                  {formatAmount(esGmxSupply, 18, 0, true)} esZOMI ($
+                  {formatAmount(esGmxSupply, 18, 0, true)} esPOOPE ($
                   {formatAmount(esGmxSupplyUsd, USD_DECIMALS, 0, true)})
                 </div>
               </div>
@@ -2096,7 +2073,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           </div>
           <div className="Page-description">
             <Trans>
-              Convert esZOMI tokens to $ZOMI tokens.
+              Convert esPOOPE tokens to $POOPE tokens.
               <br />
               Please read the{" "}
               <a
@@ -2114,7 +2091,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           <div className="StakeV2-cards">
             <div className="App-card StakeV2-gmx-card">
               <div className="App-card-title">
-                <Trans>$ZOMI Vault</Trans>
+                <Trans>$POOPE Vault</Trans>
               </div>
               <div className="App-card-divider"></div>
               <div className="App-card-content">
@@ -2131,13 +2108,13 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                           <>
                             <StatsTooltipRow
                               showDollar={false}
-                              label="$ZOMI"
+                              label="$POOPE"
                               value={formatAmount(processedData.gmxInStakedGmx, 18, 2, true)}
                             />
 
                             <StatsTooltipRow
                               showDollar={false}
-                              label="esZOMI"
+                              label="esPOOPE"
                               value={formatAmount(processedData.esGmxInStakedGmx, 18, 2, true)}
                             />
                             <StatsTooltipRow
@@ -2179,8 +2156,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                           <div>
                             <Trans>
                               {formatKeyAmount(vestingData, "gmxVesterClaimSum", 18, 4, true)} tokens have been
-                              converted to $ZOMI from the{" "}
-                              {formatKeyAmount(vestingData, "gmxVesterVestedAmount", 18, 4, true)} esZOMI deposited for
+                              converted to $POOPE from the{" "}
+                              {formatKeyAmount(vestingData, "gmxVesterVestedAmount", 18, 4, true)} esPOOPE deposited for
                               vesting.
                             </Trans>
                           </div>
@@ -2195,11 +2172,11 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   </div>
                   <div>
                     <Tooltip
-                      handle={`${formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} $ZOMI`}
+                      handle={`${formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} $POOPE`}
                       position="right-bottom"
                       renderContent={() => (
                         <Trans>
-                          {formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} $ZOMI tokens can be claimed,
+                          {formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} $POOPE tokens can be claimed,
                           use the options under the Total Rewards section to claim them.
                         </Trans>
                       )}
@@ -2266,8 +2243,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                           <div>
                             <Trans>
                               {formatKeyAmount(vestingData, "glpVesterClaimSum", 18, 4, true)} tokens have been
-                              converted to $ZOMI from the{" "}
-                              {formatKeyAmount(vestingData, "glpVesterVestedAmount", 18, 4, true)} esZOMI deposited for
+                              converted to $POOPE from the{" "}
+                              {formatKeyAmount(vestingData, "glpVesterVestedAmount", 18, 4, true)} esPOOPE deposited for
                               vesting.
                             </Trans>
                           </div>
@@ -2282,11 +2259,11 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   </div>
                   <div>
                     <Tooltip
-                      handle={`${formatKeyAmount(vestingData, "glpVesterClaimable", 18, 4, true)} $ZOMI`}
+                      handle={`${formatKeyAmount(vestingData, "glpVesterClaimable", 18, 4, true)} $POOPE`}
                       position="right-bottom"
                       renderContent={() => (
                         <Trans>
-                          {formatKeyAmount(vestingData, "glpVesterClaimable", 18, 4, true)} $ZOMI tokens can be claimed,
+                          {formatKeyAmount(vestingData, "glpVesterClaimable", 18, 4, true)} $POOPE tokens can be claimed,
                           use the options under the Total Rewards section to claim them.
                         </Trans>
                       )}

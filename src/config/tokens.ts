@@ -187,7 +187,7 @@ export const ADDITIONAL_TOKENS: { [chainId: number]: Token[] } = {
       imageUrl: "https://assets.coingecko.com/coins/images/18323/small/arbit.png?1631532468",
     },
     {
-      name: "Escrowed $ZOMI",
+      name: "Escrowed $POOPE",
       symbol: "esGMX",
       address: getContract(ARBITRUM, "ES_GMX"),
       decimals: 18,
@@ -202,21 +202,21 @@ export const ADDITIONAL_TOKENS: { [chainId: number]: Token[] } = {
   ],
   [MAINNET]: [
     {
-      name: "$ZOMI",
-      symbol: "$ZOMI",
+      name: "$POOPE",
+      symbol: "$POOPE",
       address: getContract(MAINNET, "GMX"),
       decimals: 18,
       imageUrl: "https://assets.coingecko.com/coins/images/18323/small/arbit.png?1631532468",
     },
     {
-      name: "Escrowed ZOMI",
-      symbol: "esZOMI",
+      name: "Escrowed POOPE",
+      symbol: "esGMX",
       address: getContract(MAINNET, "ES_GMX"),
       decimals: 18,
     },
     {
-      name: "ZOMI LP",
-      symbol: "$ZLP",
+      name: "GMX LP",
+      symbol: "$PLP",
       address: getContract(MAINNET, "GLP"),
       decimals: 18,
       imageUrl: "https://github.com/zomi/gmx-assets/blob/main/GMX-Assets/PNG/GLP_LOGO%20ONLY.png?raw=true",
@@ -245,14 +245,14 @@ export const PLATFORM_TOKENS: { [chainId: number]: { [symbol: string]: Token } }
   [MAINNET]: {
     // avalanche
     GMX: {
-      name: "ZOMI",
-      symbol: "$ZOMI",
+      name: "POOPE",
+      symbol: "$POOPE",
       decimals: 18,
       address: getContract(MAINNET, "GMX"),
       imageUrl: "https://assets.coingecko.com/coins/images/18323/small/arbit.png?1631532468",
     },
     GLP: {
-      name: "ZOMI LP",
+      name: "POOPE LP",
       symbol: "$ZLP",
       decimals: 18,
       address: getContract(MAINNET, "StakedGlpTracker"), // address of fsGLP token because user only holds fsGLP
