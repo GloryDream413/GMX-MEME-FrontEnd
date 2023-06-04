@@ -75,7 +75,7 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
           </div>
           <div className="Home-token-card-option-action">
             <div className="buy">
-              <BuyLink to="/buy_ZOMI" className="default-btn" network={MAINNET}>
+              <BuyLink to="/buy_POOPE" className="default-btn" network={MAINNET}>
                 <Trans>Buy</Trans>
               </BuyLink>
             </div>
