@@ -849,7 +849,7 @@ button.App-cta {
   color: white;
   text-decoration: none;
   // background: linear-gradient(90deg, rgba(45, 66, 252, 1) 0%, rgba(46, 61, 205, 1) 100%);
-  background: #3eb489;
+  background: #e44e08bb;
   /* box-shadow: 0 0 0.4rem 0.6rem rgba(45,66,252,0.15); */
 }
 
@@ -903,7 +903,7 @@ button.App-button-option {
   display: inline-flex !important;
   align-items: center;
   border: none;
-  background: #3eb489;
+  background: #e44e08bb;
 }
 
 a.App-button-option:hover,
@@ -1169,7 +1169,7 @@ button.App-button {
 
 .App-slider .rc-slider-track {
   // background: linear-gradient(90deg, rgba(46, 61, 205, 1) 0%, rgba(45, 66, 252, 1) 100%);
-  background: #3eb489;
+  background: #e44e08bb;
 }
 
 .App-slider .rc-slider-dot {
@@ -1181,13 +1181,13 @@ button.App-button {
 }
 
 .App-slider .rc-slider-dot-active {
-  background: #3eb489;
+  background: #e44e08bb;
 }
 
 .App-slider .rc-slider-handle {
   background: #303652;
   // border: solid 2px rgba(45, 66, 252, 1);
-  border: solid 2px #3eb489;
+  border: solid 2px #e44e08bb;
 }
 
 .App-slider .rc-slider-handle:active {
