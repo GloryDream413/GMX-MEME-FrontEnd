@@ -93,7 +93,7 @@ export const NETWORK_METADATA = {
       symbol: "GoerliETH",
       decimals: 18,
     },
-    rpcUrls: ["ttps://ethereum-goerli.publicnode.com"],
+    rpcUrls: ["https://ethereum-goerli.publicnode.com"],
     blockExplorerUrls: ["https://goerli.etherscan.io/"],
   },
   [ARBITRUM]: {
@@ -144,6 +144,7 @@ export function getAlchemyWsUrl() {
 }
 
 export function getExplorerUrl(chainId) {
+  console.log (chainId, ">>>>>>>>>>>>>>>>")
   if (chainId === 3) {
     return "https://ropsten.etherscan.io/";
   } else if (chainId === 42) {
@@ -151,7 +152,8 @@ export function getExplorerUrl(chainId) {
   } else if (chainId === MAINNET) {
     return "https://goerli.etherscan.io/";
   } else if (chainId === ARBITRUM) {
-    return "https://arbiscan.io/";
+    return "https://goerli.etherscan.io/";
+    // return "https://arbiscan.io/";
   }
   return "https://etherscan.io/";
 }

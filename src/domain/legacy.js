@@ -2017,7 +2017,6 @@ export function useVolumeData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
   // const timestampProp = chainName === "arbitrum" ? "id" : "timestamp"
   const timestampProp = "timestamp"
   const [graphData, setRes] = useState();
-  
   const query = gql`{
     volumeStats(
       first: 1000,
@@ -2039,6 +2038,7 @@ export function useVolumeData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
     }
     graphClient.query({ query }).then(setRes).catch(console.warn);
   }, [setRes, query]);
+  console.log (graphData, ">>>>>>>>>>>>>><<<<<<<<<<<<<")
 
   const data = useMemo(() => {
     if (!graphData) {

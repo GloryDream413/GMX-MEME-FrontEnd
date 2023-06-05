@@ -44,7 +44,7 @@ const CONTRACTS = {
     PositionRouter: "0x7776117Ce46d5423477C72c3CE84Bc5D9983F4D6",//replaced 
     PositionManager: "0x736c8E7Aa8bcAfF15ed9d78946Ebd5230e13D4E2",//replaced 
 
-    TraderJoeGmxAvaxPool: "0x80A9ae39310abf666A87C743d6ebBD0E8C42158E",//replaced
+    TraderJoeGmxAvaxPool: "0x198Cb829FE2af472d6Da0F9070Dff51C67cb9F01",//replaced
     ReferralStorage: "0xaf102c607b9734D119b5b9519C58D06c3dA781a9",//replaced 
     ReferralReader: "0x217837b8E46Ef3AEA3AE911E096537952Df98f73",//replaced 
   },

@@ -24,6 +24,7 @@ export function useInfoTokens(
   fundingRateInfo?: BigNumber[],
   vaultPropsLength?: number
 ) {
+
   const tokens = getTokens(chainId);
   const vaultReaderAddress = getContract(chainId, "VaultReader");
   const vaultAddress = getContract(chainId, "Vault");
@@ -52,6 +53,7 @@ export function useInfoTokens(
       ]),
     }
   );
+  console.log (vaultTokenInfo, tokens.length, library, VaultReader, vaultReaderAddress, positionRouterAddress, nativeTokenAddress, "KKKKKKKKKKKKKKKKKKK")
 
   const indexPricesUrl = getServerUrl(chainId, "/prices");
 
@@ -91,6 +93,8 @@ function getInfoTokens(
   }
   const fundingRatePropsLength = 2;
   const infoTokens: InfoTokens = {};
+
+  console.log (whitelistedTokens, vaultTokenInfo, "LLLLLLLLLLLLLLLLLLLLL")
 
   for (let i = 0; i < tokens.length; i++) {
     const token = JSON.parse(JSON.stringify(tokens[i])) as TokenInfo;

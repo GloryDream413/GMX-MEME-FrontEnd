@@ -55,7 +55,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       name: "PEPE MEME Coin",
       symbol: "PEPE",
       decimals: 18,
-      address: "0x01997f24959C4e282fF6A3b8E1DF1aff4143edd",
+      address: "0x01997f24959C4e282fF6A3b8E1DF1aff4143edda",
       isStable: true,
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",

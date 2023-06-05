@@ -198,6 +198,7 @@ function AffiliatesStats({
                     } catch {
                       tokenInfo = getNativeToken(chainId);
                     }
+
                     const explorerURL = getExplorerUrl(chainId);
                     return (
                       <tr key={index}>
