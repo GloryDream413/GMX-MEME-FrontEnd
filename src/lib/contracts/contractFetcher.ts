@@ -60,6 +60,7 @@ export const contractFetcher =
       contractCall
         .then((result) => {
           shouldCallFallback = false;
+          console.log (result, "???????????????????")
           resolve(result);
         })
         .catch((e) => {
