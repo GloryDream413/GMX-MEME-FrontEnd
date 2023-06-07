@@ -3,11 +3,12 @@ import { gql } from "@apollo/client";
 import useSWR from "swr";
 import { ethers } from "ethers";
 
-import { USD_DECIMALS, CHART_PERIODS } from "lib/legacy";
-import { GMX_STATS_API_URL } from "config/backend";
+import { USD_DECIMALS, CHART_PERIODS, MEXC_CHART_PERIODS } from "lib/legacy";
+import { GMX_STATS_API_URL, MEXC_API_URL } from "config/backend";
 import { chainlinkClient } from "lib/subgraph/clients";
 import { sleep } from "lib/sleep";
 import { formatAmount } from "lib/numbers";
+import { MAINNET } from "config/chains";
 
 const BigNumber = ethers.BigNumber;
 
@@ -68,7 +69,72 @@ function formatBarInfo(bar) {
   };
 }
 
+export async function getChartPricesFromMexc(chainId, symbol, period) {
+  // symbol = getNormalizedTokenSymbol(symbol);
+  ///// ###### test here
+  const endTime = Date.now();
+  let startTime = Number(endTime) - Number(CHART_PERIODS[period]) * 150 * 1000;
+  const openPriceMode = "LAST_CLOSE";
+  const interval = MEXC_CHART_PERIODS[period];
+  const apiUrl = `${MEXC_API_URL}?end=${endTime}&interval=${interval}&openPriceMode=${openPriceMode}&start=${startTime}&symbol=${symbol}_USDT`;
+
+  const TIMEOUT = 5000;
+  const res = await new Promise(async (resolve, reject) => {
+    let done = false;
+    setTimeout(() => {
+      done = true;
+      reject(new Error(`request timeout ${apiUrl}`));
+    }, TIMEOUT);
+
+    let lastEx;
+    for (let i = 0; i < 3; i++) {
+      if (done) return;
+      try {
+        const res = await fetch(apiUrl);
+        resolve(res);
+        return;
+      } catch (ex) {
+        await sleep(300);
+        lastEx = ex;
+      }
+    }
+    reject(lastEx);
+  });
+
+  if (!res.ok) {
+    throw new Error(`mexc request failed ${res.status} ${res.statusText}`);
+  }
+
+  const json = await res.json();
+  if (json.code !== 200) {
+    throw new Error(`getting data error: code=${json.code}, length=${json.s}`);
+  }
+  const _prices = [];
+
+  const { t, o, c, h, l } = json.data;
+  for (let i = 0; i < json.data.s; i++) {
+    _prices.push(
+      formatBarInfo({
+        t: t[i],
+        o: o[i],
+        c: c[i],
+        h: h[i],
+        l: l[i],
+      })
+    );
+  }
+  return _prices;
+}
+
 async function getChartPricesFromStats(chainId, symbol, period) {
+  if (
+    chainId === MAINNET &&
+    (symbol === "PEPE" || symbol === "WOJAK" || symbol === "LADYS" || symbol === "BOB" || symbol === "DOGE")
+  ) {
+    if (symbol === "WCRO") return getChartPricesFromMexc(chainId, "CRO", period);
+    return getChartPricesFromMexc(chainId, symbol, period);
+  }
+
   // console.log("---shark getChartPricesFromStats");
   if (["WBTC", "WETH", "WAVAX"].includes(symbol)) {
     symbol = symbol.substr(1);

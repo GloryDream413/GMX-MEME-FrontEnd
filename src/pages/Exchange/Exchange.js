@@ -150,18 +150,6 @@ export function getPositions(
   pendingPositions,
   updatedPositions
 ) {
-  console.log(
-    chainId,
-    positionQuery,
-    positionData,
-    infoTokens,
-    includeDelta,
-    showPnlAfterFees,
-    account,
-    pendingPositions,
-    updatedPositions,
-    "??????????????????"
-  );
   const propsLength = getConstant(chainId, "positionReaderPropsLength");
   const positions = [];
   const positionsMap = {};
@@ -210,7 +198,6 @@ export function getPositions(
     }
 
     let fundingFee = getFundingFee(position);
-    console.log(fundingFee, "KKKKKKKKKKKLLLLLLLLLLLLLL");
     position.fundingFee = fundingFee ? fundingFee : bigNumberify(0);
     position.collateralAfterFee = position.collateral.sub(position.fundingFee);
 
@@ -219,20 +206,16 @@ export function getPositions(
     position.totalFees = position.positionFee.add(position.fundingFee);
 
     position.pendingDelta = position.delta;
-    console.log("GGGGGGGGGGGGGGGGGGGGGGGGGGG1");
     if (position.collateral.gt(0)) {
       position.hasLowCollateral =
         position.collateralAfterFee.lt(0) || position.size.div(position.collateralAfterFee.abs()).gt(50);
-      console.log("GGGGGGGGGGGGGGGGGGGGGGGGGGG3");
       if (position.averagePrice && position.markPrice) {
         const priceDelta = position.averagePrice.gt(position.markPrice)
           ? position.averagePrice.sub(position.markPrice)
           : position.markPrice.sub(position.averagePrice);
-        console.log("GGGGGGGGGGGGGGGGGGGGGGGGGGG4");
 
-        if (!position.averagePrice.eq(0))
-          position.pendingDelta = position.size.mul(priceDelta).div(position.averagePrice);
-        console.log("GGGGGGGGGGGGGGGGGGGGGGGGGGG2");
+        // if (!position.averagePrice.eq(0))
+        position.pendingDelta = position.size.mul(priceDelta).div(position.averagePrice);
 
         position.delta = position.pendingDelta;
 
@@ -303,7 +286,6 @@ export function getPositions(
 
       position.netValue = netValue;
     }
-    console.log("GGGGGGGGGGGGGGGGGGGGGGGGGGG");
 
     position.leverage = getLeverage({
       size: position.size,
@@ -314,7 +296,6 @@ export function getPositions(
       delta: position.delta,
       includeDelta,
     });
-    console.log("HHHHHHHHHHHHH");
 
     positionsMap[key] = position;
 
@@ -490,7 +471,6 @@ export const Exchange = forwardRef((props, ref) => {
   const [isPendingConfirmation, setIsPendingConfirmation] = useState(false);
 
   const tokens = getTokens(chainId);
-  console.log("---shark Exchange.js");
   const tokenAddresses = tokens.map((token) => token.address);
   const { data: tokenBalances } = useSWR(active && [active, chainId, readerAddress, "getTokenBalances", account], {
     fetcher: contractFetcher(library, Reader, [tokenAddresses]),

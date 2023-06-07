@@ -131,7 +131,6 @@ export default function ExchangeTVChart(props) {
   } = props;
   const [currentChart, setCurrentChart] = useState();
   const [currentSeries, setCurrentSeries] = useState();
-  // console.log("---shark ExchangeTVChart");
   let [period, setPeriod] = useLocalStorageSerializeKey([chainId, "Chart-period"], DEFAULT_PERIOD);
   if (!(period in CHART_PERIODS)) {
     period = DEFAULT_PERIOD;
@@ -428,10 +427,10 @@ export default function ExchangeTVChart(props) {
           </div>
           <div>
             <div className="ExchangeChart-main-price">
-              {chartToken.maxPrice && formatAmount(chartToken.maxPrice, USD_DECIMALS, 2, true)}
+              {chartToken.maxPrice && formatAmount(chartToken.maxPrice, USD_DECIMALS, 8, true)}
             </div>
             <div className="ExchangeChart-info-label">
-              ${chartToken.minPrice && formatAmount(chartToken.minPrice, USD_DECIMALS, 2, true)}
+              ${chartToken.minPrice && formatAmount(chartToken.minPrice, USD_DECIMALS, 8, true)}
             </div>
           </div>
           <div>

@@ -1,7 +1,6 @@
 import { ARBITRUM, MAINNET } from "config/chains";
 import { getContract } from "config/contracts";
 
-const ARBITRUM_GMX = getContract(ARBITRUM, "GMX");
 const ETH_GMX = getContract(MAINNET, "GMX");
 
 type Exchange = {
@@ -13,16 +12,6 @@ type Exchange = {
 };
 
 export const EXTERNAL_LINKS = {
-  [ARBITRUM]: {
-    bungee: `https://multitx.bungee.exchange/?toChainId=42161&toTokenAddress=${ARBITRUM_GMX}`,
-    banxa: "https://gmx.banxa.com/?coinType=ETH&fiatType=USD&fiatAmount=500&blockchain=arbitrum",
-    o3: "https://o3swap.com/",
-    networkWebsite: "https://arbitrum.io/",
-    buyGmx: {
-      banxa: "https://gmx.banxa.com/?coinType=GMX&fiatType=USD&fiatAmount=500&blockchain=arbitrum",
-      uniswap: `https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=${ARBITRUM_GMX}`,
-    },
-  },
   [MAINNET]: {
     bungee: `https://multitx.bungee.exchange/?toChainId=43114&toTokenAddress=${ETH_GMX}`,
     banxa: "https://gmx.banxa.com/?coinType=AVAX&fiatType=USD&fiatAmount=500&blockchain=avalanche",
@@ -110,18 +99,10 @@ export const DECENTRALISED_AGGRIGATORS: Exchange[] = [
     networks: [ARBITRUM],
   },
   {
-    name: "Matcha",
-    icon: "ic_matcha.png",
-    links: {
-      [ARBITRUM]: `https://www.matcha.xyz/markets/42161/${ARBITRUM_GMX}`,
-    },
-    networks: [ARBITRUM],
-  },
-  {
     name: "Paraswap",
     icon: "ic_paraswap.svg",
     links: {
-      [ARBITRUM]: "https://app.paraswap.io/#/?network=arbitrum"
+      [ARBITRUM]: "https://app.paraswap.io/#/?network=arbitrum",
     },
     networks: [ARBITRUM],
   },
@@ -140,14 +121,6 @@ export const DECENTRALISED_AGGRIGATORS: Exchange[] = [
     networks: [ARBITRUM],
   },
   {
-    name: "DODO",
-    icon: "ic_dodo.svg",
-    links: {
-      [ARBITRUM]: `https://app.dodoex.io/?from=ETH&to=${ARBITRUM_GMX}&network=arbitrum`
-    },
-    networks: [ARBITRUM],
-  },
-  {
     name: "Odos",
     icon: "ic_odos.png",
     link: "https://app.odos.xyz/",
@@ -158,5 +131,5 @@ export const DECENTRALISED_AGGRIGATORS: Exchange[] = [
     icon: "ic_slingshot.svg",
     link: "https://app.slingshot.finance/swap/ETH",
     networks: [ARBITRUM],
-  }
+  },
 ];

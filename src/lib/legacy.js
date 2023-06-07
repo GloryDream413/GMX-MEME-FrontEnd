@@ -1405,6 +1405,14 @@ export function getTradePageUrl() {
   return "/#/trade";
 }
 
+export const MEXC_CHART_PERIODS = {
+  "5m": "Min5",
+  "15m": "Min15",
+  "1h": "Min60",
+  "4h": "Hour4",
+  "1d": "Day1",
+};
+
 export function importImage(name) {
   let tokenImage = null;
   try {

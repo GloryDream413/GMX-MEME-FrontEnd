@@ -14,6 +14,7 @@ export default function ChartTokenSelector(props) {
   const isSwap = swapOption === SWAP;
   // console.log("---shark ChartTokenSelector");
   let options = getTokens(chainId);
+
   const whitelistedTokens = getWhitelistedTokens(chainId);
   const indexTokens = whitelistedTokens.filter((token) => !token.isStable && !token.isWrapped);
   const shortableTokens = indexTokens.filter((token) => token.isShortable);
@@ -35,7 +36,7 @@ export default function ChartTokenSelector(props) {
     <Menu>
       <Menu.Button as="div" disabled={isSwap}>
         <button className={cx("App-cta small transparent chart-token-selector", { "default-cursor": isSwap })}>
-          <span className="chart-token-selector--current">{value.symbol} / ETH</span>
+          <span className="chart-token-selector--current">{value.symbol} / USD</span>
           {!isSwap && <FaChevronDown />}
         </button>
       </Menu.Button>
@@ -50,7 +51,7 @@ export default function ChartTokenSelector(props) {
                 }}
               >
                 <span style={{ marginLeft: 5 }} className="token-label">
-                  {option.symbol} / ETH
+                  {option.symbol} / USD
                 </span>
               </div>
             </Menu.Item>
