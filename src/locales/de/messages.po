@@ -14,11 +14,127 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "01 Sep 2021"
+msgid "$PLP Index Composition"
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "06 Jan 2022"
+msgid "$PLP Pool"
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "$PLP Vault"
+msgstr ""
+
+#: src/components/Glp/GlpSwap.js
+msgid "$PLP buy disabled, pending {0} upgrade"
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.js
+msgid "$PLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
+msgstr ""
+
+#: src/components/Glp/GlpSwap.js
+msgid "$PLP sell disabled, pending {0} upgrade"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "$POOPE Announcements and Updates"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE Blueberry NFTs"
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE Governance Page"
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE Pages"
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE Perpetuals Data"
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE Proposals Voting page"
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "$POOPE Stats Page"
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "$POOPE Vault"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE Weekly Updates"
+#~ msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX_.js
+msgid "$POOPE bonds can be bought on Olympus Pro with a discount and a small vesting period:"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE community discussion"
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE dashboards and analytics."
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE ecosystem pages."
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE explorer for stats and traders"
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE fundamentals"
+#~ msgstr ""
+
+#: src/pages/Home/Home.js
+#~ msgid "$POOPE is currently live on Arbitrum and Avalanche."
+#~ msgstr ""
+
+#: src/pages/Jobs/Jobs.js
+msgid "$POOPE is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.js
+msgid "$POOPE is the utility and governance token. Accrues 30% of the platform's generated fees."
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE staking calculator"
+#~ msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+#~ msgid "$POOPE staking rewards updates and insights"
+#~ msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "$POOPE transfers not yet enabled"
+msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.js
+#~ msgid "01 Sep 2021"
+#~ msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.js
+#~ msgid "06 Jan 2022"
+#~ msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
+msgid "06 June 2023"
 msgstr ""
 
 #: src/components/Exchange/ExchangeTVChart.js
@@ -42,11 +158,19 @@ msgid "<0/>Profit price: {0} ${1}. This rule applies for the next {2}, until {3}
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0> to start using $POOPE"
+#~ msgid "<0>Install Coinbase Wallet</0> to start using $POOPE"
+#~ msgstr ""
+
+#: src/App/App.js
+msgid "<0>Install Coinbase Wallet</0> to start using POOPE"
 msgstr ""
 
 #: src/App/App.js
-msgid "<0>Install Coinbase Wallet</0>, and use $POOPE with its built-in browser"
+#~ msgid "<0>Install Coinbase Wallet</0>, and use $POOPE with its built-in browser"
+#~ msgstr ""
+
+#: src/App/App.js
+msgid "<0>Install Coinbase Wallet</0>, and use POOPE with its built-in browser"
 msgstr ""
 
 #: src/App/App.js
@@ -111,10 +235,6 @@ msgid "AVAILABLE"
 msgstr ""
 
 #: src/components/Header/AppHeaderLinks.tsx
-#: src/pages/Ecosystem/Ecosystem.js
-#: src/pages/Ecosystem/Ecosystem.js
-#: src/pages/Ecosystem/Ecosystem.js
-#: src/pages/Ecosystem/Ecosystem.js
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "About"
 msgstr ""
@@ -185,8 +305,8 @@ msgstr ""
 msgid "After claiming, the esPOOPE tokens will be airdropped to your account on the selected network within 7 days."
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "After you have ETH, set your network to <0>Arbitrum</0> then click the button below:"
 msgstr ""
 
@@ -231,8 +351,8 @@ msgid "An aggregate of high-quality price feeds determine when liquidations occu
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Announcement"
-msgstr ""
+#~ msgid "Announcement"
+#~ msgstr ""
 
 #: src/domain/tokens/approveTokens.tsx
 msgid "Approval failed"
@@ -285,8 +405,8 @@ msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
-msgid "Arbitrum APR:"
-msgstr ""
+#~ msgid "Arbitrum APR:"
+#~ msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
@@ -327,21 +447,21 @@ msgid "Available amount to withdraw from $PLP. Funds not utilized by current ope
 msgstr ""
 
 #: src/pages/Home/Home.js
-msgid "Available on your preferred network"
-msgstr ""
+#~ msgid "Available on your preferred network"
+#~ msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "Available:"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Avalanche"
 msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
-msgid "Avalanche APR:"
-msgstr ""
+#~ msgid "Avalanche APR:"
+#~ msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
@@ -349,8 +469,8 @@ msgid "Avalanche Icon"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "Avax is needed on Avalanche to purchase $POOPE."
-msgstr ""
+#~ msgid "Avax is needed on Avalanche to purchase $POOPE."
+#~ msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 msgid "Balance"
@@ -366,8 +486,8 @@ msgstr ""
 msgid "Balance: {0}"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Banxa"
 msgstr ""
 
@@ -375,8 +495,8 @@ msgstr ""
 msgid "Begin Transfer"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Binance"
 msgstr ""
 
@@ -413,27 +533,9 @@ msgid "Borrow fee"
 msgstr ""
 
 #: src/components/Header/AppHeaderLinks.tsx
+#: src/components/TokenCard/TokenCard.js
+#: src/components/TokenCard/TokenCard.js
 msgid "Buy"
-msgstr ""
-
-#: src/pages/BuyGlp/BuyGlp.js
-msgid "Buy / Sell $PLP"
-msgstr ""
-
-#: src/pages/BuyGMX/BuyGMX.js
-msgid "Buy / Transfer AVAX"
-msgstr ""
-
-#: src/pages/BuyGMX/BuyGMX.js
-msgid "Buy / Transfer ETH"
-msgstr ""
-
-#: src/pages/BuyGMX/BuyGMX.js
-msgid "Buy AVAX"
-msgstr ""
-
-#: src/pages/BuyGMX/BuyGMX.js
-msgid "Buy ETH"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -447,18 +549,60 @@ msgstr ""
 msgid "Buy $PLP Icon"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
 #: src/pages/Stake/StakeV2.js
 msgid "Buy $POOPE"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Buy $POOPE Bonds"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "Buy $POOPE from Uniswap:"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "Buy $POOPE from a Decentralized Exchange"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "Buy $POOPE from centralized services"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "Buy $POOPE on {0}"
 msgstr ""
 
 #: src/pages/Buy/Buy.js
 msgid "Buy $POOPE or $PLP"
+msgstr ""
+
+#: src/pages/BuyGlp/BuyGlp.js
+msgid "Buy / Sell $PLP"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.js
+#~ msgid "Buy / Transfer AVAX"
+#~ msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
+msgid "Buy / Transfer ETH"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.js
+#~ msgid "Buy AVAX"
+#~ msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
+msgid "Buy ETH"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "Buy GMX from Uniswap (make sure to select Arbitrum):"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -467,13 +611,13 @@ msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
-msgid "Buy on Arbitrum"
-msgstr ""
+#~ msgid "Buy on Arbitrum"
+#~ msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
-msgid "Buy on Avalanche"
-msgstr ""
+#~ msgid "Buy on Avalanche"
+#~ msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "Buy submitted."
@@ -535,6 +679,10 @@ msgstr ""
 #: src/components/Referrals/AddAffiliateCode.js
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Checking code..."
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "Choose to buy from decentralized or centralized exchanges."
 msgstr ""
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
@@ -686,12 +834,12 @@ msgid "Collateral In"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Community Projects"
-msgstr ""
+#~ msgid "Community Projects"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Community curated tweet collection"
-msgstr ""
+#~ msgid "Community curated tweet collection"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Community-led Telegram groups."
@@ -866,8 +1014,8 @@ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Creator"
-msgstr ""
+#~ msgid "Creator"
+#~ msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "Current Pool Amount"
@@ -894,20 +1042,20 @@ msgstr ""
 #: src/pages/Ecosystem/Ecosystem.js
 #: src/pages/Ecosystem/Ecosystem.js
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "DEX Aggregator"
-msgstr ""
+#~ msgid "DEX Aggregator"
+#~ msgstr ""
 
 #: src/components/Header/AppHeaderLinks.tsx
 msgid "Dashboard"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Dashboard for $POOPE referral stats"
-msgstr ""
+#~ msgid "Dashboard for $POOPE referral stats"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Dashboards"
-msgstr ""
+#~ msgid "Dashboards"
+#~ msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.js
 #: src/components/Referrals/TradersStats.js
@@ -915,28 +1063,28 @@ msgid "Date"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "DeFi Portfolio Tracker"
-msgstr ""
+#~ msgid "DeFi Portfolio Tracker"
+#~ msgstr ""
 
 #: src/components/Exchange/ExchangeTVChart.js
 msgid "Dec."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Decentralized Finance Dashboard"
-msgstr ""
+#~ msgid "Decentralized Finance Dashboard"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Decentralized Options Protocol"
-msgstr ""
+#~ msgid "Decentralized Options Protocol"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Decentralized Options Strategies"
-msgstr ""
+#~ msgid "Decentralized Options Strategies"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Decentralized Trading Protocol"
-msgstr ""
+#~ msgid "Decentralized Trading Protocol"
+#~ msgstr ""
 
 #: src/pages/Home/Home.js
 msgid "Decentralized<0/>Perpetual Exchange"
@@ -1042,8 +1190,12 @@ msgstr ""
 msgid "Download"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "ETH is needed on Arbitrum to purchase $POOPE."
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX_.js
+msgid "ETH is needed on Ethereum to purchase $POOPE."
 msgstr ""
 
 #: src/components/Header/AppHeaderLinks.tsx
@@ -1052,8 +1204,8 @@ msgid "Earn"
 msgstr ""
 
 #: src/components/Header/AppHeaderLinks.tsx
-msgid "Ecosystem"
-msgstr ""
+#~ msgid "Ecosystem"
+#~ msgstr ""
 
 #: src/components/Exchange/OrdersList.js
 #: src/components/Exchange/OrdersList.js
@@ -1226,6 +1378,11 @@ msgstr ""
 msgid "Escrowed $POOPE APR"
 msgstr ""
 
+#: src/components/TokenCard/TokenCard.js
+#: src/components/TokenCard/TokenCard.js
+msgid "Ethereum APR:"
+msgstr ""
+
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "Execute"
 msgstr ""
@@ -1278,8 +1435,8 @@ msgid "Fees are high to swap from {0} to {1}. <0/>{2} is needed for collateral."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Fees generated by $POOPE"
-msgstr ""
+#~ msgid "Fees generated by $POOPE"
+#~ msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "Fees may vary depending on which asset you sell $PLP for. <0/>Enter the amount of $PLP you want to redeem in the order form, then check here to compare fees."
@@ -1305,8 +1462,8 @@ msgid "Fetching token info..."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Financial reports and protocol analytics"
-msgstr ""
+#~ msgid "Financial reports and protocol analytics"
+#~ msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Floor Price Fund"
@@ -1330,118 +1487,11 @@ msgid "Forfeit profit not checked"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "GBC NFTs APR tracker and rewards"
-msgstr ""
+#~ msgid "GBC NFTs APR tracker and rewards"
+#~ msgstr ""
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "$PLP Index Composition"
-msgstr ""
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "$PLP Pool"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "$PLP Vault"
-msgstr ""
-
-#: src/components/Glp/GlpSwap.js
-msgid "$PLP buy disabled, pending {0} upgrade"
-msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-msgid "$PLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
-msgstr ""
-
-#: src/components/Glp/GlpSwap.js
-msgid "$PLP sell disabled, pending {0} upgrade"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE Announcements and Updates"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE Blueberry NFTs"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE Governance Page"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE Pages"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE Perpetuals Data"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE Proposals Voting page"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE Stats Page"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "$POOPE Vault"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE Weekly Updates"
-msgstr ""
-
-#: src/pages/BuyGMX/BuyGMX.js
-msgid "$POOPE bonds can be bought on Olympus Pro with a discount and a small vesting period:"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE community discussion"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE dashboards and analytics."
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE ecosystem pages."
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE explorer for stats and traders"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE fundamentals"
-msgstr ""
-
-#: src/pages/Home/Home.js
-msgid "$POOPE is currently live on Arbitrum and Avalanche."
-msgstr ""
-
-#: src/pages/Jobs/Jobs.js
-msgid "$POOPE is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
-msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-msgid "$POOPE is the utility and governance token. Accrues 30% of the platform's generated fees."
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE staking calculator"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "$POOPE staking rewards updates and insights"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "$POOPE transfers not yet enabled"
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "GMX bonds can be bought on Olympus Pro with a discount and a small vesting period:"
 msgstr ""
 
 #: src/components/Referrals/AddAffiliateCode.js
@@ -1453,8 +1503,12 @@ msgid "Generating shareable image..."
 msgstr ""
 
 #: src/pages/Referrals/Referrals.js
-msgid "Get fee discounts and earn rebates through the $POOPE referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgid "Get fee discounts and earn rebates through the $POOPE referral program. For more information, please read the <0>referral program details</0>."
 msgstr ""
+
+#: src/pages/Referrals/Referrals.js
+#~ msgid "Get fee discounts and earn rebates through the $POOPE referral program.<0/>For more information, please read the <1>referral program details</1>."
+#~ msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 msgid "High Slippage, Swap Anyway"
@@ -1464,7 +1518,11 @@ msgstr ""
 msgid "High USDG Slippage, Long Anyway"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Home"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Hop"
 msgstr ""
 
@@ -1536,12 +1594,12 @@ msgstr ""
 msgid "Initial collateral"
 msgstr ""
 
-#: src/components/Exchange/PositionSeller.js
-msgid "Insufficient Available Liquidity to swap to {0}:"
-msgstr ""
-
 #: src/components/Glp/GlpSwap.js
 msgid "Insufficient $PLP balance"
+msgstr ""
+
+#: src/components/Exchange/PositionSeller.js
+msgid "Insufficient Available Liquidity to swap to {0}:"
 msgstr ""
 
 #: src/components/Exchange/SwapBox.js
@@ -1634,12 +1692,12 @@ msgid "Launch Exchange"
 msgstr ""
 
 #: src/components/Exchange/SwapBox.js
-msgid "Leaderboard"
-msgstr ""
+#~ msgid "Leaderboard"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Leaderboard for $POOPE traders"
-msgstr ""
+#~ msgid "Leaderboard for $POOPE traders"
+#~ msgstr ""
 
 #: src/components/Exchange/PositionEditor.js
 msgid "Leave at least {0} ETH for gas"
@@ -1690,10 +1748,6 @@ msgstr ""
 msgid "Limit order submitted!"
 msgstr ""
 
-#: src/pages/Ecosystem/Ecosystem.js
-#: src/pages/Ecosystem/Ecosystem.js
-#: src/pages/Ecosystem/Ecosystem.js
-#: src/pages/Ecosystem/Ecosystem.js
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Link"
 msgstr ""
@@ -1806,8 +1860,8 @@ msgid "MAX"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "MEV Optimizer"
-msgstr ""
+#~ msgid "MEV Optimizer"
+#~ msgstr ""
 
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "Mark"
@@ -1884,7 +1938,11 @@ msgid "Max leverage: 30.5xt"
 msgstr ""
 
 #: src/components/Exchange/PositionEditor.js
-msgid "Max leverage: 30x"
+#~ msgid "Max leverage: 30x"
+#~ msgstr ""
+
+#: src/components/Exchange/PositionEditor.js
+msgid "Max leverage: 5x"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -1944,8 +2002,8 @@ msgstr ""
 msgid "Max: {maxAmountFormatted}"
 msgstr ""
 
-#: src/components/Footer/Footer.js
-#: src/components/Footer/Footer.js
+#: src/components/Footer/Footer.tsx
+#: src/components/Footer/Footer.tsx
 msgid "Media Kit"
 msgstr ""
 
@@ -2026,8 +2084,8 @@ msgstr ""
 msgid "Multiplier Points APR"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Multiswap"
 msgstr ""
 
@@ -2127,7 +2185,7 @@ msgstr ""
 msgid "Note that there is a minimum holding time of 15 minutes after a purchase.<0/>View <1>staking</1> page."
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Olympus Pro"
 msgstr ""
 
@@ -2174,8 +2232,8 @@ msgid "Opening..."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Optimal compound interval calculator"
-msgstr ""
+#~ msgid "Optimal compound interval calculator"
+#~ msgstr ""
 
 #: src/components/Exchange/OrdersList.js
 #: src/pages/OrdersOverview/OrdersOverview.js
@@ -2281,8 +2339,8 @@ msgid "Partially Liquidated"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Partnerships and Integrations"
-msgstr ""
+#~ msgid "Partnerships and Integrations"
+#~ msgstr ""
 
 #: src/components/Exchange/ConfirmationBox.js
 #: src/components/Exchange/ConfirmationBox.js
@@ -2433,12 +2491,15 @@ msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Price on Arbitrum"
+#~ msgid "Price on Arbitrum"
+#~ msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+msgid "Price on Avalanche"
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "Price on Avalanche"
+msgid "Price on Ethereum"
 msgstr ""
 
 #: src/pages/Actions/Actions.js
@@ -2450,30 +2511,30 @@ msgid "Profit price: {0} ${1}. This rule applies for the next {2}, until {3}."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects developed by the $POOPE community."
-msgstr ""
+#~ msgid "Projects developed by the $POOPE community."
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects integrated with $POOPE."
-msgstr ""
+#~ msgid "Projects integrated with $POOPE."
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Protocol analytics"
-msgstr ""
+#~ msgid "Protocol analytics"
+#~ msgstr ""
 
-#: src/pages/BuyGlp/BuyGlp.js
-msgid "Purchase <0>$PLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
-msgstr "Purchase <0>$PLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
-
-#: src/pages/BuyGMX/BuyGMX.js
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Purchase $POOPE"
 msgstr ""
 
+#: src/pages/BuyGlp/BuyGlp.js
+#~ msgid "Purchase <0>$PLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
+#~ msgstr "Purchase <0>$PLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverages trading."
+
 #: src/pages/Stake/StakeV2.js
-msgid "Purchase Insurance"
-msgstr ""
+#~ msgid "Purchase Insurance"
+#~ msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
@@ -2545,7 +2606,8 @@ msgstr ""
 msgid "Referral Codes"
 msgstr ""
 
-#: src/components/Footer/Footer.js
+#: src/components/Footer/Footer.tsx
+#: src/components/Footer/Footer.tsx
 msgid "Referral Terms"
 msgstr ""
 
@@ -2573,7 +2635,6 @@ msgstr ""
 msgid "Referral code updated!"
 msgstr ""
 
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/pages/Referrals/Referrals.js
 msgid "Referrals"
 msgstr ""
@@ -2624,8 +2685,8 @@ msgid "Reserved for Vesting"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Returns calculator for $POOPE and $PLP"
-msgstr ""
+#~ msgid "Returns calculator for $POOPE and $PLP"
+#~ msgstr ""
 
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
@@ -2825,16 +2886,20 @@ msgid "Stake"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake <0>$POOPE</0> and <1>$PLP</1> to earn rewards."
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
 msgid "Stake $POOPE"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake $POOPE Rewards"
 msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+msgid "Stake $POOPE and $PLP to earn rewards."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+#~ msgid "Stake <0>$POOPE</0> and <1>$PLP</1> to earn rewards."
+#~ msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake Multiplier Points"
@@ -2874,7 +2939,6 @@ msgstr ""
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
 msgid "Staked"
 msgstr ""
 
@@ -2897,8 +2961,8 @@ msgid "Stats"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Structured Products"
-msgstr ""
+#~ msgid "Structured Products"
+#~ msgstr ""
 
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Submit"
@@ -3000,8 +3064,8 @@ msgstr ""
 msgid "Swaps disabled, pending {0} upgrade"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Synapse"
 msgstr ""
 
@@ -3024,30 +3088,35 @@ msgid "Target Weight"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
+msgid "Telegram Announcements"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
 msgid "Telegram Group"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram Group (Chinese)"
-msgstr ""
+#~ msgid "Telegram Group (Chinese)"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram Group (Portuguese)"
-msgstr ""
+#~ msgid "Telegram Group (Portuguese)"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Telegram Groups"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for $POOPE position updates"
-msgstr ""
+#~ msgid "Telegram bot for $POOPE position updates"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for Open Interest on $POOPE"
-msgstr ""
+#~ msgid "Telegram bot for Open Interest on $POOPE"
+#~ msgstr ""
 
-#: src/components/Footer/Footer.js
+#: src/components/Footer/Footer.tsx
+#: src/components/Footer/Footer.tsx
 msgid "Terms and Conditions"
 msgstr ""
 
@@ -3133,12 +3202,12 @@ msgid "There may not be sufficient liquidity to execute your order when the pric
 msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.js
-msgid "This code has been taken by someone else on {0}, you will not receive rebates from traders using this code on {1}."
-msgstr ""
+#~ msgid "This code has been taken by someone else on {0}, you will not receive rebates from traders using this code on {1}."
+#~ msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.js
-msgid "This code is not yet registered on {0}, you will not receive rebates there.<0/><1/>Switch your network to create this code on {1}."
-msgstr ""
+#~ msgid "This code is not yet registered on {0}, you will not receive rebates there.<0/><1/>Switch your network to create this code on {1}."
+#~ msgstr ""
 
 #: src/components/Exchange/ConfirmationBox.js
 msgid "This is the network cost required to execute the postion. <0>More Info</0>"
@@ -3173,12 +3242,12 @@ msgid "To complete the transfer, you must switch your connected account to {rece
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "To purchase $POOPE on <0>Arbitrum</0>, please change your network."
-msgstr ""
+#~ msgid "To purchase $POOPE on <0>Arbitrum</0>, please change your network."
+#~ msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "To purchase $POOPE on <0>Avalanche</0>, please change your network."
-msgstr ""
+#~ msgid "To purchase $POOPE on <0>Avalanche</0>, please change your network."
+#~ msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "To reduce fees, select a different asset to pay with."
@@ -3295,7 +3364,11 @@ msgid "Trade"
 msgstr ""
 
 #: src/pages/Home/Home.js
-msgid "Trade PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with up to 50x leverage directly from your wallet"
+#~ msgid "Trade PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with up to 50x leverage directly from your wallet"
+#~ msgstr ""
+
+#: src/pages/Home/Home.js
+msgid "Trade PEPE, BOB, LADYS, WOJAK, DOGE and other top cryptocurrencies with up to 5x leverage directly from your wallet"
 msgstr ""
 
 #: src/components/Exchange/ExchangeBanner.js
@@ -3347,7 +3420,7 @@ msgstr ""
 msgid "Transaction was cancelled."
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Transfer AVAX"
 msgstr ""
 
@@ -3356,7 +3429,7 @@ msgstr ""
 msgid "Transfer Account"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Transfer ETH"
 msgstr ""
 
@@ -3433,6 +3506,11 @@ msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "UTILIZATION"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.tsx
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "Uniswap"
 msgstr ""
 
 #: src/pages/Stake/StakeV1.js
@@ -3518,7 +3596,7 @@ msgstr ""
 msgid "Useful Links"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "Using the Avalanche or Synapse bridges, you can also transfer any other supported cryptocurrency, and receive free AVAX to pay for the network's fees."
 msgstr ""
 
@@ -3713,16 +3791,16 @@ msgid "Withdrew {0} USD from {tokenSymbol} {longOrShortText}."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Yield Optimizer on Avalanche"
-msgstr ""
+#~ msgid "Yield Optimizer on Avalanche"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Yield Vaults"
-msgstr ""
+#~ msgid "Yield Vaults"
+#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Yield simulator for $POOPE"
-msgstr ""
+#~ msgid "Yield simulator for $POOPE"
+#~ msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "You are earning {0}% more {nativeTokenSymbol} rewards using {1} Staked Multiplier Points."
@@ -3737,11 +3815,15 @@ msgid "You are leaving $POOPE.io and will be redirected to a third party, indepe
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.js
-msgid "You can buy AVAX directly on <0>Avalanche</0> using Banxa:"
+#~ msgid "You can buy AVAX directly on <0>Avalanche</0> using Banxa:"
+#~ msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX_.js
+msgid "You can buy ETH directly on <0>Arbitrum</0> using Banxa:"
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
-msgid "You can buy ETH directly on <0>Arbitrum</0> using Banxa:"
+#: src/pages/BuyGMX/BuyGMX_.js
+msgid "You can buy ETH directly on <0>Ethereum</0> using Banxa:"
 msgstr ""
 
 #: src/components/Exchange/SwapBox.js
@@ -3761,11 +3843,11 @@ msgstr ""
 msgid "You can currently vest a maximum of {0} esPOOPE tokens at a ratio of {1} {stakingToken} to 1 esPOOPE."
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "You can transfer AVAX to Avalanche using any of the below options."
 msgstr ""
 
-#: src/pages/BuyGMX/BuyGMX.js
+#: src/pages/BuyGMX/BuyGMX_.js
 msgid "You can transfer ETH from other networks to Arbitrum using any of the below options:"
 msgstr ""
 
@@ -3898,14 +3980,6 @@ msgstr ""
 msgid "{0, select, true {Long} false {Short}} {1} market selected"
 msgstr ""
 
-#: src/domain/tokens/approveTokens.tsx
-msgid "{0} Approved!"
-msgstr ""
-
-#: src/components/Glp/SwapErrorModal.tsx
-msgid "{0} Capacity Reached"
-msgstr ""
-
 #: src/components/Glp/GlpSwap.js
 msgid "{0} $PLP (${1})"
 msgstr ""
@@ -3925,6 +3999,14 @@ msgstr ""
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 msgid "{0} $POOPE tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgstr ""
+
+#: src/domain/tokens/approveTokens.tsx
+msgid "{0} Approved!"
+msgstr ""
+
+#: src/components/Glp/SwapErrorModal.tsx
+msgid "{0} Capacity Reached"
 msgstr ""
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
@@ -4032,17 +4114,17 @@ msgid "{swapOption, select, LONG {Longing} SHORT {Shorting}} {0} not supported"
 msgstr ""
 
 #: src/components/StatsTooltip/StatsTooltip.tsx
-msgid "{title} on Arbitrum:"
-msgstr ""
+#~ msgid "{title} on Arbitrum:"
+#~ msgstr ""
 
 #: src/components/StatsTooltip/StatsTooltip.tsx
-msgid "{title} on Avalanche:"
+#~ msgid "{title} on Avalanche:"
+#~ msgstr ""
+
+#: src/components/StatsTooltip/StatsTooltip.tsx
+msgid "{title} on Ethereum:"
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV1.js
 msgid "{volumeLabel} Volume"
-msgstr ""
-
-#: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy $POOPE on {0}"
 msgstr ""

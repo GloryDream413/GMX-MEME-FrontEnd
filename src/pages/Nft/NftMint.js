@@ -219,7 +219,7 @@ function NftMint({ connectWallet, setPendingTxns, pendingTxns }) {
                     believable.
                   </p>
                   <div className="buttons">
-                    <a href="https://opensea.io/" className="metaportal_fn_button" target="_blank">
+                    <a href="https://opensea.io/" className="metaportal_fn_button" target="_blank" rel="noreferrer">
                       <span>Buy On Opensea</span>
                     </a>
                     <a href="#" className="metaportal_fn_button" target="_blank">
