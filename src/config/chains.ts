@@ -26,13 +26,13 @@ export const CHAIN_NAMES_MAP = {
 };
 
 export const GAS_PRICE_ADJUSTMENT_MAP = {
-  [ARBITRUM]: "0",
-  [MAINNET]: "0",
+  [ARBITRUM]: 4,
+  [MAINNET]: 4,
 };
 
 export const MAX_GAS_PRICE_MAP = {
-  [MAINNET]: "0",
-  [ARBITRUM]: "0", // 200 gwei
+  [MAINNET]: 0,
+  [ARBITRUM]: 0, // 200 gwei
 };
 
 export const HIGH_EXECUTION_FEES_MAP = {
