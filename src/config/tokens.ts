@@ -9,7 +9,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       name: "Goerli ETH",
       symbol: "Goerli ETH",
       decimals: 18,
-      address:  ethers.constants.AddressZero,
+      address: ethers.constants.AddressZero,
       coingeckoUrl: "https://www.coingecko.com/en/coins/ethereum",
       imageUrl: "https://assets.coingecko.com/coins/images/279/small/ethereum.png",
       isNative: true,
@@ -23,6 +23,8 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       isWrapped: true,
       baseSymbol: "ETH",
       imageUrl: "https://assets.coingecko.com/coins/images/2518/small/weth.png?1628852295",
+      isNative: true,
+      isShortable: true,
     },
     {
       name: "USD Coin",
@@ -73,7 +75,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       name: "WOJAK MEME Coin",
       symbol: "WOJAK",
       decimals: 18,
-      address: "0x85502dD13fCc64d6Fff7430c62aDDA217dE44F7E",
+      address: "0x85502dD13fCc64d6Fff7430c62aDDA217dE44F7e",
       isStable: true,
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",
@@ -86,7 +88,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       isStable: true,
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",
-    }
+    },
   ],
   [ARBITRUM]: [
     {
@@ -174,7 +176,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       isTempHidden: true,
       imageUrl: "https://assets.coingecko.com/coins/images/16786/small/mimlogopng.png",
     },
-  ]
+  ],
 };
 
 export const ADDITIONAL_TOKENS: { [chainId: number]: Token[] } = {
@@ -326,7 +328,7 @@ export const ICONLINKS = {
       coingecko: "https://www.coingecko.com/en/coins/frax",
       arbitrum: "https://arbiscan.io/address/0x17fc002b466eec40dae837fc4be5c67993ddbd6f",
     },
-  }
+  },
 };
 
 export const GLP_POOL_COLORS = {

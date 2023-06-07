@@ -1,11 +1,12 @@
 import { ARBITRUM, MAINNET } from "./chains";
 
 export const GMX_STATS_API_URL = "https://stats.gmx.io/api";
+export const MEXC_API_URL = "https://mexc.bluespade.xyz/api/mexc";
 
 const BACKEND_URLS = {
   default: "https://gmx-server-mainnet.uw.r.appspot.com",
   // [MAINNET]: "https://gambit-server-staging.uc.r.appspot.com",
-  [MAINNET]: "https://#",
+  [MAINNET]: "https://gmx-server-mainnet.uw.r.appspot.com",
 };
 
 export function getServerBaseUrl(chainId: number) {

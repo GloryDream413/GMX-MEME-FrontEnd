@@ -57,6 +57,17 @@ function fillGaps(prices, periodSeconds) {
   return newPrices;
 }
 
+function formatBarInfo(bar) {
+  const { t, o: open, c: close, h: high, l: low } = bar;
+  return {
+    time: t + timezoneOffset,
+    open,
+    close,
+    high,
+    low,
+  };
+}
+
 async function getChartPricesFromStats(chainId, symbol, period) {
   // console.log("---shark getChartPricesFromStats");
   if (["WBTC", "WETH", "WAVAX"].includes(symbol)) {

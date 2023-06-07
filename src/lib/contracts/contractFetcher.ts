@@ -20,7 +20,6 @@ export const contractFetcher =
       params,
       additionalArgs,
     });
-    console.log (contractCall, method, arg0, arg1, "HHHHHHHHHHHHHH", additionalArgs, "JJJJJJJJJJJJJJJJJJJ") 
 
     let shouldCallFallback = true;
 
@@ -60,7 +59,6 @@ export const contractFetcher =
       contractCall
         .then((result) => {
           shouldCallFallback = false;
-          console.log (result, "???????????????????")
           resolve(result);
         })
         .catch((e) => {

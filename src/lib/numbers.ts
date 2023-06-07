@@ -70,9 +70,12 @@ export const formatAmount = (
     displayDecimals = 4;
   }
   let amountStr = ethers.utils.formatUnits(amount, tokenDecimals);
+
   amountStr = limitDecimals(amountStr, displayDecimals);
+
   if (displayDecimals !== 0) {
-    amountStr = padDecimals(amountStr, displayDecimals);
+    if (Number(amountStr) < 0.1) amountStr = padDecimals(amountStr, displayDecimals);
+    else amountStr = padDecimals(amountStr, 2);
   }
   if (useCommas) {
     return numberWithCommas(amountStr);
@@ -133,7 +136,7 @@ export function numberWithCommas(x: BigNumberish) {
   // if (!x) {
   //   return "...";
   // }
-  if (typeof x == 'undefined') {
+  if (typeof x == "undefined") {
     return "...";
   }
 
@@ -141,4 +144,3 @@ export function numberWithCommas(x: BigNumberish) {
   parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   return parts.join(".");
 }
-

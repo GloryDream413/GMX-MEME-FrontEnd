@@ -17,17 +17,17 @@ if (isDevelopment()) {
 
 export const IS_NETWORK_DISABLED = {
   [ARBITRUM]: true,
-  [MAINNET]: false
+  [MAINNET]: false,
 };
 
 export const CHAIN_NAMES_MAP = {
   [MAINNET]: "Ethereum",
-  [ARBITRUM]: "Arbitrum"
+  [ARBITRUM]: "Arbitrum",
 };
 
 export const GAS_PRICE_ADJUSTMENT_MAP = {
   [ARBITRUM]: "0",
-  [MAINNET]: "0"
+  [MAINNET]: "0",
 };
 
 export const MAX_GAS_PRICE_MAP = {
@@ -37,7 +37,7 @@ export const MAX_GAS_PRICE_MAP = {
 
 export const HIGH_EXECUTION_FEES_MAP = {
   [ARBITRUM]: 3, // 3 USD
-  [MAINNET]: 3
+  [MAINNET]: 3,
 };
 
 const constants = {
@@ -45,13 +45,14 @@ const constants = {
     nativeTokenSymbol: "GoerliETH",
     wrappedTokenSymbol: "WETH",
     defaultCollateralSymbol: "USDC",
-    defaultFlagOrdersEnabled: false,
-    positionReaderPropsLength: 8,
+    defaultFlagOrdersEnabled: true,
+    positionReaderPropsLength: 9,
     v2: true,
-    SWAP_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
-    INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
+
+    SWAP_ORDER_EXECUTION_GAS_FEE: parseEther("0.01"),
+    INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.01"),
     // contract requires that execution fee be strictly greater than instead of gte
-    DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.000300001"),
+    DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0100001"),
   },
 
   [ARBITRUM]: {
@@ -66,7 +67,7 @@ const constants = {
     INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
     // contract requires that execution fee be strictly greater than instead of gte
     DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.000300001"),
-  }
+  },
 };
 
 const ALCHEMY_WHITELISTED_DOMAINS = ["gmx.io", "app.gmx.io"];
@@ -76,12 +77,12 @@ export const ETHEREUM_RPC_PROVIDERS = ["https://ethereum-goerli.publicnode.com"]
 
 export const RPC_PROVIDERS = {
   [MAINNET]: ETHEREUM_RPC_PROVIDERS,
-  [ARBITRUM]: ARBITRUM_RPC_PROVIDERS
+  [ARBITRUM]: ARBITRUM_RPC_PROVIDERS,
 };
 
 export const FALLBACK_PROVIDERS = {
   [ARBITRUM]: [getAlchemyHttpUrl()],
-  [MAINNET]: ["https://ethereum-goerli.publicnode.com"]
+  [MAINNET]: ["https://ethereum-goerli.publicnode.com"],
 };
 
 export const NETWORK_METADATA = {
@@ -106,7 +107,7 @@ export const NETWORK_METADATA = {
     },
     rpcUrls: ARBITRUM_RPC_PROVIDERS,
     blockExplorerUrls: [getExplorerUrl(ARBITRUM)],
-  }
+  },
 };
 
 export const getConstant = (chainId: number, key: string) => {
@@ -144,7 +145,7 @@ export function getAlchemyWsUrl() {
 }
 
 export function getExplorerUrl(chainId) {
-  console.log (chainId, ">>>>>>>>>>>>>>>>")
+  console.log(chainId, ">>>>>>>>>>>>>>>>");
   if (chainId === 3) {
     return "https://ropsten.etherscan.io/";
   } else if (chainId === 42) {

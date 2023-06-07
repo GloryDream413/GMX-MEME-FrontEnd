@@ -346,6 +346,15 @@ export default function DashboardV2() {
   }
 
   const getWeightText = (tokenInfo) => {
+    console.log(
+      tokenInfo.symbol,
+      tokenInfo.weight,
+      tokenInfo.usdgAmount,
+      adjustedUsdgSupply,
+      adjustedUsdgSupply.eq(0),
+      totalTokenWeights,
+      ">>>>>>>>>>>>>>>>>>>>>>>>"
+    );
     if (
       !tokenInfo.weight ||
       !tokenInfo.usdgAmount ||
@@ -544,8 +553,8 @@ export default function DashboardV2() {
               {chainId === ARBITRUM && <img src={arbitrum24Icon} alt="arbitrum24Icon" />}
             </div>
             <div className="Page-description">
-            <Trans>
-              {chainName} Total Stats start from {totalStatsStartDate}.<br /> For detailed stats:
+              <Trans>
+                {chainName} Total Stats start from {totalStatsStartDate}.<br /> For detailed stats:
               </Trans>{" "}
             </div>
           </div>
@@ -1014,6 +1023,7 @@ export default function DashboardV2() {
                 <tbody>
                   {visibleTokens.map((token) => {
                     const tokenInfo = infoTokens[token.address];
+                    console.log(tokenInfo, "KKKKKKKKKKKKKKKKKKKKK");
                     let utilization = bigNumberify(0);
                     if (tokenInfo && tokenInfo.reservedAmount && tokenInfo.poolAmount && tokenInfo.poolAmount.gt(0)) {
                       utilization = tokenInfo.reservedAmount.mul(BASIS_POINTS_DIVISOR).div(tokenInfo.poolAmount);
@@ -1042,7 +1052,7 @@ export default function DashboardV2() {
                             </div>
                           </div>
                         </td>
-                        <td>${formatKeyAmount(tokenInfo, "minPrice", USD_DECIMALS, 2, true)}</td>
+                        <td>${formatKeyAmount(tokenInfo, "minPrice", USD_DECIMALS, 8, true)}</td>
                         <td>
                           <TooltipComponent
                             handle={`$${formatKeyAmount(tokenInfo, "managedUsd", USD_DECIMALS, 0, true)}`}
