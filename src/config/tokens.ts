@@ -25,25 +25,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       imageUrl: "https://assets.coingecko.com/coins/images/2518/small/weth.png?1628852295",
     },
     {
-      name: "USD Coin",
-      symbol: "USDT",
-      decimals: 6,
-      address: "0x509Ee0d083DdF8AC028f2a56731412edD63223B9",
-      isStable: true,
-      coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
-      imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",
-    },
-    {
-      name: "USD Coin",
-      symbol: "USDC",
-      decimals: 6,
-      address: "0x07865c6e87b9f70255377e024ace6630c1eaa37f",
-      coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
-      imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",
-      isShortable: true,
-    },
-    {
-      name: "BOB MEME Coin",
+      name: "BOB",
       symbol: "BOB",
       decimals: 18,
       address: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
@@ -52,7 +34,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       isShortable: true,
     },
     {
-      name: "PEPE MEME Coin",
+      name: "PEPE",
       symbol: "PEPE",
       decimals: 18,
       address: "0x01997f24959C4e282fF6A3b8E1DF1aff4143edda",
@@ -61,7 +43,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       isShortable: true,
     },
     {
-      name: "LADYS MEME Coin",
+      name: "LADYS",
       symbol: "LADYS",
       decimals: 18,
       address: "0xBFA8AB9a23EC2270Fd8554dd1fA585E0886625C3",
@@ -70,7 +52,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       isShortable: true,
     },
     {
-      name: "WOJAK MEME Coin",
+      name: "WOJAK",
       symbol: "WOJAK",
       decimals: 18,
       address: "0x85502dD13fCc64d6Fff7430c62aDDA217dE44F7e",
@@ -79,7 +61,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       isShortable: true,
     },
     {
-      name: "DOGE MEME Coin",
+      name: "DOGE",
       symbol: "DOGE",
       decimals: 8,
       address: "0xcd8CFeE66faDDf0845722A0a1082e66d45d99a23",

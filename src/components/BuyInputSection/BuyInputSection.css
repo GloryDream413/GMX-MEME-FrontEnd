@@ -34,6 +34,8 @@
   position: unset;
   color: white;
   font-size: 1.5rem;
+  width: 60px;
+  text-align: center;
 }
 
 .buy-input .TokenSelector-caret {
