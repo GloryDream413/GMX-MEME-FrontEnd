@@ -335,7 +335,7 @@ export default function ExchangeTVChart(props) {
       [`length-${String(parseInt(candlestick.close)).length}`]: true,
     });
 
-    const toFixedNumbers = 2;
+    const toFixedNumbers = 8;
 
     return (
       <div className={className}>
