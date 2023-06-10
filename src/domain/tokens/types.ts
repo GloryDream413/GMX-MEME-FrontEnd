@@ -8,6 +8,7 @@ export type Token = {
   address: string;
   coingeckoUrl?: string;
   imageUrl?: string;
+  isMemeCoin?: boolean;
 
   isUsdg?: boolean;
   isNative?: boolean;

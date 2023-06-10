@@ -28,10 +28,10 @@ const footerLinks = {
 
 const socialLinks = [
   { link: "https://twitter.com/poope.finance", name: "Twitter", icon: twitterIcon },
-  { link: "https://poopefinance.medium.com/", name: "Medium", icon: mediumIcon },
+  // { link: "https://poopefinance.medium.com/", name: "Medium", icon: mediumIcon },
   { link: "https://github.com/poope", name: "Github", icon: githubIcon },
   { link: "https://t.me/poopechat", name: "Telegram", icon: telegramIcon },
-  { link: "https://discord.gg/senshilabs", name: "Discord", icon: discordIcon },
+  // { link: "https://discord.gg/senshilabs", name: "Discord", icon: discordIcon },
 ];
 
 type Props = { showRedirectModal?: (to: string) => void; redirectPopupTimestamp?: () => void };

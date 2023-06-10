@@ -197,7 +197,7 @@ export default function SwapBox(props) {
     if (chainId === ARBITRUM) {
       return "https://www.gmx.house/arbitrum/leaderboard";
     }
-    
+
     return "https://www.gmx.house";
   };
 
@@ -265,7 +265,7 @@ export default function SwapBox(props) {
   const tokens = getTokens(chainId);
   const fromTokens = tokens;
   const stableTokens = tokens.filter((token) => token.isStable);
-  const indexTokens = whitelistedTokens.filter((token) => !token.isStable && !token.isWrapped);
+  const indexTokens = whitelistedTokens.filter((token) => !token.isStable && !token.isWrapped && token.isMemeCoin);
   const shortableTokens = indexTokens.filter((token) => token.isShortable);
 
   let toTokens = tokens;
@@ -903,6 +903,7 @@ export default function SwapBox(props) {
 
     if (isLong) {
       let requiredAmount = toAmount;
+      console.log(toAmount, "OOOOOOOOOOOOOOOO");
       if (fromTokenAddress !== toTokenAddress) {
         const { amount: swapAmount } = getNextToAmount(
           chainId,
@@ -917,6 +918,7 @@ export default function SwapBox(props) {
           isSwap
         );
         requiredAmount = requiredAmount.add(swapAmount);
+        console.log(toTokenInfo.availableAmount, requiredAmount, "VVVVVVVVVVVVVVVVVVV");
 
         if (toToken && toTokenAddress !== USDG_ADDRESS) {
           if (!toTokenInfo.availableAmount) {
@@ -979,6 +981,7 @@ export default function SwapBox(props) {
           isSwap
         );
         stableTokenAmount = nextToAmount;
+
         if (stableTokenAmount.gt(shortCollateralToken.availableAmount)) {
           return [t`Insufficient liquidity, change "Collateral In"`];
         }
@@ -2043,7 +2046,7 @@ export default function SwapBox(props) {
               >
                 <Slider
                   min={1.1}
-                  max={30.5}
+                  max={5}
                   step={0.1}
                   marks={leverageMarks}
                   handle={leverageSliderHandle}
@@ -2192,8 +2195,7 @@ export default function SwapBox(props) {
               orders. <br />
               <br />
               For screenshots and more information, please see the{" "}
-              <ExternalLink href="https://docs.poope.financetrading#stop-loss-take-profit-orders">docs</ExternalLink>
-              .
+              <ExternalLink href="https://docs.poope.financetrading#stop-loss-take-profit-orders">docs</ExternalLink>.
             </Trans>
           </div>
         )}

@@ -44,8 +44,10 @@ export const padDecimals = (amount: BigNumberish, minDecimals: number) => {
   const dotIndex = amountStr.indexOf(".");
   if (dotIndex !== -1) {
     const decimals = amountStr.length - dotIndex - 1;
-    if (decimals < minDecimals) {
+    if (decimals <= minDecimals) {
       amountStr = amountStr.padEnd(amountStr.length + (minDecimals - decimals), "0");
+    } else {
+      amountStr = amountStr.substring(0, dotIndex + minDecimals + 1);
     }
   } else {
     amountStr = amountStr + ".0000";
@@ -74,7 +76,7 @@ export const formatAmount = (
   amountStr = limitDecimals(amountStr, displayDecimals);
 
   if (displayDecimals !== 0) {
-    if (Number(amountStr) < 0.1) amountStr = padDecimals(amountStr, displayDecimals);
+    if (Number(amountStr) < 1) amountStr = padDecimals(amountStr, displayDecimals);
     else amountStr = padDecimals(amountStr, 2);
   }
   if (useCommas) {

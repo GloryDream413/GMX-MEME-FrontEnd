@@ -62,6 +62,7 @@ import { getTokenBySymbol, getWhitelistedTokens, GLP_POOL_COLORS } from "config/
 import { bigNumberify, expandDecimals, formatAmount, formatKeyAmount, numberWithCommas } from "lib/numbers";
 import { useChainId } from "lib/chains";
 import { formatDate } from "lib/dates";
+
 const ACTIVE_CHAIN_IDS = [ARBITRUM, MAINNET];
 
 const { AddressZero } = ethers.constants;
@@ -346,15 +347,6 @@ export default function DashboardV2() {
   }
 
   const getWeightText = (tokenInfo) => {
-    console.log(
-      tokenInfo.symbol,
-      tokenInfo.weight,
-      tokenInfo.usdgAmount,
-      adjustedUsdgSupply,
-      adjustedUsdgSupply.eq(0),
-      totalTokenWeights,
-      ">>>>>>>>>>>>>>>>>>>>>>>>"
-    );
     if (
       !tokenInfo.weight ||
       !tokenInfo.usdgAmount ||
@@ -1023,7 +1015,6 @@ export default function DashboardV2() {
                 <tbody>
                   {visibleTokens.map((token) => {
                     const tokenInfo = infoTokens[token.address];
-                    console.log(tokenInfo, "KKKKKKKKKKKKKKKKKKKKK");
                     let utilization = bigNumberify(0);
                     if (tokenInfo && tokenInfo.reservedAmount && tokenInfo.poolAmount && tokenInfo.poolAmount.gt(0)) {
                       utilization = tokenInfo.reservedAmount.mul(BASIS_POINTS_DIVISOR).div(tokenInfo.poolAmount);
@@ -1055,21 +1046,21 @@ export default function DashboardV2() {
                         <td>${formatKeyAmount(tokenInfo, "minPrice", USD_DECIMALS, 8, true)}</td>
                         <td>
                           <TooltipComponent
-                            handle={`$${formatKeyAmount(tokenInfo, "managedUsd", USD_DECIMALS, 0, true)}`}
+                            handle={`$${formatKeyAmount(tokenInfo, "managedUsd", USD_DECIMALS, 8, true)}`}
                             position="right-bottom"
                             renderContent={() => {
                               return (
                                 <>
                                   <StatsTooltipRow
                                     label={t`Pool Amount`}
-                                    value={`${formatKeyAmount(tokenInfo, "managedAmount", token.decimals, 0, true)} ${
+                                    value={`${formatKeyAmount(tokenInfo, "managedAmount", token.decimals, 8, true)} ${
                                       token.symbol
                                     }`}
                                     showDollar={false}
                                   />
                                   <StatsTooltipRow
                                     label={t`Target Min Amount`}
-                                    value={`${formatKeyAmount(tokenInfo, "bufferAmount", token.decimals, 0, true)} ${
+                                    value={`${formatKeyAmount(tokenInfo, "bufferAmount", token.decimals, 8, true)} ${
                                       token.symbol
                                     }`}
                                     showDollar={false}

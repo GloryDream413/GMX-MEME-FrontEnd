@@ -146,6 +146,7 @@ export default function ExchangeTVChart(props) {
     minPrice: null,
   });
   useEffect(() => {
+    console.log(fromToken, toToken, ">>>>>>>>>>>>>>>>>");
     const tmp = getChartToken(swapOption, fromToken, toToken, chainId);
     setChartToken(tmp);
   }, [swapOption, fromToken, toToken, chainId]);

@@ -14,6 +14,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       imageUrl: "https://assets.coingecko.com/coins/images/279/small/ethereum.png",
       isNative: true,
       isShortable: true,
+      isMemeCoin: false,
     },
     {
       name: "Wrapped Ether",
@@ -23,15 +24,17 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       isWrapped: true,
       baseSymbol: "ETH",
       imageUrl: "https://assets.coingecko.com/coins/images/2518/small/weth.png?1628852295",
+      isMemeCoin: false,
     },
     {
-      name: "USD Coin",
+      name: "USD Tether",
       symbol: "USDT",
       decimals: 6,
       address: "0x509Ee0d083DdF8AC028f2a56731412edD63223B9",
       isStable: true,
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",
+      isMemeCoin: false,
     },
     {
       name: "USD Coin",
@@ -41,6 +44,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",
       isShortable: true,
+      isMemeCoin: false,
     },
     {
       name: "BOB",
@@ -50,6 +54,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/30558/small/photo_2023-05-24_08.54.52.jpeg?1685014353",
       isShortable: true,
+      isMemeCoin: true,
     },
     {
       name: "PEPE",
@@ -59,6 +64,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/29850/small/pepe-token.jpeg?1682922725",
       isShortable: true,
+      isMemeCoin: true,
     },
     {
       name: "LADYS",
@@ -68,6 +74,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/30194/small/logo.png?1683607297",
       isShortable: true,
+      isMemeCoin: true,
     },
     {
       name: "WOJAK",
@@ -77,6 +84,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/29856/small/wojak.png?1681821640",
       isShortable: true,
+      isMemeCoin: true,
     },
     {
       name: "DOGE",
@@ -86,6 +94,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png?1547792256",
       isShortable: true,
+      isMemeCoin: true,
     },
   ],
   [ARBITRUM]: [

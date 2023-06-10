@@ -413,12 +413,12 @@ export const Exchange = forwardRef((props, ref) => {
         to: getTokenBySymbol(chainId, defaultCollateralSymbol).address,
       },
       [LONG]: {
-        from: AddressZero,
-        to: AddressZero,
+        from: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
+        to: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
       },
       [SHORT]: {
         from: getTokenBySymbol(chainId, defaultCollateralSymbol).address,
-        to: AddressZero,
+        to: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
       },
     }),
     [chainId, defaultCollateralSymbol]

@@ -27,7 +27,7 @@ export function useInfoTokens(
   const tokens = getTokens(chainId);
   const vaultReaderAddress = getContract(chainId, "VaultReader");
   const vaultAddress = getContract(chainId, "Vault");
-  const positionRouterAddress = getContract(chainId, "PositionRouter");
+  const positionRouterAddress = getContract(chainId, "PositionManager");
   const nativeTokenAddress = getContract(chainId, "NATIVE_TOKEN");
 
   const whitelistedTokens = getWhitelistedTokens(chainId);
@@ -39,7 +39,6 @@ export function useInfoTokens(
   // console.log("---shark expandDecimals(1, 18): ", expandDecimals(1, 18));
   // console.log("---shark whitelistedTokenAddresses: ", whitelistedTokenAddresses);
   // console.log("---shark useInfoTokens end!");
-
   const { data: vaultTokenInfo } = useSWR<BigNumber[], any>(
     [`useInfoTokens:${active}`, chainId, vaultReaderAddress, "getVaultTokenInfoV4"],
     {
@@ -52,7 +51,7 @@ export function useInfoTokens(
       ]),
     }
   );
-
+  console.log(vaultTokenInfo, "NNNNNNNNNNNNNNN");
   const indexPricesUrl = getServerUrl(chainId, "/prices");
 
   const { data: indexPrices } = useSWR([indexPricesUrl], {
@@ -185,7 +184,6 @@ function getInfoTokens(
 
     infoTokens[token.address] = token;
   }
-
   return infoTokens;
 }
 
