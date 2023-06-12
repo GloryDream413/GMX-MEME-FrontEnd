@@ -1188,7 +1188,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     setStakingTokenSymbol("$POOPE");
     setStakingTokenAddress(gmxAddress);
     setStakingFarmAddress(stakedGmxTrackerAddress);
-    setStakeMethodName("stakeZomi");
+    setStakeMethodName("stakeGmx");
   };
 
   const showStakeEsGmxModal = () => {
@@ -1199,7 +1199,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     setStakingTokenSymbol("esPOOPE");
     setStakingTokenAddress(esGmxAddress);
     setStakingFarmAddress(AddressZero);
-    setStakeMethodName("stakeEsZomi");
+    setStakeMethodName("stakeEsGmx");
   };
 
   const showGmxVesterDepositModal = () => {
@@ -1324,11 +1324,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           return (
             <Trans>
               Boost your rewards with Multiplier Points.&nbsp;
-              <a
-                href="https://docs.zomi.financerewards#multiplier-points"
-                rel="noreferrer"
-                target="_blank"
-              >
+              <a href="https://docs.zomi.financerewards#multiplier-points" rel="noreferrer" target="_blank">
                 More info
               </a>
               .
@@ -2076,11 +2072,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
               Convert esPOOPE tokens to $POOPE tokens.
               <br />
               Please read the{" "}
-              <a
-                href="https://docs.zomi.financehow-it-works/rewards"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://docs.zomi.financehow-it-works/rewards" target="_blank" rel="noopener noreferrer">
                 vesting details
               </a>{" "}
               before using the vaults.
@@ -2176,8 +2168,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                       position="right-bottom"
                       renderContent={() => (
                         <Trans>
-                          {formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} $POOPE tokens can be claimed,
-                          use the options under the Total Rewards section to claim them.
+                          {formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} $POOPE tokens can be
+                          claimed, use the options under the Total Rewards section to claim them.
                         </Trans>
                       )}
                     />
@@ -2263,8 +2255,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                       position="right-bottom"
                       renderContent={() => (
                         <Trans>
-                          {formatKeyAmount(vestingData, "glpVesterClaimable", 18, 4, true)} $POOPE tokens can be claimed,
-                          use the options under the Total Rewards section to claim them.
+                          {formatKeyAmount(vestingData, "glpVesterClaimable", 18, 4, true)} $POOPE tokens can be
+                          claimed, use the options under the Total Rewards section to claim them.
                         </Trans>
                       )}
                     />
