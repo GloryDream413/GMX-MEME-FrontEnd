@@ -1598,10 +1598,12 @@ export default function SwapBox(props) {
     if (opt === SHORT && infoTokens) {
       const fromToken = getToken(chainId, tokenSelection[opt].from);
       if (fromToken && fromToken.isStable) {
-        setShortCollateralAddress(fromToken.address);
+        //setShortCollateralAddress(fromToken.address);
+        setShortCollateralAddress(fromToken);
       } else {
         const stableToken = getMostAbundantStableToken(chainId, infoTokens);
-        setShortCollateralAddress(stableToken.address);
+        //setShortCollateralAddress(stableToken.address);
+        setShortCollateralAddress(stableToken);
       }
     }
   };
