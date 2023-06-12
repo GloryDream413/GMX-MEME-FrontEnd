@@ -310,7 +310,7 @@ function UnstakeModal(props) {
         {burnAmount && burnAmount.gt(0) && rewardReductionBasisPoints && rewardReductionBasisPoints.gt(0) && (
           <div className="Modal-note">
             Unstaking will burn&nbsp;
-            <a href="https://docs.zomi.financerewards" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.poope.financerewards" target="_blank" rel="noopener noreferrer">
               {formatAmount(burnAmount, 18, 4, true)} Multiplier Points
             </a>
             .&nbsp;
@@ -1288,7 +1288,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     setUnstakeModalReservedAmount(vestingData.gmxVesterPairAmount);
     setUnstakeValue("");
     setUnstakingTokenSymbol("$POOPE");
-    setUnstakeMethodName("unstakeZomi");
+    setUnstakeMethodName("unstakeGmx");
   };
 
   const showUnstakeEsGmxModal = () => {
@@ -1308,7 +1308,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     setUnstakeModalReservedAmount(vestingData.gmxVesterPairAmount);
     setUnstakeValue("");
     setUnstakingTokenSymbol("esPOOPE");
-    setUnstakeMethodName("unstakeEsZomi");
+    setUnstakeMethodName("unstakeEsGmx");
   };
 
   const renderMultiplierPointsLabel = useCallback(() => {
@@ -1324,7 +1324,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           return (
             <Trans>
               Boost your rewards with Multiplier Points.&nbsp;
-              <a href="https://docs.zomi.financerewards#multiplier-points" rel="noreferrer" target="_blank">
+              <a href="https://docs.poope.financerewards#multiplier-points" rel="noreferrer" target="_blank">
                 More info
               </a>
               .
@@ -2072,7 +2072,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
               Convert esPOOPE tokens to $POOPE tokens.
               <br />
               Please read the{" "}
-              <a href="https://docs.zomi.financehow-it-works/rewards" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.poope.financehow-it-works/rewards" target="_blank" rel="noopener noreferrer">
                 vesting details
               </a>{" "}
               before using the vaults.
