@@ -301,7 +301,7 @@ export function getPositions(
 
     applyPendingChanges(position, pendingPositions);
 
-    if (position.size.gt(1) || position.hasPendingChanges) {
+    if (position.size.gt(0) || position.hasPendingChanges) {
       positions.push(position);
     }
   }

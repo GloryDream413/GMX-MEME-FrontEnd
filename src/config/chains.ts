@@ -145,7 +145,6 @@ export function getAlchemyWsUrl() {
 }
 
 export function getExplorerUrl(chainId) {
-  console.log(chainId, ">>>>>>>>>>>>>>>>");
   if (chainId === 3) {
     return "https://ropsten.etherscan.io/";
   } else if (chainId === 42) {

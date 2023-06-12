@@ -51,7 +51,6 @@ export function useInfoTokens(
       ]),
     }
   );
-  console.log(vaultTokenInfo, "NNNNNNNNNNNNNNN");
   const indexPricesUrl = getServerUrl(chainId, "/prices");
 
   const { data: indexPrices } = useSWR([indexPricesUrl], {

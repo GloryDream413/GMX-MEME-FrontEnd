@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Token as UniToken } from "@uniswap/sdk-core";
 import { Pool } from "@uniswap/v3-sdk";
 import useSWR from "swr";
-import { chain, sumBy, sortBy, maxBy, minBy } from 'lodash'
+import { chain, sumBy, sortBy, maxBy, minBy } from "lodash";
 
 import OrderBook from "abis/OrderBook.json";
 import PositionManager from "abis/PositionManager.json";
@@ -33,10 +33,10 @@ import { t } from "@lingui/macro";
 
 export * from "./prices";
 
-const NOW_TS = parseInt(Date.now() / 1000)
-const FIRST_DATE_TS = parseInt(+(new Date(2022, 10, 1)) / 1000)
-const MOVING_AVERAGE_DAYS = 7
-const MOVING_AVERAGE_PERIOD = 86400 * MOVING_AVERAGE_DAYS
+const NOW_TS = parseInt(Date.now() / 1000);
+const FIRST_DATE_TS = parseInt(+new Date(2022, 10, 1) / 1000);
+const MOVING_AVERAGE_DAYS = 7;
+const MOVING_AVERAGE_PERIOD = 86400 * MOVING_AVERAGE_DAYS;
 const { AddressZero } = ethers.constants;
 
 export function useAllOrdersStats(chainId) {
@@ -85,7 +85,7 @@ export function usePositionStates(chainId) {
         transaction
       }
       createIncreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
@@ -94,17 +94,17 @@ export function usePositionStates(chainId) {
       indexToken
       isLong
       amountIn
-    
+
       sizeDelta
       acceptablePrice
       executionFee
-    
+
       transaction
       timestamp
     }
-        
+
     createDecreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
@@ -112,54 +112,54 @@ export function usePositionStates(chainId) {
       collateralToken
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
       executionFee
-    
+
       transaction
       timestamp
     }
-    
+
     cancelIncreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
       account
-      
+
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
-    
+
       transaction
       timestamp
     }
-    
+
     cancelDecreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
       account
-      
+
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
-    
+
       transaction
       timestamp
     }
-    
+
     orders(
-        first: 1000, 
+        first: 1000,
         where: {createdTimestamp_gt: 0}
         orderBy: createdTimestamp
         ) {
@@ -168,22 +168,22 @@ export function usePositionStates(chainId) {
       status
       index
       size
-    
+
       indexToken
       isLong
-    
+
       collateralToken
       collateral
-    
+
       triggerPrice
       triggerAboveThreshold
-    
+
       createdTimestamp
       cancelledTimestamp
       executedTimestamp
       transaction
     }
-    
+
     }`);
     if (!ethGraphClientForTrades) {
       return;
@@ -195,11 +195,8 @@ export function usePositionStates(chainId) {
         setRes(res);
       })
       .catch((err) => {
-          console.error(err);
-        }
-      );
-
-
+        console.error(err);
+      });
   }, [setRes, chainId]);
 
   const tradeVolueDataMap = useMemo(() => {
@@ -208,19 +205,23 @@ export function usePositionStates(chainId) {
     }
     const tradeData = res.data;
     const superArray = {
-      totalLongPositionCollaterals	:	bigNumberify(0),
-      totalLongPositionSizes	:	bigNumberify(0),
-      totalShortPositionCollaterals	:	bigNumberify(0),
-      totalShortPositionSizes	:	bigNumberify(0),
-      totalActivePositions	:	0
+      totalLongPositionCollaterals: bigNumberify(0),
+      totalLongPositionSizes: bigNumberify(0),
+      totalShortPositionCollaterals: bigNumberify(0),
+      totalShortPositionSizes: bigNumberify(0),
+      totalActivePositions: 0,
     };
 
     tradeData.createIncreasePositions.forEach((item) => {
-      if(item.isLong) {
-        superArray.totalLongPositionCollaterals = superArray.totalLongPositionCollaterals.add(bigNumberify(item.amountIn));
+      if (item.isLong) {
+        superArray.totalLongPositionCollaterals = superArray.totalLongPositionCollaterals.add(
+          bigNumberify(item.amountIn)
+        );
         superArray.totalLongPositionSizes = superArray.totalLongPositionSizes.add(bigNumberify(item.amountIn));
       } else {
-        superArray.totalShortPositionCollaterals = superArray.totalShortPositionCollaterals.add(bigNumberify(item.amountIn));
+        superArray.totalShortPositionCollaterals = superArray.totalShortPositionCollaterals.add(
+          bigNumberify(item.amountIn)
+        );
         superArray.totalShortPositionSizes = superArray.totalShortPositionSizes.add(bigNumberify(item.amountIn));
       }
       superArray.totalActivePositions += 1;
@@ -240,9 +241,8 @@ export function usePositionStates(chainId) {
     //   superArray.push(parent);
     // });
 
-
     // tradeData.orders.forEach((item) => {
-      
+
     //   const obj = {
     //     timestamp: item.createdTimestamp,
     //     group: 1669248000,
@@ -255,7 +255,6 @@ export function usePositionStates(chainId) {
     //   };
     //   superArray.push(parent);
     // });
-
 
     // const mapData = new Map();
 
@@ -287,7 +286,7 @@ export function useTotalVolume() {
         transaction
       }
       createIncreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
@@ -296,17 +295,17 @@ export function useTotalVolume() {
       indexToken
       isLong
       amountIn
-    
+
       sizeDelta
       acceptablePrice
       executionFee
-    
+
       transaction
       timestamp
     }
-        
+
     createDecreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
@@ -314,54 +313,54 @@ export function useTotalVolume() {
       collateralToken
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
       executionFee
-    
+
       transaction
       timestamp
     }
-    
+
     cancelIncreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
       account
-      
+
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
-    
+
       transaction
       timestamp
     }
-    
+
     cancelDecreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
       account
-      
+
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
-    
+
       transaction
       timestamp
     }
-    
+
     orders(
-        first: 1000, 
+        first: 1000,
         where: {createdTimestamp_gt: 0}
         orderBy: createdTimestamp
         ) {
@@ -370,22 +369,22 @@ export function useTotalVolume() {
       status
       index
       size
-    
+
       indexToken
       isLong
-    
+
       collateralToken
       collateral
-    
+
       triggerPrice
       triggerAboveThreshold
-    
+
       createdTimestamp
       cancelledTimestamp
       executedTimestamp
       transaction
     }
-    
+
     }`);
 
     if (!ethGraphClientForTrades) {
@@ -398,11 +397,8 @@ export function useTotalVolume() {
         setRes(res);
       })
       .catch((err) => {
-          console.error(err);
-        }
-      );
-
-
+        console.error(err);
+      });
   }, [setRes]);
 
   const tradeVolueDataMap = useMemo(() => {
@@ -423,11 +419,10 @@ export function useTotalVolume() {
       // superArray.add(bigNumberify(item.amountOut));
     });
 
-
     tradeData.orders.forEach((item) => {
       superArray = superArray.add(item.size);
     });
-    
+
     return superArray;
   }, [res]);
 
@@ -453,7 +448,7 @@ export function useTradeVolumeHistory(chainId) {
         transaction
       }
       createIncreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
@@ -462,17 +457,17 @@ export function useTradeVolumeHistory(chainId) {
       indexToken
       isLong
       amountIn
-    
+
       sizeDelta
       acceptablePrice
       executionFee
-    
+
       transaction
       timestamp
     }
-        
+
     createDecreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
@@ -480,54 +475,54 @@ export function useTradeVolumeHistory(chainId) {
       collateralToken
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
       executionFee
-    
+
       transaction
       timestamp
     }
-    
+
     cancelIncreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
       account
-      
+
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
-    
+
       transaction
       timestamp
     }
-    
+
     cancelDecreasePositions(
-        first: 1000, 
+        first: 1000,
         where: {timestamp_gt: 0}
         orderBy: timestamp
         ) {
       account
-      
+
       indexToken
       isLong
-      
-    
+
+
       sizeDelta
       acceptablePrice
-    
+
       transaction
       timestamp
     }
-    
+
     orders(
-        first: 1000, 
+        first: 1000,
         where: {createdTimestamp_gt: 0}
         orderBy: createdTimestamp
         ) {
@@ -536,22 +531,22 @@ export function useTradeVolumeHistory(chainId) {
       status
       index
       size
-    
+
       indexToken
       isLong
-    
+
       collateralToken
       collateral
-    
+
       triggerPrice
       triggerAboveThreshold
-    
+
       createdTimestamp
       cancelledTimestamp
       executedTimestamp
       transaction
     }
-    
+
     }`);
     if (!ethGraphClientForTrades) {
       return;
@@ -563,11 +558,8 @@ export function useTradeVolumeHistory(chainId) {
         setRes(res);
       })
       .catch((err) => {
-          console.error(err);
-        }
-      );
-
-
+        console.error(err);
+      });
   }, [setRes, chainId]);
 
   const tradeVolueDataMap = useMemo(() => {
@@ -582,10 +574,10 @@ export function useTradeVolumeHistory(chainId) {
         group: 1669248000,
         action: "Swap",
         token: ethers.utils.getAddress(item.tokenOut),
-        volume: item.amountIn
+        volume: item.amountIn,
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
@@ -599,7 +591,7 @@ export function useTradeVolumeHistory(chainId) {
         volume: item.amountIn,
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
@@ -613,27 +605,24 @@ export function useTradeVolumeHistory(chainId) {
         volume: item.amountOut,
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
 
-
     tradeData.orders.forEach((item) => {
-      
       const obj = {
         timestamp: item.createdTimestamp,
         group: 1669248000,
         action: "CreateIncreaseOrder",
         token: ethers.utils.getAddress(item.indexToken),
-        volume: item.size
+        volume: item.size,
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
-
 
     // const mapData = new Map();
 
@@ -649,8 +638,6 @@ export function useTradeVolumeHistory(chainId) {
 
 export function useAllTradesHistory(chainId, account) {
   const [res, setRes] = useState();
-
-  
 
   useEffect(() => {
     if (account) {
@@ -671,8 +658,8 @@ export function useAllTradesHistory(chainId, account) {
           transaction
         }
         createIncreasePositions(
-          first: 1000, 
-          where: { 
+          first: 1000,
+          where: {
             account: "${account.toLowerCase()}",
         }) {
         account
@@ -680,73 +667,73 @@ export function useAllTradesHistory(chainId, account) {
         indexToken
         isLong
         amountIn
-      
+
         sizeDelta
         acceptablePrice
         executionFee
-      
+
         transaction
         timestamp
       }
-          
+
       createDecreasePositions(
-          first: 1000, 
-          where: { 
+          first: 1000,
+          where: {
             account: "${account.toLowerCase()}",
         }) {
         account
         collateralToken
         indexToken
         isLong
-        
-      
+
+
         sizeDelta
         acceptablePrice
         executionFee
-      
+
         transaction
         timestamp
       }
-      
+
       cancelIncreasePositions(
-          first: 1000, 
-          where: { 
+          first: 1000,
+          where: {
             account: "${account.toLowerCase()}",
         }) {
         account
-        
+
         indexToken
         isLong
-        
-      
+
+
         sizeDelta
         acceptablePrice
-      
+
         transaction
         timestamp
       }
-      
+
       cancelDecreasePositions(
-          first: 1000, 
-          where: { 
+          first: 1000,
+          where: {
             account: "${account.toLowerCase()}",
         }) {
         account
-        
+
         indexToken
         isLong
-        
-      
+
+
         sizeDelta
         acceptablePrice
-      
+
         transaction
         timestamp
       }
-      
+
       orders(
-          first: 1000, 
-          where: { 
+          first: 1000,
+          where: {
             account: "${account.toLowerCase()}",
         }) {
         type
@@ -754,22 +741,22 @@ export function useAllTradesHistory(chainId, account) {
         status
         index
         size
-      
+
         indexToken
         isLong
-      
+
         collateralToken
         collateral
-      
+
         triggerPrice
         triggerAboveThreshold
-      
+
         createdTimestamp
         cancelledTimestamp
         executedTimestamp
         transaction
       }
-      
+
       }
       `);
       // console.log("---shark useAllTradesHistory 1");
@@ -793,10 +780,9 @@ export function useAllTradesHistory(chainId, account) {
           // console.log("---shark useAllTradesHistory 5");
         })
         .catch((err) => {
-            // console.log("---shark useAllTradesHistory 4");
-            console.error(err);
-          }
-        );
+          // console.log("---shark useAllTradesHistory 4");
+          console.error(err);
+        });
     }
   }, [setRes, chainId, account]);
 
@@ -813,15 +799,14 @@ export function useAllTradesHistory(chainId, account) {
         account: item.account,
         action: "Swap",
         params: {
-          "tokenIn": ethers.utils.getAddress(item.tokenIn),
-          "tokenOut": ethers.utils.getAddress(item.tokenOut),
-          "amountIn": item.amountIn,
-          "amountOut": item.amountOut,
-          
+          tokenIn: ethers.utils.getAddress(item.tokenIn),
+          tokenOut: ethers.utils.getAddress(item.tokenOut),
+          amountIn: item.amountIn,
+          amountOut: item.amountOut,
         },
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
@@ -833,18 +818,18 @@ export function useAllTradesHistory(chainId, account) {
         account: item.account,
         action: "CreateIncreasePosition",
         params: {
-          "indexToken": ethers.utils.getAddress(item.indexToken),
-          "tokenOut": item.tokenOut,
-          "amountIn": item.amountIn,
-          "acceptablePrice": item.acceptablePrice,
-          "collateralToken": ethers.utils.getAddress(item.collateralToken),
-          "executionFee": item.executionFee,
-          "isLong": item.isLong,
-          "sizeDelta": item.sizeDelta,
+          indexToken: ethers.utils.getAddress(item.indexToken),
+          tokenOut: item.tokenOut,
+          amountIn: item.amountIn,
+          acceptablePrice: item.acceptablePrice,
+          collateralToken: ethers.utils.getAddress(item.collateralToken),
+          executionFee: item.executionFee,
+          isLong: item.isLong,
+          sizeDelta: item.sizeDelta,
         },
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
@@ -856,18 +841,18 @@ export function useAllTradesHistory(chainId, account) {
         account: item.account,
         action: "CreateDecreasePosition",
         params: {
-          "indexToken": ethers.utils.getAddress(item.indexToken),
-          "tokenOut": item.tokenOut,
-          "amountOut": item.amountOut,
-          "acceptablePrice": item.acceptablePrice,
-          "collateralToken": ethers.utils.getAddress(item.collateralToken),
-          "executionFee": item.executionFee,
-          "isLong": item.isLong,
-          "sizeDelta": item.sizeDelta,
+          indexToken: ethers.utils.getAddress(item.indexToken),
+          tokenOut: item.tokenOut,
+          amountOut: item.amountOut,
+          acceptablePrice: item.acceptablePrice,
+          collateralToken: ethers.utils.getAddress(item.collateralToken),
+          executionFee: item.executionFee,
+          isLong: item.isLong,
+          sizeDelta: item.sizeDelta,
         },
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
@@ -879,14 +864,14 @@ export function useAllTradesHistory(chainId, account) {
         account: item.account,
         action: "CancelIncreasePosition",
         params: {
-          "indexToken": ethers.utils.getAddress(item.indexToken),
-          "acceptablePrice": item.acceptablePrice,
-          "isLong": item.isLong,
-          "sizeDelta": item.sizeDelta,
+          indexToken: ethers.utils.getAddress(item.indexToken),
+          acceptablePrice: item.acceptablePrice,
+          isLong: item.isLong,
+          sizeDelta: item.sizeDelta,
         },
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
@@ -898,62 +883,63 @@ export function useAllTradesHistory(chainId, account) {
         account: item.account,
         action: "CancelDecreasePosition",
         params: {
-          "indexToken": ethers.utils.getAddress(item.indexToken),
-          "acceptablePrice": item.acceptablePrice,
-          "isLong": item.isLong,
-          "sizeDelta": item.sizeDelta,
+          indexToken: ethers.utils.getAddress(item.indexToken),
+          acceptablePrice: item.acceptablePrice,
+          isLong: item.isLong,
+          sizeDelta: item.sizeDelta,
         },
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
 
     tradeData.orders.forEach((item) => {
-      
       const obj = {
         timestamp: item.createdTimestamp,
         txhash: item.transaction,
         account: item.account,
         action: "CreateIncreaseOrder",
         params: {
-          "order": {
-            "type":item.type,
+          order: {
+            type: item.type,
             // "createdAtBlock":22518920,
-            "updatedAt":1668747661257,
-            "account":item.account,
-            "orderIndex": {
-              "_type": "BigNumber",
-              "value":item.index
+            updatedAt: 1668747661257,
+            account: item.account,
+            orderIndex: {
+              _type: "BigNumber",
+              value: item.index,
             },
             // "triggerPrice": {
             //   "_type":"BigNumber",
             //   "value":item.triggerPrice
             // },
-            "triggerPrice": item.triggerPrice,
-            "triggerAboveThreshold":item.triggerAboveThreshold,
-            "executionFee": {
-              "_type":"BigNumber",
-              "value":0
+            triggerPrice: item.triggerPrice,
+            triggerAboveThreshold: item.triggerAboveThreshold,
+            executionFee: {
+              _type: "BigNumber",
+              value: 0,
             },
-            "indexToken": item.indexToken? ethers.utils.getAddress(item.indexToken) : item.indexToken,
-            "collateralToken":item.collateralToken? ethers.utils.getAddress(item.collateralToken) : item.collateralToken,
+            indexToken: item.indexToken ? ethers.utils.getAddress(item.indexToken) : item.indexToken,
+            collateralToken: item.collateralToken
+              ? ethers.utils.getAddress(item.collateralToken)
+              : item.collateralToken,
             // "purchaseToken":"0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
             // "purchaseTokenAmount":{
             //   "_type":"BigNumber",
             //   "value":"10000000"
             // },
-            "sizeDelta":item.size,
-            "isLong":item.isLong
-          }},
+            sizeDelta: item.size,
+            isLong: item.isLong,
+          },
+        },
       };
       const parent = {
-        data: obj
+        data: obj,
       };
       superArray.push(parent);
     });
-
 
     // const mapData = new Map();
 
@@ -1121,6 +1107,8 @@ export function useAllOrders(chainId, library) {
   useEffect(() => {
     getGmxGraphClient(chainId).query({ query }).then(setRes);
   }, [setRes, query, chainId]);
+
+  console.log(res, "CCCCCCCCCCCCCC");
 
   const key = res ? res.data.orders.map((order) => `${order.type}-${order.account}-${order.index}`) : null;
   const { data: orders = [] } = useSWR(key, () => {
@@ -1405,12 +1393,14 @@ function useGmxPriceFromEthereum() {
   return { data: gmxPrice, mutate };
 }
 
-
 // use only the supply endpoint on arbitrum, it includes the supply on avalanche
 export function useTotalGmxSupply() {
-  const { data: gmxSupply } = useSWR([`StakeV2:totalSupply:${MAINNET}`, MAINNET, getContract(MAINNET, "GMX"), "totalSupply"], {
-    fetcher: contractFetcher(undefined, Token),
-  });
+  const { data: gmxSupply } = useSWR(
+    [`StakeV2:totalSupply:${MAINNET}`, MAINNET, getContract(MAINNET, "GMX"), "totalSupply"],
+    {
+      fetcher: contractFetcher(undefined, Token),
+    }
+  );
 
   return {
     total: gmxSupply,
@@ -1423,7 +1413,6 @@ export function useTotalGmxStaked() {
   const stakedGmxTrackerAddressEth = getContract(MAINNET, "StakedGmxTracker");
 
   let totalStakedGmx = useRef(bigNumberify(0));
-  
 
   const { data: stakedGmxSupplyEth, mutate: updateStakedGmxSupplyEth } = useSWR(
     [
@@ -1440,7 +1429,7 @@ export function useTotalGmxStaked() {
 
   const mutate = useCallback(() => {
     updateStakedGmxSupplyEth();
-  }, [ updateStakedGmxSupplyEth]);
+  }, [updateStakedGmxSupplyEth]);
 
   if (stakedGmxSupplyEth) {
     let total = bigNumberify(stakedGmxSupplyEth);
@@ -1478,8 +1467,6 @@ export function useTotalGmxInLiquidity() {
     mutate,
   };
 }
-
-
 
 function useGmxPriceFromArbitrum(library, active) {
   const poolAddress = getContract(ARBITRUM, "UniswapGmxEthPool");
@@ -1785,7 +1772,6 @@ export function executeDecreaseOrder(chainId, library, account, index, feeReceiv
 }
 
 export function useTradersData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
-  
   const [closedPositionsData, setRes] = useState();
   const query = gql(`{
     tradingStats(
@@ -1813,73 +1799,75 @@ export function useTradersData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
     graphClient.query({ query }).then(setRes).catch(console.warn);
   }, [setRes, query]);
 
-  const [,,feesData] = useFeesData({ from, to })
+  const [, , feesData] = useFeesData({ from, to });
   const marginFeesByTs = useMemo(() => {
     if (!feesData) {
-      return {}
+      return {};
     }
 
-    let feesCumulative = 0
-    return feesData.reduce((memo, { timestamp, margin: fees}) => {
-      feesCumulative += fees
+    let feesCumulative = 0;
+    return feesData.reduce((memo, { timestamp, margin: fees }) => {
+      feesCumulative += fees;
       memo[timestamp] = {
         fees,
-        feesCumulative
-      }
-      return memo
-    }, {})
-  }, [feesData])
+        feesCumulative,
+      };
+      return memo;
+    }, {});
+  }, [feesData]);
 
-  let ret = null
+  let ret = null;
   let currentPnlCumulative = 0;
   let currentProfitCumulative = 0;
   let currentLossCumulative = 0;
-  const data = closedPositionsData ? sortBy(closedPositionsData.tradingStats, i => i.timestamp).map(dataItem => {
-    const longOpenInterest = dataItem.longOpenInterest / 1e30
-    const shortOpenInterest = dataItem.shortOpenInterest / 1e30
-    const openInterest = longOpenInterest + shortOpenInterest
+  const data = closedPositionsData
+    ? sortBy(closedPositionsData.tradingStats, (i) => i.timestamp).map((dataItem) => {
+        const longOpenInterest = dataItem.longOpenInterest / 1e30;
+        const shortOpenInterest = dataItem.shortOpenInterest / 1e30;
+        const openInterest = longOpenInterest + shortOpenInterest;
 
-    // const fees = (marginFeesByTs[dataItem.timestamp]?.fees || 0)
-    // const feesCumulative = (marginFeesByTs[dataItem.timestamp]?.feesCumulative || 0)
+        // const fees = (marginFeesByTs[dataItem.timestamp]?.fees || 0)
+        // const feesCumulative = (marginFeesByTs[dataItem.timestamp]?.feesCumulative || 0)
 
-    const profit = dataItem.profit / 1e30
-    const loss = dataItem.loss / 1e30
-    const profitCumulative = dataItem.profitCumulative / 1e30
-    const lossCumulative = dataItem.lossCumulative / 1e30
-    const pnlCumulative = profitCumulative - lossCumulative
-    const pnl = profit - loss
-    currentProfitCumulative += profit
-    currentLossCumulative -= loss
-    currentPnlCumulative += pnl
-    return {
-      longOpenInterest,
-      shortOpenInterest,
-      openInterest,
-      profit,
-      loss: -loss,
-      profitCumulative,
-      lossCumulative: -lossCumulative,
-      pnl,
-      pnlCumulative,
-      timestamp: dataItem.timestamp,
-      currentPnlCumulative,
-      currentLossCumulative,
-      currentProfitCumulative
-    }
-  }) : null
+        const profit = dataItem.profit / 1e30;
+        const loss = dataItem.loss / 1e30;
+        const profitCumulative = dataItem.profitCumulative / 1e30;
+        const lossCumulative = dataItem.lossCumulative / 1e30;
+        const pnlCumulative = profitCumulative - lossCumulative;
+        const pnl = profit - loss;
+        currentProfitCumulative += profit;
+        currentLossCumulative -= loss;
+        currentPnlCumulative += pnl;
+        return {
+          longOpenInterest,
+          shortOpenInterest,
+          openInterest,
+          profit,
+          loss: -loss,
+          profitCumulative,
+          lossCumulative: -lossCumulative,
+          pnl,
+          pnlCumulative,
+          timestamp: dataItem.timestamp,
+          currentPnlCumulative,
+          currentLossCumulative,
+          currentProfitCumulative,
+        };
+      })
+    : null;
 
   if (data && data.length) {
-    const maxProfit = maxBy(data, item => item.profit).profit
-    const maxLoss = minBy(data, item => item.loss).loss
-    const maxProfitLoss = Math.max(maxProfit, -maxLoss)
+    const maxProfit = maxBy(data, (item) => item.profit).profit;
+    const maxLoss = minBy(data, (item) => item.loss).loss;
+    const maxProfitLoss = Math.max(maxProfit, -maxLoss);
 
-    const maxPnl = maxBy(data, item => item.pnl).pnl
-    const minPnl = minBy(data, item => item.pnl).pnl
-    const maxCurrentCumulativePnl = maxBy(data, item => item.currentPnlCumulative).currentPnlCumulative
-    const minCurrentCumulativePnl = minBy(data, item => item.currentPnlCumulative).currentPnlCumulative
+    const maxPnl = maxBy(data, (item) => item.pnl).pnl;
+    const minPnl = minBy(data, (item) => item.pnl).pnl;
+    const maxCurrentCumulativePnl = maxBy(data, (item) => item.currentPnlCumulative).currentPnlCumulative;
+    const minCurrentCumulativePnl = minBy(data, (item) => item.currentPnlCumulative).currentPnlCumulative;
 
-    const currentProfitCumulative = data[data.length - 1].currentProfitCumulative
-    const currentLossCumulative = data[data.length - 1].currentLossCumulative
+    const currentProfitCumulative = data[data.length - 1].currentProfitCumulative;
+    const currentLossCumulative = data[data.length - 1].currentLossCumulative;
     const stats = {
       maxProfit,
       maxLoss,
@@ -1888,37 +1876,30 @@ export function useTradersData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
       currentLossCumulative,
       maxCurrentCumulativeProfitLoss: Math.max(currentProfitCumulative, -currentLossCumulative),
 
-      maxAbsPnl: Math.max(
-        Math.abs(maxPnl),
-        Math.abs(minPnl),
-      ),
-      maxAbsCumulativePnl: Math.max(
-        Math.abs(maxCurrentCumulativePnl),
-        Math.abs(minCurrentCumulativePnl)
-      ),
-      
-    }
+      maxAbsPnl: Math.max(Math.abs(maxPnl), Math.abs(minPnl)),
+      maxAbsCumulativePnl: Math.max(Math.abs(maxCurrentCumulativePnl), Math.abs(minCurrentCumulativePnl)),
+    };
 
     ret = {
       data,
-      stats
-    }
+      stats,
+    };
   }
 
   const [openInterest, openInterestDelta] = useMemo(() => {
     if (!ret) {
-      return []
+      return [];
     }
-    const total = ret.data[ret.data.length - 1]?.openInterest
-    const delta = total - ret.data[ret.data.length - 2]?.openInterest
-    return [total, delta]
-  }, [ret])
+    const total = ret.data[ret.data.length - 1]?.openInterest;
+    const delta = total - ret.data[ret.data.length - 2]?.openInterest;
+    return [total, delta];
+  }, [ret]);
 
-  return [openInterest, openInterestDelta]
+  return [openInterest, openInterestDelta];
 }
 
 export function useFeesData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
-  const PROPS = 'margin liquidation swap mint burn'.split(' ')
+  const PROPS = "margin liquidation swap mint burn".split(" ");
   const query = gql(`{
     feeStats(
       first: 1000
@@ -1951,71 +1932,70 @@ export function useFeesData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
 
   const feesChartData = useMemo(() => {
     if (!feesData) {
-      return null
+      return null;
     }
 
     // let chartData = sortBy(feesData.feeStats, 'id').map(item => {
-    let chartData = sortBy(feesData.data.feeStats, 'id').map(item => {
-
+    let chartData = sortBy(feesData.data.feeStats, "id").map((item) => {
       const ret = { timestamp: item.timestamp || item.id };
 
-      PROPS.forEach(prop => {
+      PROPS.forEach((prop) => {
         if (item[prop]) {
-          ret[prop] = item[prop] / 1e30
+          ret[prop] = item[prop] / 1e30;
         }
-      })
+      });
 
-      ret.liquidation = item.marginAndLiquidation / 1e30 - item.margin / 1e30
-      ret.all = PROPS.reduce((memo, prop) => memo + ret[prop], 0)
-      return ret
-    })
+      ret.liquidation = item.marginAndLiquidation / 1e30 - item.margin / 1e30;
+      ret.all = PROPS.reduce((memo, prop) => memo + ret[prop], 0);
+      return ret;
+    });
 
-    let cumulative = 0
-    const cumulativeByTs = {}
+    let cumulative = 0;
+    const cumulativeByTs = {};
     return chain(chartData)
-      .groupBy(item => item.timestamp)
+      .groupBy((item) => item.timestamp)
       .map((values, timestamp) => {
-        const all = sumBy(values, 'all')
-        cumulative += all
+        const all = sumBy(values, "all");
+        cumulative += all;
 
-        let movingAverageAll
-        const movingAverageTs = timestamp - MOVING_AVERAGE_PERIOD
+        let movingAverageAll;
+        const movingAverageTs = timestamp - MOVING_AVERAGE_PERIOD;
         if (movingAverageTs in cumulativeByTs) {
-          movingAverageAll = (cumulative - cumulativeByTs[movingAverageTs]) / MOVING_AVERAGE_DAYS
+          movingAverageAll = (cumulative - cumulativeByTs[movingAverageTs]) / MOVING_AVERAGE_DAYS;
         }
 
         const ret = {
           timestamp: Number(timestamp),
           all,
           cumulative,
-          movingAverageAll
-        }
-        PROPS.forEach(prop => {
-           ret[prop] = sumBy(values, prop)
-        })
-        cumulativeByTs[timestamp] = cumulative
-        return ret
+          movingAverageAll,
+        };
+        PROPS.forEach((prop) => {
+          ret[prop] = sumBy(values, prop);
+        });
+        cumulativeByTs[timestamp] = cumulative;
+        return ret;
       })
       .value()
-      .filter(item => item.timestamp >= from)
-  }, [feesData])
+      .filter((item) => item.timestamp >= from);
+  }, [feesData]);
 
   const [totalFees, totalFeesDelta] = useMemo(() => {
     if (!feesChartData) {
-      return []
+      return [];
     }
-    const total = feesChartData[feesChartData.length - 1]?.cumulative
-    const delta = total - feesChartData[feesChartData.length - 2]?.cumulative
-    return [total, delta]
-  }, [feesChartData])
+    const total = feesChartData[feesChartData.length - 1]?.cumulative;
+    const delta = total - feesChartData[feesChartData.length - 2]?.cumulative;
+    return [total, delta];
+  }, [feesChartData]);
 
   return [totalFees, totalFeesDelta, feesChartData];
 }
 
 export function useVolumeData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
-	const PROPS = 'margin liquidation swap mint burn'.split(' ')
+  const PROPS = "margin liquidation swap mint burn".split(" ");
   // const timestampProp = chainName === "arbitrum" ? "id" : "timestamp"
-  const timestampProp = "timestamp"
+  const timestampProp = "timestamp";
   const [graphData, setRes] = useState();
   const query = gql`{
     volumeStats(
@@ -2026,9 +2006,9 @@ export function useVolumeData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
       subgraphError: allow
     ) {
       ${timestampProp}
-      ${PROPS.join('\n')}
+      ${PROPS.join("\n")}
     }
-  }`
+  }`;
   // const [graphData, loading, error] = useGraph(query, { chainName })
 
   useEffect(() => {
@@ -2038,113 +2018,125 @@ export function useVolumeData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
     }
     graphClient.query({ query }).then(setRes).catch(console.warn);
   }, [setRes, query]);
-  console.log (graphData, ">>>>>>>>>>>>>><<<<<<<<<<<<<")
 
   const data = useMemo(() => {
     if (!graphData) {
-      return null
+      return null;
     }
 
-    let ret =  sortBy(graphData.data.volumeStats, timestampProp).map(item => {
+    let ret = sortBy(graphData.data.volumeStats, timestampProp).map((item) => {
       const ret = { timestamp: item[timestampProp] };
       let all = 0;
-      PROPS.forEach(prop => {
-        ret[prop] = item[prop] / 1e30
-        all += ret[prop]
-      })
-      ret.all = all
-      return ret
-    })
+      PROPS.forEach((prop) => {
+        ret[prop] = item[prop] / 1e30;
+        all += ret[prop];
+      });
+      ret.all = all;
+      return ret;
+    });
 
-    let cumulative = 0
-    const cumulativeByTs = {}
-    return ret.map(item => {
-      cumulative += item.all
+    let cumulative = 0;
+    const cumulativeByTs = {};
+    return ret.map((item) => {
+      cumulative += item.all;
 
-      let movingAverageAll
-      const movingAverageTs = item.timestamp - MOVING_AVERAGE_PERIOD
+      let movingAverageAll;
+      const movingAverageTs = item.timestamp - MOVING_AVERAGE_PERIOD;
       if (movingAverageTs in cumulativeByTs) {
-        movingAverageAll = (cumulative - cumulativeByTs[movingAverageTs]) / MOVING_AVERAGE_DAYS
+        movingAverageAll = (cumulative - cumulativeByTs[movingAverageTs]) / MOVING_AVERAGE_DAYS;
       }
 
       return {
         movingAverageAll,
         cumulative,
-        ...item
-      }
-    })
-  }, [graphData])
+        ...item,
+      };
+    });
+  }, [graphData]);
 
   // return [data, loading, error]
 
   const [totalVolume, totalVolumeDelta] = useMemo(() => {
     if (!data) {
-      return []
+      return [];
     }
-    const total = data[data.length - 1]?.cumulative
-    const delta = total - data[data.length - 2]?.cumulative
-    return [total, delta]
-  }, [data])
+    const total = data[data.length - 1]?.cumulative;
+    const delta = total - data[data.length - 2]?.cumulative;
+    return [total, delta];
+  }, [data]);
 
   return [totalVolume, totalVolumeDelta];
 }
 
-const numberFmt0 = Intl.NumberFormat('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })
-const numberFmt1 = Intl.NumberFormat('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 1 })
-const numberFmt2 = Intl.NumberFormat('en-US', { minimumFractionDigits: 3, maximumFractionDigits: 3 })
-const currencyFmt0 = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 })
-const currencyFmt1 = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 1, maximumFractionDigits: 1 })
-const currencyFmt2 = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 })
-
+const numberFmt0 = Intl.NumberFormat("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+const numberFmt1 = Intl.NumberFormat("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 1 });
+const numberFmt2 = Intl.NumberFormat("en-US", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+const currencyFmt0 = Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
+const currencyFmt1 = Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+});
+const currencyFmt2 = Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
 
 function _getCurrencyFmt(value) {
-  const absValue = Math.abs(value)
+  const absValue = Math.abs(value);
   if (absValue < 10) {
-    return currencyFmt2
+    return currencyFmt2;
   } else if (absValue < 1000) {
-    return currencyFmt1
+    return currencyFmt1;
   } else {
-    return currencyFmt0
+    return currencyFmt0;
   }
 }
 
 function _getNumberFmt(value) {
-  const absValue = Math.abs(value)
+  const absValue = Math.abs(value);
   if (absValue < 10) {
-    return numberFmt2
+    return numberFmt2;
   } else if (absValue < 1000) {
-    return numberFmt1
+    return numberFmt1;
   } else {
-    return numberFmt0
+    return numberFmt0;
   }
 }
-
 
 export const formatNumber = (value, opts = {}) => {
-  const currency = !!opts.currency
-  const compact = !!opts.compact
+  const currency = !!opts.currency;
+  const compact = !!opts.compact;
 
   if (currency && !compact) {
-    return _getCurrencyFmt(value).format(value)
+    return _getCurrencyFmt(value).format(value);
   }
 
-  const display = compact ? compactNumber(value) : _getNumberFmt(value).format(value)
+  const display = compact ? compactNumber(value) : _getNumberFmt(value).format(value);
   if (currency) {
-    return `$${display}`
+    return `$${display}`;
   }
-  return display
-}
+  return display;
+};
 
-export const compactNumber = value => {
-  const abs = Math.abs(value)
+export const compactNumber = (value) => {
+  const abs = Math.abs(value);
   if (abs >= 1e9) {
-    return `${(value / 1e9).toFixed(abs < 1e10 ? 2 : 1)}B`
+    return `${(value / 1e9).toFixed(abs < 1e10 ? 2 : 1)}B`;
   }
   if (abs >= 1e6) {
-    return `${(value / 1e6).toFixed(abs < 1e7 ? 2 : 1)}M`
+    return `${(value / 1e6).toFixed(abs < 1e7 ? 2 : 1)}M`;
   }
   if (abs >= 1e3) {
-    return `${(value / 1e3).toFixed(abs < 1e4 ? 2 : 1)}K`
+    return `${(value / 1e3).toFixed(abs < 1e4 ? 2 : 1)}K`;
   }
-  return `${value.toFixed(1)}`
-}
+  return `${value.toFixed(1)}`;
+};

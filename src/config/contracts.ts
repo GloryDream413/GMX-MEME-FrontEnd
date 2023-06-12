@@ -10,43 +10,43 @@ export const XGMT_EXCLUDED_ACCOUNTS = [
 const CONTRACTS = {
   [MAINNET]: {
     //Goerli Testnet
-    Vault: "0x7fC7fC2b7731ba0d0E9249E6e631Fa847bF49fF3", //replaced
-    Router: "0x31292AFBd1d507a87dAa90c14E7dc061F1b0667f", //replaced
-    VaultReader: "0x7d6aD321b5B1a9f7e0392e24e5BFe2ECe051ca3F", //replaced
-    Reader: "0xc6e05fc8Ad98A24fE4c7e50D9Bd46F985da0dbE5", //replaced
-    GlpManager: "0xf321A40A588E5c738685A44fc5Aa813221F70Ca5", //replaced
-    RewardRouter: "0xA2c2980Ad188FEA9BA041A942eDacd0306f39cba", //replaced
-    RewardReader: "0x119459363848512EE22F1d06eEa1C39E1d3Dcd87", //replaced
+    Vault: "0x458217E1CB42cA9d196Fd0B6C92E0f01377b0Ce9", //replaced
+    Router: "0xde89Eeb63dEC88dC3b4a563327df38eF46AD56DC", //replaced
+    VaultReader: "0xCF2491f13461BA73a07E2eBd4c1d19286F38eC5c", //replaced
+    Reader: "0x8d9a156c94ce59884986acB3BFc0537d2A11A26A", //replaced
+    GlpManager: "0xaC4fc0d106f0ccB7e01858fC1e84267AE1544E39", //replaced
+    RewardRouter: "0x6C84C34B3Bd0a80Cc7e8ac78231FcDA63073DfCF", //replaced
+    RewardReader: "0x93621f79E6C24Bdc9B14f38FE65ca9EB42a44b46", //replaced
     NATIVE_TOKEN: "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
-    GLP: "0x41268357F826D5Ec34FbBA8da86bCA2aDF885d25", //replaced
-    GMX: "0x9f2f24B0A2d9550474d62b61539e7b437715eF1F", //replaced
-    ES_GMX: "0x935912a166760446f2bDE1d082D3960F0A6Ef477", //replaced
-    BN_GMX: "0xA8F08321123AD15fC8703c536d9347F9Db4da0F3", //replaced
-    USDG: "0x78313C50e1636f366432D079a193Fe7c50acB5bd", //replaced
-    ES_GMX_IOU: "0xC97B2209D81383d77b9e5D17C320b4E669295bE9", // placeholder address
+    GLP: "0xEA003EDf3c6886F42B39921478757d5Dc6dF06dD", //replaced
+    GMX: "0xc30982498ceAc1989c200FE30a7b19ba3763AeaD", //replaced
+    ES_GMX: "0x879Cf0E12135B3980BBd1446882ef7c149106427", //replaced
+    BN_GMX: "0x6d461e2b6a377A7b35c914551CCF87D41E303540", //replaced
+    USDG: "0xa8939852828b26060281F9b2eA806C0253cFdD88", //replaced
+    ES_GMX_IOU: "0xe36D77cf33654f4353A46FaD17Fb33cbC5902351", // placeholder address
 
-    StakedGmxTracker: "0x631238cb763B2A7840b4F2754bAe9cA5f053053C", //replaced
-    BonusGmxTracker: "0xE68beE7B3d1cAf6FE78A2a1c1694968de5Bd267A", //replaced
-    FeeGmxTracker: "0xFbbd636F25735f4Bc68062Da1506a1DAfe638705", //replaced
-    StakedGlpTracker: "0x71a7026c6892fc3e493129C4E52Eb3fefAE5d903", //replaced
-    FeeGlpTracker: "0x481dC824EcE37E47080185edb5c0b23eEd85392F", //replaced
+    StakedGmxTracker: "0x06e2182b2096a0381970aB0416F86c80B9cb2F73", //replaced
+    BonusGmxTracker: "0x60bc69a5873faE24D0f8115640599c7e2e37b259", //replaced
+    FeeGmxTracker: "0x5c9640F6411f2beAC2C60B67820E3DF3e597EDDA", //replaced
+    StakedGlpTracker: "0x8cDf3204a6E272d6aAa16DCbc1C214d591e42406", //replaced
+    FeeGlpTracker: "0xd72fA66F9d144ec94AF2B05d214839E8EE2bC791", //replaced
 
-    StakedGmxDistributor: "0xFE7C336F42072aAe5048cDA1a5c942c570471998", //replaced
-    StakedGlpDistributor: "0x83A2213ac361FB90B6f65E0a562a103Ca94A5bdc", //replaced
+    StakedGmxDistributor: "0x01f885e08460D855dE7410a7b2CF63eeC74438AD", //replaced
+    StakedGlpDistributor: "0x85Da252752dF617060c5489605e77B4F1130E162", //replaced
 
-    GmxVester: "0x5A9B426E1C5AcB83F9819d92d316570DA28B62e9", //replaced
-    GlpVester: "0x9D4ac5dAf5faDdc4b2bC7Cced6BBda7B84Cc5A4c", //replaced
+    GmxVester: "0x0eDE195a1A8A798f0701004f1e1CC495611C3E21", //replaced
+    GlpVester: "0x933901dA035c9E5c6cB734744b410c607e8d7677", //replaced
 
-    OrderBook: "0x631238cb763B2A7840b4F2754bAe9cA5f053053C", //replaced
-    OrderExecutor: "0x631238cb763B2A7840b4F2754bAe9cA5f053053C", //replaced
-    OrderBookReader: "0x34F7475721aa1fe99E0928EDbfDf4538CfC5ba4c", //replaced
+    OrderBook: "0x1e0ad629592e25860c608111dEd9c5E61921C2ED", //replaced
+    OrderExecutor: "0x1e0ad629592e25860c608111dEd9c5E61921C2ED", //replaced
+    OrderBookReader: "0x51Ad66DB808bcC40fEC15970DEAffA8D940251Eb", //replaced
 
-    PositionRouter: "0xa23c7346B1c0CD79591b225Db9530b7170e3E70d", //replaced
-    PositionManager: "0xE482B6074FE9eD423142779E1e148b84934491B7", //replaced
+    PositionRouter: "0x54d094B8f55cE13111BED6b128d5bA8e580D67C9", //replaced
+    PositionManager: "0x9E6803fc355Ff3D1dE47C99ED6b49853de252194", //replaced
 
     TraderJoeGmxAvaxPool: "0x198Cb829FE2af472d6Da0F9070Dff51C67cb9F01", //replaced
-    ReferralStorage: "0x22E5fD281B9CcFD0D9914bAe5ad14b577e638bdE", //replaced
-    ReferralReader: "0xAd310160C41D4107083f262B30b8705BF77F306c", //replaced
+    ReferralStorage: "0xC6a09f95CB92650A35Cd34147a6d9C24505deFfA", //replaced
+    ReferralReader: "0x8b84e7f6d8Ee11a4ED15223C7b1e38942f362E8c", //replaced
   },
 
   [ARBITRUM]: {
