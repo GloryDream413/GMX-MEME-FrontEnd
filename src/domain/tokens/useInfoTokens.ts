@@ -104,7 +104,7 @@ function getInfoTokens(
 
     infoTokens[token.address] = token;
   }
-  // console.log("---shark getInfoTokens   ");
+  console.log("---shark getInfoTokens   ", infoTokens, "<<<<<<<<<<<");
   for (let i = 0; i < whitelistedTokens.length; i++) {
     const token = JSON.parse(JSON.stringify(whitelistedTokens[i])) as TokenInfo;
 

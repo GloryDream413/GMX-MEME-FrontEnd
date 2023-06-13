@@ -417,19 +417,19 @@ export default function PositionsList(props) {
                       <div className="label">
                         <Trans>Mark Price</Trans>
                       </div>
-                      <div>${formatAmount(position.markPrice, USD_DECIMALS, 2, true)}</div>
+                      <div>${formatAmount(position.markPrice, USD_DECIMALS, 8, true)}</div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Entry Price</Trans>
                       </div>
-                      <div>${formatAmount(position.averagePrice, USD_DECIMALS, 2, true)}</div>
+                      <div>${formatAmount(position.averagePrice, USD_DECIMALS, 8, true)}</div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Liq. Price</Trans>
                       </div>
-                      <div>${formatAmount(liquidationPrice, USD_DECIMALS, 2, true)}</div>
+                      <div>${formatAmount(liquidationPrice, USD_DECIMALS, 8, true)}</div>
                     </div>
                   </div>
                   <div className="App-card-divider"></div>
@@ -558,18 +558,18 @@ export default function PositionsList(props) {
                               <br />
                               <StatsTooltipRow
                                 label={t`Initial Collateral`}
-                                value={formatAmount(position.collateral, USD_DECIMALS, 2, true)}
+                                value={formatAmount(position.collateral, USD_DECIMALS, 8, true)}
                               />
                               <StatsTooltipRow label={t`PnL`} value={position.deltaBeforeFeesStr} showDollar={false} />
                               <StatsTooltipRow
                                 label={t`Borrow Fee`}
                                 showDollar={false}
-                                value={`-$${formatAmount(position.fundingFee, USD_DECIMALS, 2, true)}`}
+                                value={`-$${formatAmount(position.fundingFee, USD_DECIMALS, 8, true)}`}
                               />
                               <StatsTooltipRow
                                 label={t`Open + Close fee`}
                                 showDollar={false}
-                                value={`-$${formatAmount(position.positionFee, USD_DECIMALS, 2, true)}`}
+                                value={`-$${formatAmount(position.positionFee, USD_DECIMALS, 8, true)}`}
                               />
                               <StatsTooltipRow
                                 label={t`PnL After Fees`}
@@ -619,7 +619,7 @@ export default function PositionsList(props) {
                                   >
                                     {order.triggerAboveThreshold ? ">" : "<"}{" "}
                                     {formatAmount(order.triggerPrice, 30, 2, true)}:
-                                    {order.type === INCREASE ? " +" : " -"}${formatAmount(order.sizeDelta, 30, 2, true)}
+                                    {order.type === INCREASE ? " +" : " -"}${formatAmount(order.sizeDelta, 30, 8, true)}
                                     {order.error && (
                                       <>
                                         , <span className="negative">{order.error}</span>
@@ -657,12 +657,12 @@ export default function PositionsList(props) {
 
                             <StatsTooltipRow
                               label={t`Initial Collateral`}
-                              value={formatAmount(position.collateral, USD_DECIMALS, 2, true)}
+                              value={formatAmount(position.collateral, USD_DECIMALS, 8, true)}
                             />
                             <StatsTooltipRow
                               label={t`Borrow Fee`}
                               showDollar={false}
-                              value={`-$${formatAmount(position.fundingFee, USD_DECIMALS, 2, true)}`}
+                              value={`-$${formatAmount(position.fundingFee, USD_DECIMALS, 8, true)}`}
                             />
                             <StatsTooltipRow
                               showDollar={false}
@@ -682,7 +682,7 @@ export default function PositionsList(props) {
                 </td>
                 <td className="clickable" onClick={() => onPositionClick(position)}>
                   <Tooltip
-                    handle={`$${formatAmount(position.markPrice, USD_DECIMALS, 2, true)}`}
+                    handle={`$${formatAmount(position.markPrice, USD_DECIMALS, 8, true)}`}
                     position="left-bottom"
                     handleClassName="plain clickable"
                     renderContent={() => {
@@ -704,10 +704,10 @@ export default function PositionsList(props) {
                   />
                 </td>
                 <td className="clickable" onClick={() => onPositionClick(position)}>
-                  ${formatAmount(position.averagePrice, USD_DECIMALS, 2, true)}
+                  ${formatAmount(position.averagePrice, USD_DECIMALS, 8, true)}
                 </td>
                 <td className="clickable" onClick={() => onPositionClick(position)}>
-                  ${formatAmount(liquidationPrice, USD_DECIMALS, 2, true)}
+                  ${formatAmount(liquidationPrice, USD_DECIMALS, 8, true)}
                 </td>
 
                 <td>
