@@ -903,7 +903,6 @@ export default function SwapBox(props) {
 
     if (isLong) {
       let requiredAmount = toAmount;
-      console.log(toAmount, "OOOOOOOOOOOOOOOO");
       if (fromTokenAddress !== toTokenAddress) {
         const { amount: swapAmount } = getNextToAmount(
           chainId,
@@ -918,7 +917,6 @@ export default function SwapBox(props) {
           isSwap
         );
         requiredAmount = requiredAmount.add(swapAmount);
-        console.log(toTokenInfo.availableAmount, requiredAmount, "VVVVVVVVVVVVVVVVVVV");
 
         if (toToken && toTokenAddress !== USDG_ADDRESS) {
           if (!toTokenInfo.availableAmount) {
@@ -1222,7 +1220,6 @@ export default function SwapBox(props) {
   };
 
   const switchTokens = () => {
-    console.log("---shark switchTokens");
     if (fromAmount && toAmount) {
       if (anchorOnFromAmount) {
         setToValue(formatAmountFree(fromAmount, fromToken.decimals, 8));

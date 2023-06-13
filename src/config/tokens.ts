@@ -44,6 +44,7 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",
       isShortable: true,
+      isStable: true,
       isMemeCoin: false,
     },
     {

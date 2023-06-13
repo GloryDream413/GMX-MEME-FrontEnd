@@ -1108,8 +1108,6 @@ export function useAllOrders(chainId, library) {
     getGmxGraphClient(chainId).query({ query }).then(setRes);
   }, [setRes, query, chainId]);
 
-  console.log(res, "CCCCCCCCCCCCCC");
-
   const key = res ? res.data.orders.map((order) => `${order.type}-${order.account}-${order.index}`) : null;
   const { data: orders = [] } = useSWR(key, () => {
     const provider = getProvider(library, chainId);
@@ -1790,7 +1788,6 @@ export function useTradersData({ from = FIRST_DATE_TS, to = NOW_TS } = {}) {
       shortOpenInterest
     }
   }`);
-  console.log("---shark useTradersData");
   useEffect(() => {
     const graphClient = getGmxGraphClient(MAINNET);
     if (!graphClient) {

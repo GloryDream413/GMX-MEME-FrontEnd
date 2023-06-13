@@ -118,7 +118,6 @@ function applyPendingChanges(position, pendingPositions) {
     return;
   }
   const { key } = position;
-
   if (
     pendingPositions[key] &&
     pendingPositions[key].updatedAt &&
@@ -413,12 +412,15 @@ export const Exchange = forwardRef((props, ref) => {
         to: getTokenBySymbol(chainId, defaultCollateralSymbol).address,
       },
       [LONG]: {
-        from: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
-        to: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
+        // from: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
+        // to: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
+        from: AddressZero,
+        to: AddressZero,
       },
       [SHORT]: {
         from: getTokenBySymbol(chainId, defaultCollateralSymbol).address,
-        to: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
+        // to: "0x979c80C31A57C885e5160009ed8FB1e78f496C7D",
+        to: AddressZero,
       },
     }),
     [chainId, defaultCollateralSymbol]

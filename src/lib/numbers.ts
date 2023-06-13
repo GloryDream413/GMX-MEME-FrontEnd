@@ -76,7 +76,6 @@ export const formatAmount = (
   amountStr = limitDecimals(amountStr, displayDecimals);
 
   if (displayDecimals !== 0) {
-    console.log(amountStr, "SSSSSSSSSSSSSS", Number(amountStr) < 1);
     if (Number(amountStr) < 1) amountStr = padDecimals(amountStr, displayDecimals);
     else amountStr = padDecimals(amountStr, 2);
   }
