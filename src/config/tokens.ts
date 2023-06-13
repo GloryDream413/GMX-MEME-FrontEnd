@@ -43,7 +43,6 @@ export const TOKENS: { [chainId: number]: Token[] } = {
       address: "0x07865c6e87b9f70255377e024ace6630c1eaa37f",
       coingeckoUrl: "https://www.coingecko.com/en/coins/usd-coin",
       imageUrl: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png",
-      isShortable: true,
       isStable: true,
       isMemeCoin: false,
     },
@@ -405,7 +404,6 @@ export function isValidToken(chainId: number, address: string) {
   }
   return address in TOKENS_MAP[chainId];
 }
-
 export function getToken(chainId: number, address: string) {
   if (!TOKENS_MAP[chainId]) {
     throw new Error(`Incorrect chainId ${chainId}`);
