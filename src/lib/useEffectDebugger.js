@@ -26,10 +26,6 @@ const useEffectDebugger = (effectHook, dependencies, dependencyNames = []) => {
     return acc;
   }, {});
 
-  if (Object.keys(changedDeps).length) {
-    console.log("[use-effect-debugger] ", changedDeps);
-  }
-
   useEffect(effectHook, [...dependencies, effectHook]);
 };
 

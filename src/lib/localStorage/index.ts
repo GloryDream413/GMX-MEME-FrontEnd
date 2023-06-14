@@ -7,7 +7,6 @@ export function useLocalStorageByChainId<T>(
   defaultValue: T
 ): [T | undefined, (value: T) => void] {
   const [internalValue, setInternalValue] = useLocalStorage(key, {});
-  console.log(internalValue, "PPPPPPPPPPPPPPPPPPP");
   const setValue = useCallback(
     (value) => {
       setInternalValue((internalValue) => {
@@ -32,7 +31,6 @@ export function useLocalStorageByChainId<T>(
   } else {
     value = defaultValue;
   }
-  console.log(value, "DDDDDDDDDDDDDDD");
 
   return [value, setValue];
 }

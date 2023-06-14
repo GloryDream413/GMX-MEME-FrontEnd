@@ -1812,8 +1812,6 @@ export default function SwapBox(props) {
     [SWAP]: t`Swap`,
   };
 
-  console.log("YYYYYYYYYYYYYYY", fromTokenAddress);
-
   return (
     <div className="Exchange-swap-box">
       {/* <div className="Exchange-swap-wallet-box App-box">
