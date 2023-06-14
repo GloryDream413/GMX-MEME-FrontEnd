@@ -259,7 +259,10 @@ export default function SwapBox(props) {
     positionKey = getPositionKey(account, toTokenAddress, toTokenAddress, true, nativeTokenAddress);
   }
   if (isShort) {
-    positionKey = getPositionKey(account, shortCollateralAddress.address, toTokenAddress, false, nativeTokenAddress);
+    if (typeof shortCollateralAddress === "object")
+      positionKey = getPositionKey(account, shortCollateralAddress.address, toTokenAddress, false, nativeTokenAddress);
+    else if (typeof shortCollateralAddress === "string")
+      positionKey = getPositionKey(account, shortCollateralAddress, toTokenAddress, false, nativeTokenAddress);
   }
 
   const existingPosition = positionKey ? positionsMap[positionKey] : undefined;
@@ -325,7 +328,11 @@ export default function SwapBox(props) {
 
   const fromToken = getToken(chainId, fromTokenAddress);
   const toToken = getToken(chainId, toTokenAddress);
-  const shortCollateralToken = getTokenInfo(infoTokens, shortCollateralAddress.address);
+  let shortCollateralToken;
+  if (typeof shortCollateralAddress === "object")
+    shortCollateralToken = getTokenInfo(infoTokens, shortCollateralAddress.address);
+  if (typeof shortCollateralAddress === "string")
+    shortCollateralToken = getTokenInfo(infoTokens, shortCollateralAddress);
 
   const fromTokenInfo = getTokenInfo(infoTokens, fromTokenAddress);
   const toTokenInfo = getTokenInfo(infoTokens, toTokenAddress);
@@ -386,7 +393,7 @@ export default function SwapBox(props) {
   const toUsdMax = getUsd(toAmount, toTokenAddress, true, infoTokens, orderOption, triggerPriceUsd);
 
   const indexTokenAddress = toTokenAddress === AddressZero ? nativeTokenAddress : toTokenAddress;
-  const collateralTokenAddress = isLong ? indexTokenAddress : shortCollateralAddress.address;
+  const collateralTokenAddress = isLong ? indexTokenAddress : shortCollateralToken.address;
   const collateralToken = getToken(chainId, collateralTokenAddress);
 
   const [triggerRatioValue, setTriggerRatioValue] = useState("");
@@ -491,7 +498,7 @@ export default function SwapBox(props) {
       const key = getPositionKey(account, stableToken.address, toTokenAddress, false, nativeTokenAddress);
       const position = positionsMap[key];
       if (position && position.size && position.size.gt(0)) {
-        setShortCollateralAddress(position.collateralToken.address);
+        setShortCollateralAddress(position.collateralToken);
         return;
       }
     }
@@ -503,7 +510,7 @@ export default function SwapBox(props) {
     positionsMap,
     stableTokens,
     nativeTokenAddress,
-    shortCollateralAddress.address,
+    shortCollateralToken.address,
     setShortCollateralAddress,
   ]);
 
@@ -969,12 +976,12 @@ export default function SwapBox(props) {
 
     if (isShort) {
       let stableTokenAmount = bigNumberify(0);
-      if (fromTokenAddress !== shortCollateralAddress.address && fromAmount && fromAmount.gt(0)) {
+      if (fromTokenAddress !== shortCollateralToken.address && fromAmount && fromAmount.gt(0)) {
         const { amount: nextToAmount } = getNextToAmount(
           chainId,
           fromAmount,
           fromTokenAddress,
-          shortCollateralAddress.address,
+          shortCollateralToken.address,
           infoTokens,
           undefined,
           undefined,
@@ -1201,12 +1208,12 @@ export default function SwapBox(props) {
     setIsWaitingForApproval(false);
 
     if (isShort && token.isStable) {
-      setShortCollateralAddress(token.address);
+      setShortCollateralAddress(token);
     }
   };
 
   const onSelectShortCollateralAddress = (token) => {
-    setShortCollateralAddress(token.address);
+    setShortCollateralAddress(token);
   };
 
   const onSelectToToken = (token) => {
@@ -1401,7 +1408,7 @@ export default function SwapBox(props) {
         const stableToken = getMostAbundantStableToken(chainId, infoTokens);
         path.push(stableToken.address);
       } else {
-        path.push(shortCollateralAddress.address);
+        path.push(shortCollateralToken.address);
       }
     }
 
@@ -1466,9 +1473,9 @@ export default function SwapBox(props) {
     }
 
     if (isShort) {
-      path = [shortCollateralAddress.address];
-      if (tokenAddress0 !== shortCollateralAddress.address) {
-        path = [tokenAddress0, shortCollateralAddress.address];
+      path = [shortCollateralToken.address];
+      if (tokenAddress0 !== shortCollateralToken.address) {
+        path = [tokenAddress0, shortCollateralToken.address];
       }
     }
 
@@ -2069,7 +2076,7 @@ export default function SwapBox(props) {
                   <TokenSelector
                     label={t`Collateral In`}
                     chainId={chainId}
-                    tokenAddress={shortCollateralAddress.address}
+                    tokenAddress={shortCollateralToken.address}
                     onSelectToken={onSelectShortCollateralAddress}
                     tokens={stableTokens}
                     showTokenImgInDropdown={true}
@@ -2462,7 +2469,7 @@ export default function SwapBox(props) {
           onConfirmationClick={onConfirmationClick}
           setIsConfirming={setIsConfirming}
           hasExistingPosition={hasExistingPosition}
-          shortCollateralAddress={shortCollateralAddress.address}
+          shortCollateralAddress={shortCollateralToken.address}
           shortCollateralToken={shortCollateralToken}
           leverage={leverage}
           existingPosition={existingPosition}
