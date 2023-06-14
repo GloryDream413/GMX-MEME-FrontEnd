@@ -187,9 +187,8 @@ export default function SwapBox(props) {
   const [shortCollateralAddress, setShortCollateralAddress] = useLocalStorageByChainId(
     chainId,
     "Short-Collateral-Address",
-    getTokenBySymbol(chainId, defaultCollateralSymbol).address
+    getTokenBySymbol(chainId, defaultCollateralSymbol)
   );
-  console.log(shortCollateralAddress, "BBBBBBBBBBBBBBBBBBBBBBBB");
   const isLong = swapOption === LONG;
   const isShort = swapOption === SHORT;
   const isSwap = swapOption === SWAP;
@@ -388,7 +387,6 @@ export default function SwapBox(props) {
 
   const indexTokenAddress = toTokenAddress === AddressZero ? nativeTokenAddress : toTokenAddress;
   const collateralTokenAddress = isLong ? indexTokenAddress : shortCollateralAddress.address;
-  console.log(shortCollateralAddress, "GGGGGGGGGGGGGGG");
   const collateralToken = getToken(chainId, collateralTokenAddress);
 
   const [triggerRatioValue, setTriggerRatioValue] = useState("");
