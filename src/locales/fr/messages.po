@@ -316,7 +316,7 @@ msgstr ""
 
 #: src/components/Exchange/ConfirmationBox.js
 #: src/components/Exchange/PositionSeller.js
-msgid "Allow up to 1% slippage"
+msgid "Allow up to 10% slippage"
 msgstr ""
 
 #: src/App/App.js

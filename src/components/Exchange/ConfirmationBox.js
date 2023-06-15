@@ -698,7 +698,7 @@ export default function ConfirmationBox(props) {
             <div className="PositionEditor-allow-higher-slippage">
               <Checkbox isChecked={isHigherSlippageAllowed} setIsChecked={setIsHigherSlippageAllowed}>
                 <span className="muted font-sm">
-                  <Trans>Allow up to 1% slippage</Trans>
+                  <Trans>Allow up to 10 % slippage</Trans>
                 </span>
               </Checkbox>
             </div>

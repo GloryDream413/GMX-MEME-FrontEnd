@@ -306,8 +306,8 @@ function FullApp() {
       helperToast.error(t`Invalid slippage value`);
       return;
     }
-    if (slippage > 5) {
-      helperToast.error(t`Slippage should be less than 5%`);
+    if (slippage > 10) {
+      helperToast.error(t`Slippage should be less than 10%`);
       return;
     }
 
